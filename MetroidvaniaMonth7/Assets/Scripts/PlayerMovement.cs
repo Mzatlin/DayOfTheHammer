@@ -10,19 +10,21 @@ public class PlayerMovement : MonoBehaviour
     public bool isFacingRight = true;
     private float moveX;
     Vector2 playerScale;
-    Rigidbody2D rigidbody;
     [SerializeField]
     bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask Ground;
+    public LayerMask Box;
+    LayerMask finalLayerMask;
+    List<Collider2D> results;
 
     // Start is called before the first frame update
     void Start()
     {
+        finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
         move = GetComponent<MovePhysics>();
-        rigidbody = GetComponent<Rigidbody2D>();
         playerScale = transform.localScale;
     }
 
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     void MovePlayer()
     {
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, Ground);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, finalLayerMask);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
