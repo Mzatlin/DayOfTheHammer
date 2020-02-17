@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump.JumpMove();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
+
         }
 
         moveX = Input.GetAxis("Horizontal");
