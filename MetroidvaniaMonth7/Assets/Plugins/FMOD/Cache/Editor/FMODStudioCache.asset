@@ -32,15 +32,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 1573143148529918172}
-  - {fileID: -6377379888746415206}
+  - {fileID: 5808185308268580081}
   EditorEvents:
   - {fileID: 5655218590518824696}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6377379888746415206}
+  - {fileID: 5808185308268580081}
   StringsBanks:
   - {fileID: 1573143148529918172}
-  stringsBankWriteTime: 637174552340000000
+  stringsBankWriteTime: 637174757280046343
   cacheVersion: 3
 --- !u!114 &1573143148529918172
 MonoBehaviour:
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../MetroidVania7-FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637174552340000000
+  lastModified: 637174757280046343
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -77,7 +77,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: 070457901b00b74caa5df5df7a2666fe
   Banks:
-  - {fileID: -6377379888746415206}
+  - {fileID: 5808185308268580081}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -85,3 +85,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 800
+--- !u!114 &5808185308268580081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637174757280046343
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
