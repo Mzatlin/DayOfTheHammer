@@ -25,6 +25,10 @@ public class ChargeHammerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            // add charging sound here
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Hammer_Charge");
+
+
             var results = Physics2D.OverlapCircleAll(chargeCenter.position, chargeRadius, finalLayerMask);
             foreach (Collider2D obj in results)
             {
@@ -34,9 +38,15 @@ public class ChargeHammerAttack : MonoBehaviour
                     if (distance < 1.5f)
                     {
                         obj.gameObject.SetActive(false);
+                        //should I make a special sound for gameobjects destroyed by the hammer charge here?
+                        //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Destroyed_By_Charge");
+
                     }
 
                     obj.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
+
+                    //I'm guessing this throws objects that aren't within 1.5 but within the charge radius. Could maybe add a sound to this.
+
                 }
             }
         }
