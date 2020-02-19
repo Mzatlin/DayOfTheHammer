@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyThrow : MonoBehaviour, IThrow
+{
+
+    [SerializeField]
+    float throwSpeed;
+    [SerializeField]
+    GameObject hammer;
+    Rigidbody2D _rigidBody;
+
+    public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
+
+    public void InitializeThrow()
+    {
+        if (hammer != null)
+        {
+            _rigidBody = hammer.GetComponent<Rigidbody2D>();
+            hammer.SetActive(false);
+            hammer.GetComponent<HitOnTouch>().OnTouch += HandleTouch;
+        }
+    }
+
+    public void ThrowAttackTick()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    void HandleTouch(Transform obj)
+    {
+
+    }
+ }

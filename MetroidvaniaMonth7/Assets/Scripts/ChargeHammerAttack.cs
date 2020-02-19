@@ -9,7 +9,7 @@ public class ChargeHammerAttack : MonoBehaviour, IChargeAttack
     [HideInInspector]
     public float chargeRadius;
     public LayerMask Enemy;
-    public LayerMask Box;
+    public LayerMask Box; 
     LayerMask finalLayerMask;
     bool isHit;
     List<Collider2D> results = new List<Collider2D>();

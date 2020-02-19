@@ -13,7 +13,7 @@ public class NewBehaviourScript : AbilitySO
 
     public override void Initialize(GameObject obj)
     {
-        throwHammer = obj.GetComponent<ThrowHammer>();
+        throwHammer = obj.GetComponent<IThrow>();
         throwHammer.ThrowSpeed = throwSpeed;
         throwHammer.InitializeThrow();
     }

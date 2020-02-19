@@ -12,7 +12,7 @@ public class ChargeHammerAbilitySO : AbilitySO
 
     public override void Initialize(GameObject obj)
     {
-        chargeAttack = obj.GetComponent<ChargeHammerAttack>();
+        chargeAttack = obj.GetComponent<IChargeAttack>();
         chargeAttack.InitializeCharge();
         chargeAttack.HammerRadius = chargeRadius;
     }
