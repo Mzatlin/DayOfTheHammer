@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    MovePhysics move;
+    IMove move;
     Jump jump;
     public bool isFacingRight = true;
     private float moveX;
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
-        move = GetComponent<MovePhysics>();
+        move = GetComponent<IMove>();
         playerScale = transform.localScale;
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Abilities/ThrowAbility")]
-public class NewBehaviourScript : AbilitySO
+public class HammerThrowAbilitySO : AbilitySO
 {
 
     [SerializeField]

@@ -8,7 +8,7 @@ public class HammerAttack : MonoBehaviour
     Transform hitCheck;
     [SerializeField]
     float checkRadius;
-    MovePhysics move;
+    IMove move;
     private bool isHitting;
     public Vector2 lastDirection;
     Vector2 directionCurrent;
@@ -19,9 +19,9 @@ public class HammerAttack : MonoBehaviour
     void Start()
     {
         lastDirection = transform.right;
-        move = GetComponent<MovePhysics>();
+        move = GetComponent<IMove>();
     }
-
+     
     // Update is called once per frame
     void Update()
     {
