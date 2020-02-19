@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChargeHammerAttack : MonoBehaviour
+public class ChargeHammerAttack : MonoBehaviour, IChargeAttack
 {
     [SerializeField]
     Transform chargeCenter;
@@ -13,15 +13,19 @@ public class ChargeHammerAttack : MonoBehaviour
     LayerMask finalLayerMask;
     bool isHit;
     List<Collider2D> results = new List<Collider2D>();
+
+    public float HammerRadius { get => chargeRadius; set => chargeRadius = value; }
+
     // Start is called before the first frame update
 
-    public void Initialize()
+    public void InitializeCharge()
     {
         finalLayerMask = (1 << LayerMask.NameToLayer("Box") | (1 << LayerMask.NameToLayer("Enemy")));
     }
 
 
-    public void HammerCharge()
+    //This Tick method is called in the use ability function once per frame
+    public void HammerChargeTick()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {

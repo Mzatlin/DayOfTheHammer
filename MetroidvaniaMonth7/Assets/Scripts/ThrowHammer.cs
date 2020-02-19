@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ThrowHammer : MonoBehaviour
+public class ThrowHammer : MonoBehaviour, IThrow
 {
     public event Action OnThrow = delegate { };
 
     [SerializeField]
     GameObject hammer;
     [SerializeField]
-    float throwSpeed;
+    public float throwSpeed;
     Rigidbody2D _rigidBody;
     MovePhysics move;
     Vector2 movement;
     HammerAttack attack;
 
+    public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
+
     // Start is called before the first frame update
-    void Start()
+
+    public void InitializeThrow()
     {
-        
         attack = GetComponent<HammerAttack>();
         move = GetComponent<MovePhysics>();
         if (hammer != null)
@@ -35,21 +37,20 @@ public class ThrowHammer : MonoBehaviour
         transform.position = obj.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ThrowAttackTick()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Throw();
         }
 
-        if (Vector3.Distance(transform.position,hammer.transform.position) > 5)
+        if (Vector3.Distance(transform.position, hammer.transform.position) > 5)
         {
             _rigidBody.velocity = Vector2.zero;
         }
     }
 
-    void Throw()
+    public void Throw()
     {
         if (CanThrow())
         {
@@ -66,4 +67,5 @@ public class ThrowHammer : MonoBehaviour
     {
         return true;
     }
+
 }

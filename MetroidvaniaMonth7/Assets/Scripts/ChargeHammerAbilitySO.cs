@@ -8,17 +8,17 @@ public class ChargeHammerAbilitySO : AbilitySO
     [SerializeField]
     float chargeRadius;
 
-    private ChargeHammerAttack chargeAttack;
+    private IChargeAttack chargeAttack;
 
     public override void Initialize(GameObject obj)
     {
         chargeAttack = obj.GetComponent<ChargeHammerAttack>();
-        chargeAttack.Initialize();
-        chargeAttack.chargeRadius = chargeRadius;
+        chargeAttack.InitializeCharge();
+        chargeAttack.HammerRadius = chargeRadius;
     }
 
     public override void UseAbilityTick()
     {
-        chargeAttack.HammerCharge();
+        chargeAttack.HammerChargeTick();
     }
 }
