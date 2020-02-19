@@ -10,6 +10,12 @@ public class HitBase : MonoBehaviour, IHittable
     public void ProcessHit()
     {
         HandleHit();
+
+        //Sound when hit
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hit");
+
+
+
     }
 
     protected virtual void HandleHit()

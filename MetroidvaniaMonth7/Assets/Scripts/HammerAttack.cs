@@ -37,6 +37,10 @@ public class HammerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             TryHit();
+
+            //implement hammer attack sound
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
+
         }
     }
 

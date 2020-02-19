@@ -42,6 +42,9 @@ public class ThrowHammer : MonoBehaviour, IThrow
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Throw();
+            //implement throwing sound
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
+
         }
 
         if (Vector3.Distance(transform.position, hammer.transform.position) > 5)
