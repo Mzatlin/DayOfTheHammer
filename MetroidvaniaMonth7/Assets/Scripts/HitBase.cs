@@ -12,7 +12,7 @@ public class HitBase : MonoBehaviour, IHittable
         HandleHit();
 
         //Sound when hit
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hit");
+      //  FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hit");
 
 
 
