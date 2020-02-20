@@ -24,6 +24,12 @@ public class ThrowHammer : MonoBehaviour, IThrow
     {
         attack = GetComponent<HammerAttack>();
         move = GetComponent<MovePhysics>();
+        InitializeProjectile();
+
+    }
+
+    void InitializeProjectile()
+    {
         if (hammer != null)
         {
             _rigidBody = hammer.GetComponent<Rigidbody2D>();

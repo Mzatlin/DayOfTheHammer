@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HammerAttack : MonoBehaviour
 {
-    [SerializeField]
-    Transform hitCheck;
+
     [SerializeField]
     float checkRadius;
     IMove move;

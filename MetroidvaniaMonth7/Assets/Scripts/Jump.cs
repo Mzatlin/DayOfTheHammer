@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Jump : MonoBehaviour, IAbility
+public class Jump : MonoBehaviour
 {
-    [HideInInspector]
-    public float jumpPower = 5f;
     [SerializeField]
     float fallMultiplier = 2.5f;
     [SerializeField]
@@ -14,16 +12,14 @@ public class Jump : MonoBehaviour, IAbility
     Transform trans;
 
     Rigidbody2D _rigidbody;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
        
-    }
-
-    public void Initialize()
-    {
-        throw new KeyNotFoundException();
     }
 
     // Update is called once per frame
@@ -39,9 +35,9 @@ public class Jump : MonoBehaviour, IAbility
         }
     }
 
-    public void JumpMove()
+    public void JumpMove(float _jumpPower)
     {
-        _rigidbody.velocity = Vector2.up * jumpPower;
+        _rigidbody.velocity = Vector2.up * _jumpPower;
     }
 
 }
