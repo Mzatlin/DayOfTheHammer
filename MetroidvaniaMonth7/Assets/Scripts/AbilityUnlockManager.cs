@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AbilityUnlockManager : MonoBehaviour
 {
-    [SerializeField]
-    List<GameObject> abilityContainers = new List<GameObject>();
+
+    public List<GameObject> abilityContainers = new List<GameObject>();
     Dictionary<string, GameObject> abilities = new Dictionary<string, GameObject>();
     // Start is called before the first frame update
     void Start()

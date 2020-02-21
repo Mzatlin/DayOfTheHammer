@@ -10,13 +10,13 @@ public class PlayerStateSO : ScriptableObject
 
     public bool IsPlayerReady()
     {
-        if(!isDead && !isStopped)
+        if(isDead || isStopped)
         {
-            return true;
+            return false;
         }
         else
         {
-            return false;
+            return true;
         }
     }
 }

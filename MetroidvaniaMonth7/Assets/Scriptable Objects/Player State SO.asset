@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c07cb9370c3121479f0c964705f1db3, type: 3}
   m_Name: Player State SO
   m_EditorClassIdentifier: 
-  isDead: 0
+  isDead: 1
   isStopped: 0

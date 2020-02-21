@@ -7,6 +7,7 @@ public class HitOnTouch : MonoBehaviour
 {
     public event Action<Transform> OnTouch = delegate { };
 
+    [SerializeField]
     LayerMask mask;
 
     void Start()

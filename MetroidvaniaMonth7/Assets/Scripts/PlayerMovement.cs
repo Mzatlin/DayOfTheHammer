@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    PlayerStateSO playerState;
     IMove move;
     public bool isFacingRight = true;
     private float moveX;
@@ -21,7 +23,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
+        if (playerState.IsPlayerReady())
+        {
+            MovePlayer();
+        }
+        else
+        {
+            move.MoveX(0f);
+        }
+
     }
 
     void MovePlayer()
