@@ -45,7 +45,6 @@ public class ThrowHammer : MonoBehaviour, IThrow
             Throw();
             //implement throwing sound
             FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
-
         }
 
         if (Vector3.Distance(transform.position, hammer.transform.position) > 5)
@@ -61,13 +60,13 @@ public class ThrowHammer : MonoBehaviour, IThrow
             OnThrow();
             hammer.transform.position = transform.position;
             hammer.SetActive(true);
-            var finalDirection = attack.lastDirection.normalized;
-            _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed);
+            var finalDirection = attack.lastDirection.normalized; //Calculate Direction
+            _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
 
         }
     }
 
-    bool CanThrow()
+    bool CanThrow() //CanFire
     {
         return true;
     }

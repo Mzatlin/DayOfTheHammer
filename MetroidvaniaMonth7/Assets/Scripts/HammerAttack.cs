@@ -7,6 +7,8 @@ public class HammerAttack : MonoBehaviour
 
     [SerializeField]
     float checkRadius;
+    [SerializeField]
+    LayerMask finalLayerMask;
     IMove move;
     private bool isHitting;
     public Vector2 lastDirection;
@@ -45,11 +47,9 @@ public class HammerAttack : MonoBehaviour
 
     void TryHit()
     {
-
-
         ray = new Ray2D(transform.position, directionCurrent);
         Debug.DrawRay(ray.origin, ray.direction, Color.red, checkRadius);
-        var hit = Physics2D.RaycastAll(ray.origin, ray.direction, checkRadius);
+        var hit = Physics2D.RaycastAll(ray.origin, ray.direction, checkRadius, finalLayerMask);
         foreach (var obj in hit)
         {
             var hittable = obj.collider.transform.GetComponent<IHittable>();
