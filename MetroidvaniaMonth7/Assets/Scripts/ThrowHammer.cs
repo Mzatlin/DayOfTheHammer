@@ -34,14 +34,9 @@ public class ThrowHammer : MonoBehaviour, IThrow
         {
             _rigidBody = hammer.GetComponent<Rigidbody2D>();
             hammer.SetActive(false);
-            hammer.GetComponent<HitOnTouch>().OnTouch += HandleTouch;
         }
     }
 
-    private void HandleTouch(Transform obj)
-    {
-        transform.position = obj.transform.position;
-    }
 
     public void ThrowAttackTick()
     {

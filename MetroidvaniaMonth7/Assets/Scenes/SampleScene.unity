@@ -2967,7 +2967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b6763a62aac864c8ad5d0160f5d584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask:
+  finalmask:
     serializedVersion: 2
     m_Bits: 0
 --- !u!50 &505317703
@@ -3322,6 +3322,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 707336582}
+--- !u!114 &578209445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578209428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736b279673759af44810c6563a91e7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hammer: {fileID: 1567957524}
 --- !u!1 &582847906
 GameObject:
   m_ObjectHideFlags: 0
@@ -5033,7 +5046,7 @@ PrefabInstance:
     - target: {fileID: 6591481625291161355, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
         type: 3}
       propertyPath: m_Name
-      value: Hammer
+      value: GrappleHammer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6, type: 3}
@@ -6924,7 +6937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b6763a62aac864c8ad5d0160f5d584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask:
+  finalmask:
     serializedVersion: 2
     m_Bits: 3072
 --- !u!50 &1567957526
@@ -6948,6 +6961,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1567957530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567957524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a38caea40c1f95499ff8d4ac32db60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalmask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!1001 &1575625090
 PrefabInstance:
   m_ObjectHideFlags: 0

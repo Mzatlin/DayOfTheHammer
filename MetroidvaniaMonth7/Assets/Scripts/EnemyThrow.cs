@@ -19,17 +19,11 @@ public class EnemyThrow : MonoBehaviour, IThrow
         {
             _rigidBody = hammer.GetComponent<Rigidbody2D>();
             hammer.SetActive(false);
-            hammer.GetComponent<HitOnTouch>().OnTouch += HandleTouch;
         }
     }
 
     public void ThrowAttackTick()
     {
         throw new System.NotImplementedException();
-    }
-
-    void HandleTouch(Transform obj)
-    {
-
     }
  }

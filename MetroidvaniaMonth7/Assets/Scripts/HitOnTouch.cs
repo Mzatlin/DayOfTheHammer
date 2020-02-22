@@ -5,28 +5,26 @@ using System;
 
 public class HitOnTouch : MonoBehaviour
 {
-    public event Action<Transform> OnTouch = delegate { };
-
     [SerializeField]
-    LayerMask mask;
+    LayerMask finalmask;
 
     void Start()
     {
-        mask = LayerMask.GetMask("Grapple");
+        //  mask = LayerMask.GetMask("Grapple");
+        if (finalmask == 0)
+        {
+            Debug.Log("Missing LayerMask!");
+        }
     }
-    // Start is called before the first frame update
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         var hit = collision.GetComponent<IHittable>();
-        if(hit != null)
+        if (hit != null && (1 << collision.gameObject.layer & finalmask) != 0)
         {
             hit.ProcessHit();
-            var result = Physics2D.OverlapCircle(transform.position, 1f, mask);
-            if(result != null)
-            {
-                OnTouch(collision.transform);
-            }
-
         }
     }
 }
+
