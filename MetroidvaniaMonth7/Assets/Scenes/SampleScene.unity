@@ -985,7 +985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163236074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.3, y: -5.18, z: 0}
+  m_LocalPosition: {x: -13.867, y: -1.86, z: 0}
   m_LocalScale: {x: 3.888, y: 3.8974, z: 1}
   m_Children:
   - {fileID: 1402222564}
@@ -1119,9 +1119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5e1af6e7cd5034f806932c4c08dc7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 5
+  jumpPower: 9.9
   isGrounded: 0
-  jumpRate: 0.69
+  jumpRate: 0.68
   groundCheck: {fileID: 585862826}
   checkRadius: 0.3
   Ground:
@@ -1614,7 +1614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &224871422
 Transform:
   m_ObjectHideFlags: 0
@@ -1643,6 +1643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 9e3f4a072f425664b846da4371269230, type: 2}
   abilitySource: {fileID: 163236074}
+  playerState: {fileID: 0}
 --- !u!1001 &227507213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4065,6 +4066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 41463d3ce00071943991ea535ca05808, type: 2}
   abilitySource: {fileID: 163236074}
+  playerState: {fileID: 0}
 --- !u!4 &788315292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6591481625291161352, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -9256,6 +9258,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 482049774630158153, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: playerState
+      value: 
+      objectReference: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56,
+        type: 2}
     - target: {fileID: 758174693710431904, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: _movementSpeed
@@ -9366,6 +9374,18 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 457133874}
+    - target: {fileID: 2455658951704434362, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: playerState
+      value: 
+      objectReference: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56,
+        type: 2}
+    - target: {fileID: 2842602880747244165, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: playerState
+      value: 
+      objectReference: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56,
+        type: 2}
     - target: {fileID: 3606046127817483980, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: timeToCharge
@@ -9381,6 +9401,12 @@ PrefabInstance:
       propertyPath: hammer
       value: 
       objectReference: {fileID: 6591481624582362779}
+    - target: {fileID: 6327570251997761785, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: playerState
+      value: 
+      objectReference: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56,
+        type: 2}
     - target: {fileID: 6447959673703010459, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: finalLayerMask.m_Bits

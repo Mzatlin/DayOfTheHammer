@@ -11,9 +11,9 @@ public class BreakOnHit : HitBase
         render = GetComponentInChildren<SpriteRenderer>();
     }
 
-    protected override void HandleHit()
+    protected override void HandleHit(float damage)
     {
-        base.HandleHit();
+        base.HandleHit(damage);
         render.enabled = false;
         gameObject.SetActive(false);
     }

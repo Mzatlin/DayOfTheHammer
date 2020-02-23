@@ -6,5 +6,6 @@ using System;
 public interface IHittable
 {
     event Action OnHit;
+    void ProcessHit(float damage);
     void ProcessHit();
 }

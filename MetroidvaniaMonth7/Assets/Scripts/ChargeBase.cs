@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class ChargeBase : MonoBehaviour, IChargeable
 {
-    public event Action OnChargeBegin = delegate { };
-    public event Action OnChargeEnd = delegate { };
-
     [SerializeField]
     protected float holdDownTime = 0f;
     [SerializeField]

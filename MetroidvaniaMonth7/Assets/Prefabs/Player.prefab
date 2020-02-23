@@ -307,7 +307,6 @@ GameObject:
   - component: {fileID: 352773919927044135}
   - component: {fileID: 7201695358064779252}
   - component: {fileID: 6026988864690838865}
-  - component: {fileID: 1306489355673860786}
   - component: {fileID: 7462708572023999753}
   - component: {fileID: 7903729276919409820}
   - component: {fileID: 7940315172410922822}
@@ -443,6 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdDownTime: 0
   timeToCharge: 1.5
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
   chargeCenter: {fileID: 877930816724466956}
   chargeRadius: 0
 --- !u!114 &6447959673703010459
@@ -504,22 +504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hammer: {fileID: 0}
   throwSpeed: 25
---- !u!114 &1306489355673860786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758174693710431917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7aba08df93b2d4bb291ff2c0db7f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdDownTime: 0
-  timeToCharge: 1.5
-  chargeCenter: {fileID: 877930816724466956}
-  chargeRadius: 6
 --- !u!114 &7462708572023999753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6f2b3d074c9144f8cf90b3a672317b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
 --- !u!1 &922007510579866762
 GameObject:
   m_ObjectHideFlags: 0

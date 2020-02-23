@@ -19,14 +19,14 @@ public class HealthController : HitBase, IHealth
     public bool IsDead { get => isDead; set => isDead = value; }
 
     //health is decremented and death is handled here. Unless already dead, the hit event will be triggered. 
-    protected override void HandleHit()
+    protected override void HandleHit(float damage)
     {
-        if (isDead)
+        if (isDead) //also check if CanHit from ICanHit
         {
             return;
         }
-        base.HandleHit();
-        currentHealth--;
+        base.HandleHit(damage);
+        currentHealth -= damage;
         if (currentHealth < 1)
         {
             isDead = true;

@@ -3,16 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChargeHammerAttack : ChargeBase, IChargeAttack
+public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
 {
-    public event Action OnChargeEnd = delegate { };
-    public event Action OnChargeBegin = delegate { };
+    public event Action OnAbilityStart = delegate { };
+    public event Action OnAbilityEnd = delegate { };
+
+    [SerializeField]
+    PlayerStateSO playerState;
     [SerializeField]
     Transform chargeCenter;
     [HideInInspector]
     public float chargeRadius;
     LayerMask finalLayerMask;
     List<Collider2D> results = new List<Collider2D>();
+    bool isAbilityInUse = false;
 
     public float HammerRadius { get => chargeRadius; set => chargeRadius = value; }
 
@@ -23,24 +27,27 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack
         finalLayerMask = (1 << LayerMask.NameToLayer("Box") | (1 << LayerMask.NameToLayer("Enemy")));
     }
 
-
     //This Tick method is called in the use ability function once per frame
     public void HammerChargeTick()
     {
         if (Input.GetKey(KeyCode.E))
         {
-            holdDownTime += Time.deltaTime;
-        }
+            if (isAbilityInUse || playerState.IsPlayerReady())
+            {
+                holdDownTime += Time.deltaTime;
+            }
 
-        if(holdDownTime > .2f)
-        {
-            OnChargeBegin();
         }
-
-        if (CanRelease())
+        if (holdDownTime > .2f)
         {
             // add charging sound here
             //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Hammer_Charge");
+            isAbilityInUse = true;
+            OnAbilityStart();
+        }
+        if (CanRelease())
+        {
+
             var results = Physics2D.OverlapCircleAll(chargeCenter.position, chargeRadius, finalLayerMask);
             if (results != null)
             {
@@ -57,7 +64,8 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack
     {
         if (Input.GetKeyUp(KeyCode.E))
         {
-            OnChargeEnd();
+            isAbilityInUse = false;
+            OnAbilityEnd();
             if (holdDownTime > timeToCharge)
             {
                 holdDownTime = 0f;
@@ -85,7 +93,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack
                 var hit = obj.GetComponent<IHittable>();
                 if (hit != null)
                 {
-                    hit.ProcessHit();//This will send more damage eventually 
+                    hit.ProcessHit(10f/distance);//This will send more damage eventually 
                 }
                 //should I make a special sound for gameobjects destroyed by the hammer charge here?
                 //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Destroyed_By_Charge");

@@ -21,7 +21,7 @@ public class MoveBlock : HitBase
     }
 
 
-    protected override void HandleHit()
+    protected override void HandleHit(float damage)
     {
         targetPoint = Vector2.right;
         blockPoint = target.transform.position - transform.position;
@@ -34,7 +34,7 @@ public class MoveBlock : HitBase
         {
             Debug.Log("To the left");
         }
-        base.HandleHit();
+        base.HandleHit(damage);
         rb.velocity = new Vector2(moveX, 0);
     }
 

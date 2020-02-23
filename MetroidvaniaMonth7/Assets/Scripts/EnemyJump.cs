@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyJump : MonoBehaviour, IJump
+public class EnemyJump : MonoBehaviour,IJump
 {
-    [HideInInspector]
+    [SerializeField]
     public float jumpPower = 5f;
     [SerializeField]
     public bool isGrounded;
@@ -22,14 +22,14 @@ public class EnemyJump : MonoBehaviour, IJump
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
     // Start is called before the first frame update
-    public void Initialize()
+    public void Start()
     {
         finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
     }
 
     // Update is called once per frame
-    public void JumpAbilityTick()
+    public void Update()
     {
         if (CanJump())
         {
@@ -69,5 +69,15 @@ public class EnemyJump : MonoBehaviour, IJump
         {
             return false;
         }
+    }
+
+    public void JumpAbilityTick()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Initialize()
+    {
+        throw new System.NotImplementedException();
     }
 }
