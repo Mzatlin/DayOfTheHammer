@@ -6,6 +6,7 @@ using UnityEngine;
 public class ChargeHammerAttack : ChargeBase, IChargeAttack
 {
     public event Action OnChargeEnd = delegate { };
+    public event Action OnChargeBegin = delegate { };
     [SerializeField]
     Transform chargeCenter;
     [HideInInspector]
@@ -30,6 +31,12 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack
         {
             holdDownTime += Time.deltaTime;
         }
+
+        if(holdDownTime > .2f)
+        {
+            OnChargeBegin();
+        }
+
         if (CanRelease())
         {
             // add charging sound here
@@ -50,9 +57,9 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack
     {
         if (Input.GetKeyUp(KeyCode.E))
         {
+            OnChargeEnd();
             if (holdDownTime > timeToCharge)
             {
-                OnChargeEnd();
                 holdDownTime = 0f;
                 return true;
             }

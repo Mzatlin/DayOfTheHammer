@@ -313,6 +313,8 @@ GameObject:
   - component: {fileID: 7940315172410922822}
   - component: {fileID: 5637370899215982957}
   - component: {fileID: 8748775288703942785}
+  - component: {fileID: 6327570251997761785}
+  - component: {fileID: 2007935670819547133}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -588,6 +590,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1690aca61558c1b418d51699f9fb38cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  chargeSlider: {fileID: 0}
+  offset: 1
+--- !u!114 &6327570251997761785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758174693710431917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f49d717ca45385408d8209ad3850322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2007935670819547133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758174693710431917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6f2b3d074c9144f8cf90b3a672317b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &922007510579866762
