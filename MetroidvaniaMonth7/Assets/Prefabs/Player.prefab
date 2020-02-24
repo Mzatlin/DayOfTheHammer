@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 93ec1dcbb80a42c438786d339ff37217, type: 2}
   abilitySource: {fileID: 758174693710431917}
+  playerState: {fileID: 0}
 --- !u!1 &758174692481552262
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7543be6dfdc7e74482c44e18843eba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkRadius: 0.8
   finalLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -591,6 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f49d717ca45385408d8209ad3850322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 0}
 --- !u!114 &2007935670819547133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: addc595a4a56d3f439de86f463042741, type: 2}
   abilitySource: {fileID: 758174693710431917}
+  playerState: {fileID: 0}
 --- !u!1 &4052892044092842341
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +712,7 @@ Transform:
   - {fileID: 3593369862121544725}
   - {fileID: 2793877308170674813}
   - {fileID: 7450704309137006151}
+  - {fileID: 5110239013113212283}
   m_Father: {fileID: 758174693710431905}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -729,6 +732,52 @@ MonoBehaviour:
   - {fileID: 471840233982618523}
   - {fileID: 922007510579866762}
   - {fileID: 6435886972986988039}
+--- !u!1 &6375043611078924134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5110239013113212283}
+  - component: {fileID: 4049525558074621645}
+  m_Layer: 9
+  m_Name: HammerAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5110239013113212283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375043611078924134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.49479973, y: 0.024271429, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8354891878730429822}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4049525558074621645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375043611078924134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ea680e60419934ba513348e7bee50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 8795c406730ff0441922d6c6ddee320f, type: 2}
+  abilitySource: {fileID: 758174693710431917}
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &6435886972986988039
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,3 +823,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 41463d3ce00071943991ea535ca05808, type: 2}
   abilitySource: {fileID: 758174693710431917}
+  playerState: {fileID: 0}

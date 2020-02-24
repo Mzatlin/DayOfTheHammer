@@ -8717,6 +8717,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6, type: 3}
+--- !u!1 &1979819026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6375043611078924134, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 758174693205983289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033394875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6591481625291161355, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -9369,6 +9375,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1484105886826123359, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: abilityContainers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484105886826123359, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: abilityContainers.Array.data[3]
+      value: 
+      objectReference: {fileID: 1979819026}
     - target: {fileID: 2007935670819547133, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: healthBar
@@ -9390,6 +9406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeToCharge
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110239013113212283, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5637370899215982957, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}

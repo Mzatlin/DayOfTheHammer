@@ -2,29 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerAttack : MonoBehaviour
+public class HammerAttack : MonoBehaviour, IHammer
 {
 
-    [SerializeField]
-    float checkRadius;
+    [HideInInspector]
+    float attackRange = 0.8f;
     [SerializeField]
     LayerMask finalLayerMask;
     IMove move;
-    private bool isHitting;
+    private Ray2D ray;
+
+    //Move to a separate Interface 
     public Vector2 lastDirection;
     Vector2 directionCurrent;
 
-    // RaycastHit2D hit;
-    Ray2D ray;
+    public float AttackRange { get => attackRange; set => attackRange = value; }
+
+
     // Start is called before the first frame update
-    void Start()
+    public void Initialize()
     {
         lastDirection = transform.right;
         move = GetComponent<IMove>();
     }
-     
-    // Update is called once per frame
-    void Update()
+
+    // HammerAttackTick is Called from the HammerAbiltySO Update
+    public void HammerAttackTick()
     {
         if (move.MoveDirection == Vector2.zero)
         {
@@ -41,22 +44,27 @@ public class HammerAttack : MonoBehaviour
 
             //implement hammer attack sound
             FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
-
         }
     }
 
     void TryHit()
     {
         ray = new Ray2D(transform.position, directionCurrent);
-        Debug.DrawRay(ray.origin, ray.direction, Color.red, checkRadius);
-        var hit = Physics2D.RaycastAll(ray.origin, ray.direction, checkRadius, finalLayerMask);
-        foreach (var obj in hit)
+        Debug.DrawRay(ray.origin, ray.direction, Color.red, attackRange);
+        var hit = Physics2D.RaycastAll(ray.origin, ray.direction, attackRange, finalLayerMask);
+        foreach (RaycastHit2D obj in hit)
         {
-            var hittable = obj.collider.transform.GetComponent<IHittable>();
-            if (hittable != null)
-            {
-                hittable.ProcessHit();
-            }
+            ProcessAttack(obj);
+        }
+    }
+
+    void ProcessAttack(RaycastHit2D obj)
+    {
+        var hittable = obj.collider.transform.GetComponent<IHittable>();
+        if (hittable != null)
+        {
+            hittable.ProcessHit();
+            //implement hammer attack hit sound
         }
     }
 }

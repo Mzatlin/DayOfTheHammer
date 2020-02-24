@@ -14,6 +14,7 @@ public class AbilityUnlockManager : MonoBehaviour
         {
             obj.SetActive(false);
         }
+        abilityContainers[3].SetActive(true);
     }
 
     // Update is called once per frame
