@@ -20,6 +20,8 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
 
     public float HammerRadius { get => chargeRadius; set => chargeRadius = value; }
 
+    public bool IsAbilityInUse => isAbilityInUse;
+
     // Start is called before the first frame update
 
     public void InitializeCharge()
@@ -34,6 +36,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
         {
             if (isAbilityInUse || playerState.IsPlayerReady())
             {
+                isAbilityInUse = true;
                 holdDownTime += Time.deltaTime;
             }
 
@@ -66,6 +69,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
         {
             isAbilityInUse = false;
             OnAbilityEnd();
+            isAbilityInUse = false;
             if (holdDownTime > timeToCharge)
             {
                 holdDownTime = 0f;

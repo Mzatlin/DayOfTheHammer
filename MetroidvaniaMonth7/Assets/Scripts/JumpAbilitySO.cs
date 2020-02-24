@@ -7,6 +7,8 @@ public class JumpAbilitySO : AbilitySO
 {
     [SerializeField]
     float jumpPower;
+    [SerializeField]
+    PlayerStateSO playerState;
 
     private IJump _jump;
 
@@ -19,6 +21,9 @@ public class JumpAbilitySO : AbilitySO
 
     public override void UseAbilityTick()
     {
-        _jump.JumpAbilityTick();
+        if(_jump.IsAbilityInUse || playerState.IsPlayerReady())
+        {
+            _jump.JumpAbilityTick();
+        }
     }
 }

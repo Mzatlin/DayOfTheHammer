@@ -8,4 +8,5 @@ public interface IChargeAttack
     void HammerChargeTick();
     void InitializeCharge();
     float HammerRadius { get; set; }
+    bool IsAbilityInUse { get; }
 }

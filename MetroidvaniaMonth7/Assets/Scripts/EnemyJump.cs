@@ -21,6 +21,8 @@ public class EnemyJump : MonoBehaviour,IJump
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
+    public bool IsAbilityInUse => throw new System.NotImplementedException();
+
     // Start is called before the first frame update
     public void Start()
     {

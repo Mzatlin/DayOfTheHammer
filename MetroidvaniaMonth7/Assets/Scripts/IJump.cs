@@ -8,4 +8,5 @@ public interface IJump
     float JumpPower { get; set; }
     void JumpAbilityTick();
     void Initialize();
+    bool IsAbilityInUse { get; }
 }

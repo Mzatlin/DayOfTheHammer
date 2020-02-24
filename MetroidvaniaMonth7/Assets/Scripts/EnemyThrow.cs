@@ -13,6 +13,8 @@ public class EnemyThrow : MonoBehaviour, IThrow
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
 
+    public bool IsAbilityInUse => throw new System.NotImplementedException();
+
     public void InitializeThrow()
     {
         if (hammer != null)

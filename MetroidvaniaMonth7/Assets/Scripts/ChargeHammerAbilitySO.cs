@@ -7,6 +7,8 @@ public class ChargeHammerAbilitySO : AbilitySO
 {
     [SerializeField]
     float chargeRadius;
+    [SerializeField]
+    PlayerStateSO playerStats;
 
     private IChargeAttack chargeAttack;
 
@@ -19,6 +21,10 @@ public class ChargeHammerAbilitySO : AbilitySO
 
     public override void UseAbilityTick()
     {
-        chargeAttack.HammerChargeTick();
+        if(playerStats.IsPlayerReady() || chargeAttack.IsAbilityInUse)
+        {
+            chargeAttack.HammerChargeTick();
+        }
+
     }
 }

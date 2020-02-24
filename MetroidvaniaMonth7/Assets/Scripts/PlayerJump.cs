@@ -15,8 +15,11 @@ public class PlayerJump : MonoBehaviour, IJump
     public LayerMask Ground;
     public LayerMask Box;
     LayerMask finalLayerMask;
+    bool isAbilityInUse = false;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
+
+    public bool IsAbilityInUse => isAbilityInUse;
 
     // Start is called before the first frame update
     public void Initialize()

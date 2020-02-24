@@ -15,8 +15,11 @@ public class ThrowHammer : MonoBehaviour, IThrow
     MovePhysics move;
     Vector2 movement;
     HammerAttack attack;
+    bool isAbilityInUse = false;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
+
+    public bool IsAbilityInUse => isAbilityInUse;
 
     // Start is called before the first frame update
 
@@ -50,6 +53,7 @@ public class ThrowHammer : MonoBehaviour, IThrow
         if (Vector3.Distance(transform.position, hammer.transform.position) > 5)
         {
             _rigidBody.velocity = Vector2.zero;
+            isAbilityInUse = false;
         }
     }
 
@@ -57,6 +61,7 @@ public class ThrowHammer : MonoBehaviour, IThrow
     {
         if (CanThrow())
         {
+            isAbilityInUse = true;
             OnThrow();
             hammer.transform.position = transform.position;
             hammer.SetActive(true);
