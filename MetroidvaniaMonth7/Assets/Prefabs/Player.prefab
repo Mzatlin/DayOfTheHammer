@@ -313,8 +313,8 @@ GameObject:
   - component: {fileID: 7940315172410922822}
   - component: {fileID: 5637370899215982957}
   - component: {fileID: 8748775288703942785}
-  - component: {fileID: 6327570251997761785}
   - component: {fileID: 2007935670819547133}
+  - component: {fileID: 8793018287665555309}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -461,6 +461,7 @@ MonoBehaviour:
   finalLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
   lastDirection: {x: 0, y: 0}
 --- !u!114 &352773919927044135
 MonoBehaviour:
@@ -489,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289383000f1e2c242800a4943b94d3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerState: {fileID: 0}
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!114 &6026988864690838865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hammer: {fileID: 0}
   throwSpeed: 25
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
+  isAbilityInUse: 0
 --- !u!114 &7462708572023999753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,19 +582,6 @@ MonoBehaviour:
   canvas: {fileID: 0}
   chargeSlider: {fileID: 0}
   offset: 1
---- !u!114 &6327570251997761785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758174693710431917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f49d717ca45385408d8209ad3850322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerState: {fileID: 0}
 --- !u!114 &2007935670819547133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,6 +595,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+--- !u!114 &8793018287665555309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758174693710431917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7c0442dcfd4474a89ccf20c7cf01b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &922007510579866762
 GameObject:
   m_ObjectHideFlags: 0

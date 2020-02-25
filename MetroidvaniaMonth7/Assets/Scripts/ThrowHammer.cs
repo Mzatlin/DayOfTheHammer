@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ThrowHammer : MonoBehaviour, IThrow
+public class ThrowHammer : MonoBehaviour, IThrow, IAbility
 {
     public event Action OnThrow = delegate { };
+    public event Action OnAbilityStart = delegate { };
+    public event Action OnAbilityEnd = delegate { };
 
     [SerializeField]
     GameObject hammer;
     [SerializeField]
     public float throwSpeed;
+    [SerializeField]
+    PlayerStateSO playerState;
     Rigidbody2D _rigidBody;
     MovePhysics move;
     Vector2 movement;
     HammerAttack attack;
+    [SerializeField]
     bool isAbilityInUse = false;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
 
-    public bool IsAbilityInUse => isAbilityInUse;
+    bool IAbility.IsAbilityInUse { get => isAbilityInUse; set => isAbilityInUse = value; }
+
 
     // Start is called before the first frame update
 
@@ -43,18 +49,26 @@ public class ThrowHammer : MonoBehaviour, IThrow
 
     public void ThrowAttackTick()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (isAbilityInUse || playerState.IsPlayerReady())
         {
-            Throw();
-            //implement throwing sound
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
 
-        if (Vector3.Distance(transform.position, hammer.transform.position) > 5)
+                Throw();
+                //implement throwing sound
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
+            }
+
+        }
+        if (hammer.activeInHierarchy && Vector3.Distance(transform.position, hammer.transform.position) > 5)
         {
             _rigidBody.velocity = Vector2.zero;
+            hammer.SetActive(false);
+            OnAbilityEnd();
             isAbilityInUse = false;
+
         }
+
     }
 
     public void Throw()
@@ -62,6 +76,7 @@ public class ThrowHammer : MonoBehaviour, IThrow
         if (CanThrow())
         {
             isAbilityInUse = true;
+            OnAbilityStart();
             OnThrow();
             hammer.transform.position = transform.position;
             hammer.SetActive(true);

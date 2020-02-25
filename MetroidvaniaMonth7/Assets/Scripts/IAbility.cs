@@ -7,4 +7,5 @@ public interface IAbility
 {
     event Action OnAbilityStart;
     event Action OnAbilityEnd;
+    bool IsAbilityInUse { get; set; }
 }

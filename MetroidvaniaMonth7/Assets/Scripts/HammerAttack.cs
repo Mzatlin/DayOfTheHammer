@@ -1,22 +1,30 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerAttack : MonoBehaviour, IHammer
+public class HammerAttack : MonoBehaviour, IHammer, IAbility
 {
 
     [HideInInspector]
     float attackRange = 0.8f;
     [SerializeField]
     LayerMask finalLayerMask;
+    [SerializeField]
+    PlayerStateSO playerState;
     IMove move;
     private Ray2D ray;
+    bool isAbilityInUse = false;
 
     //Move to a separate Interface 
     public Vector2 lastDirection;
     Vector2 directionCurrent;
 
+    public event Action OnAbilityStart = delegate { };
+    public event Action OnAbilityEnd = delegate { };
+
     public float AttackRange { get => attackRange; set => attackRange = value; }
+    public bool IsAbilityInUse { get => isAbilityInUse; set => isAbilityInUse = value; }
 
 
     // Start is called before the first frame update
@@ -38,17 +46,26 @@ public class HammerAttack : MonoBehaviour, IHammer
             directionCurrent = move.MoveDirection;
             lastDirection = directionCurrent;
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (isAbilityInUse || playerState.IsPlayerReady())
         {
-            TryHit();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
 
-            //implement hammer attack sound
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
+                OnAbilityStart();
+                isAbilityInUse = true;
+                TryHit();
+                //implement hammer attack sound
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
+            }
+
         }
     }
 
+
+
     void TryHit()
     {
+
         ray = new Ray2D(transform.position, directionCurrent);
         Debug.DrawRay(ray.origin, ray.direction, Color.red, attackRange);
         var hit = Physics2D.RaycastAll(ray.origin, ray.direction, attackRange, finalLayerMask);
@@ -56,7 +73,10 @@ public class HammerAttack : MonoBehaviour, IHammer
         {
             ProcessAttack(obj);
         }
+        OnAbilityEnd();
+        isAbilityInUse = false;
     }
+
 
     void ProcessAttack(RaycastHit2D obj)
     {
@@ -64,6 +84,7 @@ public class HammerAttack : MonoBehaviour, IHammer
         if (hittable != null)
         {
             hittable.ProcessHit();
+
             //implement hammer attack hit sound
         }
     }

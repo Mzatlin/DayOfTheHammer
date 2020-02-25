@@ -21,10 +21,7 @@ public class ChargeHammerAbilitySO : AbilitySO
 
     public override void UseAbilityTick()
     {
-        if(playerStats.IsPlayerReady() || chargeAttack.IsAbilityInUse)
-        {
             chargeAttack.HammerChargeTick();
-        }
 
     }
 }

@@ -22,6 +22,8 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
 
     public bool IsAbilityInUse => isAbilityInUse;
 
+    bool IAbility.IsAbilityInUse { get => isAbilityInUse; set => isAbilityInUse = value; }
+
     // Start is called before the first frame update
 
     public void InitializeCharge()

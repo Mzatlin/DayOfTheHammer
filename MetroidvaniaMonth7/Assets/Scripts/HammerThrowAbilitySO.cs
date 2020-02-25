@@ -22,9 +22,6 @@ public class HammerThrowAbilitySO : AbilitySO
 
     public override void UseAbilityTick()
     {
-        if(throwHammer.IsAbilityInUse || playerState.IsPlayerReady())
-        {
             throwHammer.ThrowAttackTick();
-        }
     }
 }
