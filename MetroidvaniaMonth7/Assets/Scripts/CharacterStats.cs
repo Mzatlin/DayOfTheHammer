@@ -51,6 +51,5 @@ public class CharacterStats : MonoBehaviour, ICharacterMovement
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
