@@ -51,7 +51,7 @@ MonoBehaviour:
   Path: event:/Objects/Hit
   guid: 4546f531aecd774cab89d330e92681b1
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
   Path: event:/Objects/Charging
   guid: f65170dd3fe6834dbc2f16f0399e73a6
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -82,6 +82,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 9896
+--- !u!114 &-8466376205197039402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637182722680000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8368338020290715584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +133,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/First
   guid: 59e00446d743814ca058cf030c2ea03d
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -156,7 +174,7 @@ MonoBehaviour:
   Path: event:/Player/Landed
   guid: 4e6eada09e43324b9dce978475ca7a03
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -233,7 +251,7 @@ MonoBehaviour:
   Path: event:/Objects/Charge
   guid: c46b23625c24e74cb330c77234cea286
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -274,7 +292,7 @@ MonoBehaviour:
   Path: event:/Objects/Throw
   guid: 8362b561fe8415479f27ab09ffdad3e5
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -351,14 +369,14 @@ MonoBehaviour:
   Path: event:/Ambiences/Spooky
   guid: 46aee93794918c42b462664de1f04390
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 184643
+  Length: 14516
 --- !u!114 &-4283471559206455955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +410,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Attack
   guid: a6add3ce1ca52a41acf39763b7fc0619
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -451,7 +469,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/Death
   guid: 39b6ad56dd12ae4590c3ccb2171813a8
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -474,7 +492,7 @@ MonoBehaviour:
   Path: event:/Player/Flip
   guid: 0f14310cfa788640af08b92bb3fb6e98
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -482,6 +500,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 383
+--- !u!114 &-1432748989399502362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637182536210000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1376583497401260747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,7 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 1573143148529918172}
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   EditorEvents:
   - {fileID: 5655218590518824696}
   - {fileID: -7345509259241288989}
@@ -631,7 +667,6 @@ MonoBehaviour:
   - {fileID: -8646096119697549037}
   - {fileID: -5368403001776404847}
   - {fileID: -3441415382626320845}
-  - {fileID: 6253000418794782820}
   - {fileID: 8614957317728548864}
   - {fileID: 2624229888510897619}
   - {fileID: 4773502213397844051}
@@ -643,10 +678,10 @@ MonoBehaviour:
   - {fileID: -4284370881363611031}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   StringsBanks:
   - {fileID: 1573143148529918172}
-  stringsBankWriteTime: 637182427260000000
+  stringsBankWriteTime: 637182722680000000
   cacheVersion: 3
 --- !u!114 &74924325771083917
 MonoBehaviour:
@@ -716,11 +751,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../MetroidVania7-FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637182427260000000
+  lastModified: 637182722680000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1468
+    Value: 1434
   Exists: 1
 --- !u!114 &1696881740938635366
 MonoBehaviour:
@@ -809,7 +844,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Swing
   guid: 4959c8eb44718c45a1889649576967be
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -868,7 +903,7 @@ MonoBehaviour:
   Path: event:/Player/Footsteps
   guid: 6cb2f000a7cf4944852dbd7dc552352f
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -909,7 +944,7 @@ MonoBehaviour:
   Path: event:/Enemy/Enemy-Dead
   guid: e5495afb15e7f74f920f6075951e2731
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -950,7 +985,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: 070457901b00b74caa5df5df7a2666fe
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -990,8 +1025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/test
   guid: 7bc70e77182a6241bafaa878c818ab7a
-  Banks:
-  - {fileID: -5689613445810485954}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1032,7 +1066,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/Second
   guid: e37b3d7508abfa4b9daf67579ea0b370
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1055,7 +1089,7 @@ MonoBehaviour:
   Path: event:/Objects/Ability-Collected
   guid: d34f7c97a3006141a75947b882019981
   Banks:
-  - {fileID: -5689613445810485954}
+  - {fileID: -8466376205197039402}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
