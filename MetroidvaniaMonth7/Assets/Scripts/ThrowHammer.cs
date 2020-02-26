@@ -60,7 +60,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             }
 
         }
-        if (hammer.activeInHierarchy && Vector3.Distance(transform.position, hammer.transform.position) > 5)
+        if (Vector3.Distance(transform.position, hammer.transform.position) > 5 && hammer.activeInHierarchy)
         {
             _rigidBody.velocity = Vector2.zero;
             hammer.SetActive(false);

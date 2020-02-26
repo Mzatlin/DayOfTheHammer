@@ -160,3 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 5
+  finalLayerMask:
+    serializedVersion: 2
+    m_Bits: 5888

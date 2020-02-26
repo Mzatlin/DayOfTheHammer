@@ -59,6 +59,12 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
         {
             ProcessAttack(obj);
         }
+        StartCoroutine(HitDelay());
+    }
+
+    IEnumerator HitDelay()
+    {
+        yield return new WaitForSeconds(.25f);
         OnAbilityEnd();
         isAbilityInUse = false;
     }

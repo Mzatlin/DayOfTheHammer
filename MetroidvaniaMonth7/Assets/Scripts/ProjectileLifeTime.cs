@@ -6,6 +6,8 @@ public class ProjectileLifeTime : MonoBehaviour
 {
     [SerializeField]
     float lifeTime = 3f;
+    [SerializeField]
+    LayerMask finalLayerMask;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -16,5 +18,14 @@ public class ProjectileLifeTime : MonoBehaviour
     {
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if((1 << collision.gameObject.layer & finalLayerMask) != 0)
+        {
+            Destroy(gameObject);
+        }
+ 
     }
 }
