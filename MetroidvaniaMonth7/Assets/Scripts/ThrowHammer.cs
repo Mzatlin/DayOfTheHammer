@@ -21,6 +21,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
     HammerAttack attack;
     [SerializeField]
     bool isAbilityInUse = false;
+    ICharacterMovement charMove;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
 
@@ -28,12 +29,11 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
 
 
     // Start is called before the first frame update
-
     public void InitializeThrow()
     {
-        attack = GetComponent<HammerAttack>();
         move = GetComponent<MovePhysics>();
         InitializeProjectile();
+        charMove = GetComponent<ICharacterMovement>();
 
     }
 
@@ -80,7 +80,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             OnThrow();
             hammer.transform.position = transform.position;
             hammer.SetActive(true);
-            var finalDirection = attack.lastDirection.normalized; //Calculate Direction
+            var finalDirection = charMove.GetLasLoggedDirection().normalized; //Calculate Direction
             _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
 
         }

@@ -12,13 +12,9 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
     LayerMask finalLayerMask;
     [SerializeField]
     PlayerStateSO playerState;
-    IMove move;
+    ICharacterMovement charMove;
     private Ray2D ray;
     bool isAbilityInUse = false;
-
-    //Move to a separate Interface 
-    public Vector2 lastDirection;
-    Vector2 directionCurrent;
 
     public event Action OnAbilityStart = delegate { };
     public event Action OnAbilityEnd = delegate { };
@@ -30,22 +26,12 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
     // Start is called before the first frame update
     public void Initialize()
     {
-        lastDirection = transform.right;
-        move = GetComponent<IMove>();
+        charMove = GetComponent<ICharacterMovement>();
     }
 
     // HammerAttackTick is Called from the HammerAbiltySO Update
     public void HammerAttackTick()
     {
-        if (move.MoveDirection == Vector2.zero)
-        {
-            directionCurrent = lastDirection;
-        }
-        else
-        {
-            directionCurrent = move.MoveDirection;
-            lastDirection = directionCurrent;
-        }
         if (isAbilityInUse || playerState.IsPlayerReady())
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -66,7 +52,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
     void TryHit()
     {
 
-        ray = new Ray2D(transform.position, directionCurrent);
+        ray = new Ray2D(transform.position, charMove.GetCurrentMoveDirection());
         Debug.DrawRay(ray.origin, ray.direction, Color.red, attackRange);
         var hit = Physics2D.RaycastAll(ray.origin, ray.direction, attackRange, finalLayerMask);
         foreach (RaycastHit2D obj in hit)

@@ -29,7 +29,7 @@ public class CharacterStats : MonoBehaviour, ICharacterMovement
 
     public Vector2 GetCurrentMoveDirection()
     {
-        if(movement == null || movement.MoveDirection == Vector2.zero)
+        if(movement.MoveDirection == Vector2.zero)
         {
             return GetLasLoggedDirection();
         }
@@ -47,9 +47,9 @@ public class CharacterStats : MonoBehaviour, ICharacterMovement
             return _lastLoggedDirection;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
+        movement.MoveDirection = GetCurrentMoveDirection();
     }
+
 }
