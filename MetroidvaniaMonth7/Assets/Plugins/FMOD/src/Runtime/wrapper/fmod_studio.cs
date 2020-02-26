@@ -1346,6 +1346,11 @@ namespace FMOD.Studio
             return hasHandle() && FMOD_Studio_EventInstance_IsValid(this.handle);
         }
 
+        public void stop(object aLLOWFADEOUT)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 

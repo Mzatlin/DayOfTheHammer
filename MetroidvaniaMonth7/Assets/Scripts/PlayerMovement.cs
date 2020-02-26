@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         playerScale.x *= -1;
         transform.localScale = playerScale;
         //maybe add a flip direction sound
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Flip");
+      //  FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Flip");
 
 
     }

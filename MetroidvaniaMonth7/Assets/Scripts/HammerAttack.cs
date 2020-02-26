@@ -43,7 +43,7 @@ public class HammerAttack : MonoBehaviour, IHammer
             TryHit();
 
             //implement hammer attack sound
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Swing");
         }
     }
 
@@ -64,7 +64,7 @@ public class HammerAttack : MonoBehaviour, IHammer
         if (hittable != null)
         {
             hittable.ProcessHit();
-            //implement hammer attack hit sound
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
         }
     }
 }

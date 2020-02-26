@@ -47,14 +47,16 @@ public class EnemyJump : MonoBehaviour,IJump
         {
             jump.JumpMove(jumpPower);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
+
         }
 
         if (isGrounded != wasGrounded)
         {
             wasGrounded = !wasGrounded;
-            if (isGrounded == true)
+;
+            if (isGrounded == false)
             {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
+              FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
             }
 
         }

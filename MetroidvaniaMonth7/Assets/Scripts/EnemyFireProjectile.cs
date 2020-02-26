@@ -55,6 +55,8 @@ public class EnemyFireProjectile : MonoBehaviour,IShootProjectile
     {
        var clone = Instantiate(projectile, transform.position, Quaternion.identity);
         clone.GetComponent<Rigidbody2D>().velocity = (CalculateDirection() * projectileSpeed);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
+
     }
 
 

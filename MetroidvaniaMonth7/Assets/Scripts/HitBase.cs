@@ -10,8 +10,7 @@ public class HitBase : MonoBehaviour, IHittable
     public void ProcessHit()
     {
         HandleHit(1f);
-        //Sound when hit
-      //  FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hit");
+   
     }
 
     public void ProcessHit(float damage)

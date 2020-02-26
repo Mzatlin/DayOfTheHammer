@@ -9,6 +9,10 @@ public class BoxDeath : DeathBase
     {
         base.HandleDie();
         StartCoroutine(DieDelay());
+
+        //death sound. not sure if this should be triggered with the delay or before
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Enemy/Enemy-Dead");
+
     }
 
     IEnumerator DieDelay()

@@ -27,10 +27,19 @@ public class HealthController : HitBase, IHealth
         }
         base.HandleHit(damage);
         currentHealth -= damage;
+
+        if (currentHealth == 2)
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player-Hit/First");
+
+        if (currentHealth == 1)
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player-Hit/Second");
+
         if (currentHealth < 1)
         {
             isDead = true;
             OnDie();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player-Hit/Death");
+
         }
     }
 
