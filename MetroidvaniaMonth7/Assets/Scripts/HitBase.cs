@@ -6,6 +6,7 @@ using UnityEngine;
 public class HitBase : MonoBehaviour, IHittable
 {
     public event Action OnHit = delegate { };
+    public event Action<Transform> OnHitTransform = delegate { };
 
     public void ProcessHit()
     {
@@ -17,6 +18,17 @@ public class HitBase : MonoBehaviour, IHittable
     public void ProcessHit(float damage)
     {
         HandleHit(damage);
+    }
+
+    public void ProcessHit(Transform trans)
+    {
+        HandleHitTransform(trans);
+    }
+
+    protected virtual void HandleHitTransform(Transform trans)
+    {
+        OnHitTransform(trans);
+        Debug.Log(trans);
     }
 
     protected virtual void HandleHit(float damage)

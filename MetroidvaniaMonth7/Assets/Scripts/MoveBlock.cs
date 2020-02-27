@@ -5,8 +5,6 @@ using UnityEngine;
 public class MoveBlock : HitBase
 {
     [SerializeField]
-    GameObject target;
-    [SerializeField]
     float moveX = 15f;
     Rigidbody2D rb;
     [SerializeField]
@@ -21,21 +19,20 @@ public class MoveBlock : HitBase
     }
 
 
-    protected override void HandleHit(float damage)
+    protected override void HandleHitTransform(Transform trans)
     {
         targetPoint = Vector2.right;
-        blockPoint = target.transform.position - transform.position;
-        Debug.Log(Vector2.Dot(targetPoint, blockPoint));
+        blockPoint = trans.position - transform.position;
         if (Vector2.Dot(targetPoint, blockPoint) < 0)
         {
-            Debug.Log("To the right");
+            rb.velocity = new Vector2(moveX, 0);
         }
         if (Vector2.Dot(targetPoint, blockPoint) > 0)
         {
-            Debug.Log("To the left");
+            rb.velocity = new Vector2(-moveX, 0);
         }
-        base.HandleHit(damage);
-        rb.velocity = new Vector2(moveX, 0);
+        base.HandleHitTransform(trans);
+
     }
 
 }

@@ -76,8 +76,13 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
         if (hittable != null)
         {
             hittable.ProcessHit();
-
+            hittable.ProcessHit(transform);
             //implement hammer attack hit sound
         }
+    }
+
+    void ProcessMoveBlock()
+    {
+      //  var moveBlock 
     }
 }

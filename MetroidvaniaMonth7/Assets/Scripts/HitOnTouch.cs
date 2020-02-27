@@ -24,6 +24,7 @@ public class HitOnTouch : MonoBehaviour
         if (hit != null && (1 << collision.gameObject.layer & finalmask) != 0)
         {
             hit.ProcessHit();
+            hit.ProcessHit(transform);
         }
     }
 }

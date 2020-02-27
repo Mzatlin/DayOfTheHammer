@@ -44,7 +44,10 @@ public class PlayerInteract : MonoBehaviour
         }
         else
         {
-            interact.IsInteracting = false;
+            if(interact != null)
+            {
+                interact.IsInteracting = false;
+            }
         }
     }
 }
