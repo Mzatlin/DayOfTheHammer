@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isFacingRight = true;
     private float moveX;
     Vector2 playerScale;
+    Animator animator;
 
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         move = GetComponent<IMove>();
         playerScale = transform.localScale;
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             move.MoveX(0f);
+            animator.SetFloat("PlayerMoveX",0f);
         }
 
     }
@@ -39,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         moveX = Input.GetAxis("Horizontal");
 
         move.MoveX(moveX);
+        animator.SetFloat("PlayerMoveX", Mathf.Abs(moveX));
 
         if (moveX < 0.0f && isFacingRight == false)
         {

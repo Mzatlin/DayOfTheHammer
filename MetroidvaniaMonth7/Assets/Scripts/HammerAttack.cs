@@ -80,9 +80,4 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
             //implement hammer attack hit sound
         }
     }
-
-    void ProcessMoveBlock()
-    {
-      //  var moveBlock 
-    }
 }

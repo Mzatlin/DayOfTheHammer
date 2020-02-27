@@ -6,6 +6,8 @@ public class ReelToGrapplePoint : MonoBehaviour
 {
     [SerializeField]
     GameObject hammer;
+    bool isGrappled = false;
+    Transform hook; 
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,13 @@ public class ReelToGrapplePoint : MonoBehaviour
 
     private void HandleTouch(Transform obj)
     {
-        transform.position = obj.transform.position;
+        // while(transform.position != obj.position)
+        //    {
+      //  isGrappled = true;
+     //   hook = obj;
+  
+        //   }
+     transform.position = obj.transform.position;
     }
 
 
@@ -22,5 +30,10 @@ public class ReelToGrapplePoint : MonoBehaviour
     void Update()
     {
         //reelback logic
+      //  if (isGrappled && hook != null)
+      //  {
+       //     transform.position = Vector2.Lerp(transform.position, hook.position, Time.time);
+      //  }
+
     }
 }

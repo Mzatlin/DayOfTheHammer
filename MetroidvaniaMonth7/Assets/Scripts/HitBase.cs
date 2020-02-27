@@ -28,7 +28,6 @@ public class HitBase : MonoBehaviour, IHittable
     protected virtual void HandleHitTransform(Transform trans)
     {
         OnHitTransform(trans);
-        Debug.Log(trans);
     }
 
     protected virtual void HandleHit(float damage)
