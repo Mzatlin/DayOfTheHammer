@@ -9918,6 +9918,11 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 758174693710431916, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 758174693710431917, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: m_Name
@@ -10044,6 +10049,7 @@ PrefabInstance:
       objectReference: {fileID: 1456217877}
     m_RemovedComponents:
     - {fileID: 1306489355673860786, guid: 88c1e90ab99106a4ba20b4460cc7d9dc, type: 3}
+    - {fileID: 758174693710431919, guid: 88c1e90ab99106a4ba20b4460cc7d9dc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88c1e90ab99106a4ba20b4460cc7d9dc, type: 3}
 --- !u!1001 &1333207725447388272
 PrefabInstance:
