@@ -11,4 +11,5 @@ public interface IInteractable
     void ProcessInteraction();
     void ProcessHover();
     void ProcessHoverLeave();
+    bool IsInteracting { get; set; }
 }

@@ -32,13 +32,19 @@ public class PlayerInteract : MonoBehaviour
             if(interact != null)
             {
                 interact.ProcessHover();
+                interact.IsInteracting = true;
                 if (Input.GetKeyDown(KeyCode.S))
                 {
+                    interact.IsInteracting = false;
                     interact.ProcessInteraction();
                     interact.ProcessHoverLeave();
                 }
             }
-                
+     
+        }
+        else
+        {
+            interact.IsInteracting = false;
         }
     }
 }
