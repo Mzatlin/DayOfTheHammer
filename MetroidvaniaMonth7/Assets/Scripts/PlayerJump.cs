@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour, IJump
+public class PlayerJump : MonoBehaviour, IJump, IGrounded
 {
     [HideInInspector]
     public float jumpPower = 5f;
@@ -12,19 +12,21 @@ public class PlayerJump : MonoBehaviour, IJump
     Jump jump;
     public Transform groundCheck;
     public float checkRadius;
-    public LayerMask Ground;
-    public LayerMask Box;
-    LayerMask finalLayerMask;
+    [SerializeField]
+    LayerMask groundLayerMask;
     bool isAbilityInUse = false;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
     public bool IsAbilityInUse => isAbilityInUse;
 
+    public bool IsGrounded => isGrounded;
+
+    public LayerMask GroundLayerMask => groundLayerMask;
+
     // Start is called before the first frame update
     public void Initialize()
     {
-        finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
     }
 
@@ -36,7 +38,7 @@ public class PlayerJump : MonoBehaviour, IJump
 
     public void Jump()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, finalLayerMask);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayerMask);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

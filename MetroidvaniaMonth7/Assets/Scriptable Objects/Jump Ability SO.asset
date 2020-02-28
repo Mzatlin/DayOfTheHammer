@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jump Ability SO
   m_EditorClassIdentifier: 
   assetname: Jump
-  jumpPower: 5
+  jumpPower: 6
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
