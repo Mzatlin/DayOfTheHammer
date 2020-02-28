@@ -691,6 +691,7 @@ MonoBehaviour:
     m_Bits: 16384
   isStanding: 1
   groundCheck: {fileID: 758174692594029910}
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &922007510579866762
 GameObject:
   m_ObjectHideFlags: 0

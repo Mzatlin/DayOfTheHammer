@@ -11,16 +11,27 @@ public class MoveBlock : HitBase
     Vector2 targetPoint;
     [SerializeField]
     Vector2 blockPoint;
-    
+
+
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();    
+        rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Static;
     }
 
 
+    void Update()
+    {
+        if(Mathf.Abs(rb.velocity.x) < 0.1f && Mathf.Abs(rb.velocity.y) <0.1f)
+        {
+            rb.bodyType = RigidbodyType2D.Static;
+        }    
+    }
+
     protected override void HandleHitTransform(Transform trans)
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
         targetPoint = Vector2.right;
         blockPoint = trans.position - transform.position;
         if (Vector2.Dot(targetPoint, blockPoint) < 0)
@@ -34,5 +45,13 @@ public class MoveBlock : HitBase
         base.HandleHitTransform(trans);
 
     }
+
+    protected override void HandleHit(float damage)
+    {
+        base.HandleHit(damage);
+        rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+
 
 }

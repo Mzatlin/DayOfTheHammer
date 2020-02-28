@@ -14,6 +14,8 @@ public class PlayerCrouch : MonoBehaviour
     GameObject groundCheck;
     [SerializeField]
     RaycastHit2D down;
+    [SerializeField]
+    PlayerStateSO playerState;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,22 +28,19 @@ public class PlayerCrouch : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S) && Physics2D.OverlapCircle(groundCheck.transform.position, 0.3f, platformMask))
         {
-           // if (isStanding)
-         //   {
+              playerState.isStopped = true;
               StartCoroutine(FallDelay());
-        //    }
-
         }
             
     }
 
-
     IEnumerator FallDelay()
     {
         collider.isTrigger = true;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.25f);
         collider.isTrigger = false;
         isStanding = false;
+        playerState.isStopped = false;
     }
 
 }

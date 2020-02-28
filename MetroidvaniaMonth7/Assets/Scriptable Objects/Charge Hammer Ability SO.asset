@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Charge Hammer Ability SO
   m_EditorClassIdentifier: 
   assetname: Charge Hammer
-  chargeRadius: 6
+  chargeRadius: 8
   playerStats: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
