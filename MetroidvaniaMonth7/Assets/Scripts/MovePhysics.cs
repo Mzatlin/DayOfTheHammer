@@ -18,9 +18,4 @@ public class MovePhysics : MoveBase
         moveDirection = new Vector2(_movDirectionX, 0);
         _rigidbody.velocity = new Vector2(_movDirectionX * moveSpeed, _rigidbody.velocity.y);
     }
-
-    public override void MoveY(float _moveDirectionY)
-    {
-        throw new System.NotImplementedException();
-    }
 }

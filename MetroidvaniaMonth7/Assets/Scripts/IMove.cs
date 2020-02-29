@@ -5,7 +5,6 @@ using UnityEngine;
 public interface IMove 
 {
     float MovementSpeed { get; set; }
-    Vector2 MoveDirection { get; set; }
+    Vector2 MoveDirectionX { get; set; }
     void MoveX(float _movDirectionX);
-    void MoveY(float _moveDirectionY);
 }

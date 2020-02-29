@@ -9,10 +9,4 @@ public class MoveCollider : MoveBase
     {
         transform.position += new Vector3(_movDirectionX*moveSpeed, 0,0);
     }
-
-    public override void MoveY(float _moveDirectionY)
-    {
-        throw new System.NotImplementedException();
-    }
-
 }

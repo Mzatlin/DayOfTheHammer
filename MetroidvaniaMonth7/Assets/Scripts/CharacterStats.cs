@@ -29,15 +29,15 @@ public class CharacterStats : MonoBehaviour, ICharacterMovement
 
     public Vector2 GetCurrentMoveDirection()
     {
-        if(movement.MoveDirection == Vector2.zero)
+        if(movement.MoveDirectionX == Vector2.zero)
         {
             return GetLasLoggedDirection();
         }
 
         else
         {
-            _lastLoggedDirection = movement.MoveDirection;
-            return movement.MoveDirection;
+            _lastLoggedDirection = movement.MoveDirectionX;
+            return movement.MoveDirectionX;
         }
 
     }
@@ -49,7 +49,7 @@ public class CharacterStats : MonoBehaviour, ICharacterMovement
 
     void Update()
     {
-        movement.MoveDirection = GetCurrentMoveDirection();
+        movement.MoveDirectionX = GetCurrentMoveDirection();
     }
 
 }

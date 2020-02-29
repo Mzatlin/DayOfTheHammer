@@ -100,6 +100,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
                 if (hit != null)
                 {
                     hit.ProcessHit(10f/distance);//This will send more damage eventually 
+                    obj.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
                 }
                 //should I make a special sound for gameobjects destroyed by the hammer charge here?
                 //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Destroyed_By_Charge");
