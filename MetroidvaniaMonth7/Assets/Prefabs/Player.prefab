@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammer: {fileID: 0}
+  grappleSpeed: 0.24
 --- !u!114 &8748775288703942785
 MonoBehaviour:
   m_ObjectHideFlags: 0

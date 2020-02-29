@@ -22,6 +22,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
     [SerializeField]
     bool isAbilityInUse = false;
     ICharacterMovement charMove;
+    IVerticalDirection vertical;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
 
@@ -34,6 +35,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
         move = GetComponent<MovePhysics>();
         InitializeProjectile();
         charMove = GetComponent<ICharacterMovement>();
+        vertical = GetComponent<IVerticalDirection>();
 
     }
 
@@ -78,10 +80,19 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             isAbilityInUse = true;
             OnAbilityStart();
             OnThrow();
+
             hammer.transform.position = transform.position;
             hammer.SetActive(true);
-            var finalDirection = charMove.GetLasLoggedDirection().normalized; //Calculate Direction
-            _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
+            if (Mathf.Abs(vertical.MoveDirectionY.y) < 0.1f)
+            {
+                var finalDirection = charMove.GetLasLoggedDirection().normalized; //Calculate Direction
+                _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
+            }
+            else
+            {
+                var finalDirection = vertical.MoveDirectionY.normalized; //Calculate Direction
+                _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
+            }
 
         }
     }
