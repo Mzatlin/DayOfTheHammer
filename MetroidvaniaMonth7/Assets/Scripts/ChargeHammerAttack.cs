@@ -94,20 +94,27 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
         float distance = Vector3.Distance(obj.transform.position, transform.position);
         if (distance < chargeRadius)
         {
+            var lift = obj.gameObject.GetComponent<Rigidbody2D>();
             if (distance < timeToCharge)
             {
                 var hit = obj.GetComponent<IHittable>();
                 if (hit != null)
                 {
                     hit.ProcessHit(10f/distance);//This will send more damage eventually 
-                    obj.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
+                    
+                    if(lift != null)
+                    {
+                       lift.AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
+                    }
                 }
                 //should I make a special sound for gameobjects destroyed by the hammer charge here?
                 //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Destroyed_By_Charge");
 
             }
-
-            obj.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
+            if (lift != null)
+            {
+                lift.AddForce(new Vector2(0, 35f / distance), ForceMode2D.Impulse);
+            }
             //I'm guessing this throws objects that aren't within 1.5 but within the charge radius. Could maybe add a sound to this.
         }
     }

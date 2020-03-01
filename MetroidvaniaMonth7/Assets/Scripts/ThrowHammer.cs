@@ -70,6 +70,13 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             isAbilityInUse = false;
 
         }
+        else if (!hammer.activeInHierarchy)
+        {
+            _rigidBody.velocity = Vector2.zero;
+            hammer.SetActive(false);
+            OnAbilityEnd();
+            isAbilityInUse = false;
+        }
 
     }
 

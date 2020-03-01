@@ -48,8 +48,9 @@ public class MoveBlock : HitBase
 
     protected override void HandleHit(float damage)
     {
-        base.HandleHit(damage);
         rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.AddForce(new Vector2(0, 35f / 1.4f), ForceMode2D.Impulse);
+        base.HandleHit(damage);
     }
 
 

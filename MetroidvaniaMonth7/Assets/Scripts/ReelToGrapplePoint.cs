@@ -10,6 +10,7 @@ public class ReelToGrapplePoint : MonoBehaviour
     float grappleSpeed = 0.3f;
     bool isGrappled = false;
     Transform hook;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class ReelToGrapplePoint : MonoBehaviour
     {
         isGrappled = true;
         hook = obj;
+        hammer.SetActive(false);
     }
 
 
@@ -33,6 +35,7 @@ public class ReelToGrapplePoint : MonoBehaviour
         }
         else
         {
+
             isGrappled = false;
 
         }

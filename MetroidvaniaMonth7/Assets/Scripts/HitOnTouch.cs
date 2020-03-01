@@ -10,7 +10,6 @@ public class HitOnTouch : MonoBehaviour
 
     void Start()
     {
-        //  mask = LayerMask.GetMask("Grapple");
         if (finalmask == 0)
         {
             Debug.Log("Missing LayerMask!");
