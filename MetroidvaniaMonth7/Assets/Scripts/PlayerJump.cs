@@ -15,6 +15,7 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
     [SerializeField]
     LayerMask groundLayerMask;
     bool isAbilityInUse = false;
+    Animator animator;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
@@ -28,6 +29,7 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
     public void Initialize()
     {
         jump = GetComponent<Jump>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -42,6 +44,7 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            animator.SetBool("IsJumping", true);
             jump.JumpMove(jumpPower);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
 
@@ -50,8 +53,10 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
         if (isGrounded != wasGrounded)
         {
             wasGrounded = !wasGrounded;
+
             if (isGrounded == true)
             {
+                animator.SetBool("IsJumping", false);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
             }
 
