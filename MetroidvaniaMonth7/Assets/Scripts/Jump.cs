@@ -12,6 +12,7 @@ public class Jump : MonoBehaviour
     Transform trans;
 
     Rigidbody2D _rigidbody;
+    Animator animator;
 
 
 
@@ -19,6 +20,7 @@ public class Jump : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
        
     }
 

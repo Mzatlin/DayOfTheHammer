@@ -16,6 +16,7 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
     LayerMask groundLayerMask;
     bool isAbilityInUse = false;
     Animator animator;
+    Rigidbody2D rb;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
@@ -30,12 +31,19 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
     {
         jump = GetComponent<Jump>();
         animator = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     public void JumpAbilityTick()
     {
         Jump();
+
+        if(!isGrounded && rb.velocity.y < 0)
+        {
+            animator.SetBool("IsFalling", true);
+            animator.SetBool("IsJumping", false);
+        }
     }
 
     public void Jump()
@@ -57,6 +65,7 @@ public class PlayerJump : MonoBehaviour, IJump, IGrounded
             if (isGrounded == true)
             {
                 animator.SetBool("IsJumping", false);
+                animator.SetBool("IsFalling", false);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
             }
 
