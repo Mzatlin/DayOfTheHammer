@@ -5,12 +5,14 @@ using UnityEngine;
 public class MoveBlock : HitBase
 {
     [SerializeField]
-    float moveX = 15f;
+    float moveXSpeed = 15f;
+    [SerializeField]
+    LayerMask staticLayer;
     Rigidbody2D rb;
-    [SerializeField]
     Vector2 targetPoint;
-    [SerializeField]
     Vector2 blockPoint;
+    bool isHit = false;
+
 
 
 
@@ -23,24 +25,41 @@ public class MoveBlock : HitBase
 
     void Update()
     {
-        if(Mathf.Abs(rb.velocity.x) < 0.1f && Mathf.Abs(rb.velocity.y) <0.1f)
-        {
+       // if(isHit && Mathf.Abs(rb.velocity.x) < 0.1f && Mathf.Abs(rb.velocity.y) <0.1f)
+    //    {
+     ////       rb.bodyType = RigidbodyType2D.Static;
+    //        isHit = false;
+     //   }    
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if((1 << collision.gameObject.layer & staticLayer) != 0){
             rb.bodyType = RigidbodyType2D.Static;
-        }    
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if ((1 << collision.gameObject.layer & staticLayer) != 0)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
     }
 
     protected override void HandleHitTransform(Transform trans)
     {
+        isHit = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
         targetPoint = Vector2.right;
         blockPoint = trans.position - transform.position;
         if (Vector2.Dot(targetPoint, blockPoint) < 0)
         {
-            rb.velocity = new Vector2(moveX, 0);
+            rb.velocity = new Vector2(moveXSpeed, 0);
         }
         if (Vector2.Dot(targetPoint, blockPoint) > 0)
         {
-            rb.velocity = new Vector2(-moveX, 0);
+            rb.velocity = new Vector2(-moveXSpeed, 0);
         }
         base.HandleHitTransform(trans);
 
@@ -48,6 +67,7 @@ public class MoveBlock : HitBase
 
     protected override void HandleHit(float damage)
     {
+        isHit = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.AddForce(new Vector2(0, 35f / 1.4f), ForceMode2D.Impulse);
         base.HandleHit(damage);

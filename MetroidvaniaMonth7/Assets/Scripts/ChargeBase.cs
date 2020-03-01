@@ -9,14 +9,15 @@ public class ChargeBase : MonoBehaviour, IChargeable
     protected float holdDownTime = 0f;
     [SerializeField]
     protected float timeToCharge = 1.5f;
+    protected float targetDistance = 0f;
 
     public float HoldDownTime => holdDownTime;
 
     public float TimeToCharge { get => timeToCharge; set => timeToCharge = value; }
-    
+
     protected virtual bool CanRelease()
     {
-        if(holdDownTime > timeToCharge)
+        if (holdDownTime > timeToCharge)
         {
             holdDownTime = 0;
             return true;
@@ -25,5 +26,15 @@ public class ChargeBase : MonoBehaviour, IChargeable
         {
             return false;
         }
+    }
+
+    protected virtual void ProcessHammerCharge(Collider2D obj)
+    {
+        targetDistance = CalculateDistance(obj);
+    }
+
+    protected float CalculateDistance(Collider2D obj)
+    {
+        return Vector3.Distance(obj.transform.position, transform.position);
     }
 }
