@@ -6,14 +6,20 @@ public class LaserBeam : MonoBehaviour
 {
     [SerializeField]
     Transform laserHit;
+    [SerializeField]
+    LayerMask laserMask;
     LineRenderer laserRenderer;
     RaycastHit2D hit;
+    bool laserOn = true;
+    IHittable hittable;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         laserRenderer = GetComponent<LineRenderer>();
-        //    laserRenderer.useWorldSpace = true;
+        laserRenderer.useWorldSpace = true;
         laserRenderer.enabled = true;
     }
 
@@ -22,33 +28,53 @@ public class LaserBeam : MonoBehaviour
     {
         if (CanFireLaser())
         {
-            FireLaser();
+          //  FireLaser();
+              StartCoroutine(FireLaserEnum());
         }
     }
 
     void FireLaser()
     {
-        Ray2D ray = new Ray2D(transform.position, transform.up);
-        laserRenderer.SetPosition(0, transform.position);
-        hit = Physics2D.Raycast(transform.position, transform.up);
+        Ray2D ray = new Ray2D(transform.position, -transform.up);
+        RaycastHit2D hit;
+
+        laserRenderer.SetPosition(0, ray.origin);
+
+        hit = Physics2D.Raycast(ray.origin, ray.direction, 100f);
 
         if (hit.collider)
         {
-            Debug.Log("Hit");
-            //   laserRenderer.SetPosition(1, new Vector3(hit.point.x, hit.point.y, transform.position.z));
+            laserRenderer.SetPosition(1, hit.point);
+            var hittable = hit.collider.GetComponent<IHittable>();
+
+            if (hittable != null)
+            {
+                //       hittable.ProcessHit(2f);
+            }
             laserRenderer.SetPosition(1, hit.point);
         }
         else
         {
-            laserRenderer.SetPosition(1, transform.position * 2000);
+            laserRenderer.SetPosition(1, ray.GetPoint(100f));
         }
-        //   Debug.DrawLine(transform.position, hit.point);
-        //    laserHit.position = hit.point;
-        //   laserRenderer.SetPosition(0, transform.position);
-        //    laserRenderer.SetPosition(1, laserHit.position);
-    }
-    bool CanFireLaser()
+          
+
+}
+bool CanFireLaser()
+{
+    return true;
+}
+
+IEnumerator FireLaserEnum()
+{
+    laserRenderer.enabled = true;
+
+    while (laserOn)
     {
-        return true;
+        FireLaser();
+        yield return null;
     }
+    laserRenderer.enabled = false;
+}
+
 }
