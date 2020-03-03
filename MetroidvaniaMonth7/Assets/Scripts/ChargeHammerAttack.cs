@@ -17,6 +17,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
     LayerMask finalLayerMask;
     List<Collider2D> results = new List<Collider2D>();
     bool isAbilityInUse = false;
+    Animator animator;
 
     public float HammerRadius { get => chargeRadius; set => chargeRadius = value; }
 
@@ -29,11 +30,13 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
     public void InitializeCharge()
     {
         finalLayerMask = (1 << LayerMask.NameToLayer("Box") | (1 << LayerMask.NameToLayer("Enemy")));
+        animator = GetComponentInChildren<Animator>();
     }
 
     //This Tick method is called in the use ability function once per frame
     public void HammerChargeTick()
     {
+
         if (Input.GetKey(KeyCode.E))
         {
             if (isAbilityInUse || playerState.IsPlayerReady())
@@ -50,18 +53,32 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
             isAbilityInUse = true;
             OnAbilityStart();
         }
+
         if (CanRelease())
         {
-
+ 
             var results = Physics2D.OverlapCircleAll(chargeCenter.position, chargeRadius, finalLayerMask);
             if (results != null)
             {
                 foreach (Collider2D obj in results)
                 {
-                    ProcessHammerCharge(obj);
+                    StartCoroutine(EffectDelay(obj));
+
                 }
             }
         }
+
+        animator.SetFloat("ChargePower", holdDownTime);
+
+    }
+
+    IEnumerator EffectDelay(Collider2D obj)
+    {
+        yield return new WaitForSeconds(0.1f);
+        ProcessHammerCharge(obj);
+        animator.SetBool("CanRelease", false);
+        isAbilityInUse = false;
+        OnAbilityEnd();
 
     }
 
@@ -69,17 +86,19 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
     {
         if (Input.GetKeyUp(KeyCode.E))
         {
-            isAbilityInUse = false;
-            OnAbilityEnd();
-            isAbilityInUse = false;
+
             if (holdDownTime > timeToCharge)
             {
                 holdDownTime = 0f;
+                animator.SetBool("CanRelease", true);
                 return true;
             }
             else
             {
+                isAbilityInUse = false;
+                OnAbilityEnd();
                 holdDownTime = 0f;
+                animator.SetBool("CanRelease",false);
                 return false;
             }
         }
@@ -110,7 +129,11 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
             {
                 lift.ProcessLift(35f / targetDistance);
             }
+
+
             //I'm guessing this throws objects that aren't within 1.5 but within the charge radius. Could maybe add a sound to this.
         }
     }
+
+
 }
