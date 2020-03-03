@@ -23,12 +23,20 @@ public class NPCInteractAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //NOTE, this is a placeholder for when I fully implement the dialog system that will throw an OnEndDialog Event that this will handle 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetBool("IsInteracting", false);
+        }
+
+
         if (interact.IsInteracting)
         {
             animator.SetBool("IsHovering", true);
         }
         else
         {
+
             animator.SetBool("IsHovering", false);
         }
     }

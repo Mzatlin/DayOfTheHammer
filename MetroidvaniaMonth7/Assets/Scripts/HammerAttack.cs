@@ -15,6 +15,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
     ICharacterMovement charMove;
     private Ray2D ray;
     bool isAbilityInUse = false;
+    Animator animator;
 
     public event Action OnAbilityStart = delegate { };
     public event Action OnAbilityEnd = delegate { };
@@ -27,6 +28,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
     public void Initialize()
     {
         charMove = GetComponent<ICharacterMovement>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // HammerAttackTick is Called from the HammerAbiltySO Update
@@ -39,6 +41,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
 
                 OnAbilityStart();
                 isAbilityInUse = true;
+                animator.SetBool("IsSwinging", true);
                 TryHit();
                 //implement hammer attack sound
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
@@ -64,7 +67,8 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
 
     IEnumerator HitDelay()
     {
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(.3f);
+        animator.SetBool("IsSwinging", false);
         OnAbilityEnd();
         isAbilityInUse = false;
     }
