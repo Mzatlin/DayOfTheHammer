@@ -2810,6 +2810,7 @@ GameObject:
   - component: {fileID: 475734210}
   - component: {fileID: 475734198}
   - component: {fileID: 475734211}
+  - component: {fileID: 475734212}
   m_Layer: 11
   m_Name: Enemy Test (2)
   m_TagString: Untagged
@@ -2939,7 +2940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666f54715c783bd449c3095c804e17fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 0.06041284, b: 0, a: 1}
+  flashColor: {r: 0, g: 0.14819956, b: 1, a: 1}
 --- !u!61 &475734206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2978,8 +2979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf128929b70ed8f429b63b91e9ae6691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 2
-  maxHealth: 1
+  currentHealth: 5
+  maxHealth: 5
   isDead: 0
 --- !u!114 &475734208
 MonoBehaviour:
@@ -3056,6 +3057,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13676086, y: 0.1475067}
   m_EdgeRadius: 0
+--- !u!114 &475734212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475734197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cee60636c9802d47b2616979912a161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveXSpeed: 2
 --- !u!1 &475953532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,7 +4130,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.34782982, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8741456, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10207,12 +10221,12 @@ PrefabInstance:
     - target: {fileID: 758174693710431905, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.8
+      value: -14.42
       objectReference: {fileID: 0}
     - target: {fileID: 758174693710431905, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 758174693710431905, guid: 88c1e90ab99106a4ba20b4460cc7d9dc,
         type: 3}
@@ -10908,6 +10922,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7215489598610247599, guid: 46ab3d294c399e74b94a76ac9d4b7a2d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.2800007
+      objectReference: {fileID: 0}
     - target: {fileID: 7215489600232150572, guid: 46ab3d294c399e74b94a76ac9d4b7a2d,
         type: 3}
       propertyPath: m_Name
