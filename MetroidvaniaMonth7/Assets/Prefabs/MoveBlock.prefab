@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65648086d7bb8c446bf2415b77ed56c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveX: 15
-  targetPoint: {x: 0, y: 0}
-  blockPoint: {x: 0, y: 0}
+  moveXSpeed: 15
+  staticLayer:
+    serializedVersion: 2
+    m_Bits: 2560

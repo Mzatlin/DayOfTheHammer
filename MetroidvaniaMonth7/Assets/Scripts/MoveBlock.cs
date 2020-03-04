@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveBlock : HitBase
+public class MoveBlock : HitBase, IMoveBlock
 {
     [SerializeField]
     float moveXSpeed = 15f;
@@ -13,23 +13,12 @@ public class MoveBlock : HitBase
     Vector2 blockPoint;
     bool isHit = false;
 
-
-
+    public float MoveXSpeed { get => moveXSpeed; set => moveXSpeed = value; }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Static;
-    }
-
-
-    void Update()
-    {
-       // if(isHit && Mathf.Abs(rb.velocity.x) < 0.1f && Mathf.Abs(rb.velocity.y) <0.1f)
-    //    {
-     ////       rb.bodyType = RigidbodyType2D.Static;
-    //        isHit = false;
-     //   }    
     }
 
     void OnCollisionEnter2D(Collision2D collision)
