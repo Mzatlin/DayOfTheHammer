@@ -7,6 +7,6 @@ using System;
 public interface IStunnable
 {
     event Action OnStun;
+    event Action OnEndStun;
     bool IsStunned { get; set; }
-    void HandleStun();
 }

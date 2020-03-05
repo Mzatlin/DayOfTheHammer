@@ -39,15 +39,20 @@ public class EnemyJump : MonoBehaviour, IJump
     // Update is called once per frame
     public void Update()
     {
-        if (!isGrounded && rb.velocity.y < 0)
+
+        if (animator != null && animator.isActiveAndEnabled)
         {
-            animator.SetBool("IsFalling", true);
-            animator.SetBool("CanJump", false);
+            if (!isGrounded && rb.velocity.y < 0)
+            {
+                animator.SetBool("IsFalling", true);
+                animator.SetBool("CanJump", false);
+            }
+            else
+            {
+                animator.SetBool("IsFalling", false);
+            }
         }
-        else
-        {
-            animator.SetBool("IsFalling", false);
-        }
+     
         if (CanJump())
         {
             Jump();
