@@ -31,7 +31,7 @@ public class CameraFollowPlayer : MonoBehaviour
         }
         if(Room != null)
         {
-            GetRoomBounds();
+        //    GetRoomBounds();
         }
 
     }
@@ -44,6 +44,7 @@ public class CameraFollowPlayer : MonoBehaviour
             _cameraPosX = Mathf.Clamp(target.transform.position.x, xCamMin, xCamMax);
             _cameraPosY = Mathf.Clamp(target.transform.position.y, yCamMin, yCamMax);
             transform.position = new Vector3(_cameraPosX, _cameraPosY, transform.position.z);
+            transform.position = new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z);
         }
     }
 
