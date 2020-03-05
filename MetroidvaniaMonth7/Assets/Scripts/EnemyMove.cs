@@ -9,9 +9,11 @@ public class EnemyMove : MonoBehaviour
     Vector2 enemyScale;
     bool isFacingRight;
     EnemyJump jump; //need to add isGrounded to Jump Interface 
+    IStunnable stun;
     // Start is called before the first frame update
     void Start()
     {
+        stun = GetComponent<IStunnable>();
         jump = GetComponent<EnemyJump>();
         enemyScale = transform.localScale;
         move = GetComponent<IMove>();
@@ -21,7 +23,7 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (jump.isGrounded)
+        if (!stun.IsStunned && jump.isGrounded)
         {
             move.MoveX(2f*nextJump);
             if (nextJump < 0.0f && isFacingRight == false)

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyJump : MonoBehaviour,IJump
+public class EnemyJump : MonoBehaviour, IJump
 {
     [SerializeField]
     public float jumpPower = 5f;
@@ -20,6 +20,7 @@ public class EnemyJump : MonoBehaviour,IJump
     LayerMask finalLayerMask;
     Animator animator;
     Rigidbody2D rb;
+    IStunnable stun;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
@@ -32,6 +33,7 @@ public class EnemyJump : MonoBehaviour,IJump
         finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
         animator = GetComponentInChildren<Animator>();
+        stun = GetComponent<IStunnable>();
     }
 
     // Update is called once per frame
@@ -46,7 +48,7 @@ public class EnemyJump : MonoBehaviour,IJump
         {
             animator.SetBool("IsFalling", false);
         }
-            if (CanJump())
+        if (CanJump())
         {
             Jump();
         }
@@ -77,7 +79,7 @@ public class EnemyJump : MonoBehaviour,IJump
 
     public bool CanJump()
     {
-        if(Time.time >= timeBeforeJump)
+        if (!stun.IsStunned && Time.time >= timeBeforeJump)
         {
             timeBeforeJump = Time.time + jumpRate;
             return true;
