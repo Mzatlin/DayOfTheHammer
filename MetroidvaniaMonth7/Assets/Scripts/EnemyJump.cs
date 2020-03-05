@@ -18,6 +18,8 @@ public class EnemyJump : MonoBehaviour,IJump
     public LayerMask Ground;
     public LayerMask Box;
     LayerMask finalLayerMask;
+    Animator animator;
+    Rigidbody2D rb;
 
     public float JumpPower { get => jumpPower; set => jumpPower = value; }
 
@@ -26,14 +28,25 @@ public class EnemyJump : MonoBehaviour,IJump
     // Start is called before the first frame update
     public void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
         jump = GetComponent<Jump>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     public void Update()
     {
-        if (CanJump())
+        if (!isGrounded && rb.velocity.y < 0)
+        {
+            animator.SetBool("IsFalling", true);
+            animator.SetBool("CanJump", false);
+        }
+        else
+        {
+            animator.SetBool("IsFalling", false);
+        }
+            if (CanJump())
         {
             Jump();
         }
@@ -45,7 +58,9 @@ public class EnemyJump : MonoBehaviour,IJump
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, finalLayerMask);
         if (isGrounded)
         {
+            animator.SetBool("CanJump", true);
             jump.JumpMove(jumpPower);
+
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
         }
 
@@ -60,7 +75,7 @@ public class EnemyJump : MonoBehaviour,IJump
         }
     }
 
-    bool CanJump()
+    public bool CanJump()
     {
         if(Time.time >= timeBeforeJump)
         {
