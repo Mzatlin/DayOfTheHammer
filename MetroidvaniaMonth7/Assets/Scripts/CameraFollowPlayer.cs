@@ -24,7 +24,7 @@ public class CameraFollowPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        renderer = Room.GetComponent<SpriteRenderer>(); 
+     //   renderer = Room.GetComponent<SpriteRenderer>(); 
         if (target == null)
         {
             Debug.Log("No Target For Camera Found!");
