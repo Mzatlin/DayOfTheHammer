@@ -1,19 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PauseOnClick : MonoBehaviour
 {
-    IPause pause;
-    // Start is called before the first frame update
-    void Awake()
-    {
-
-    }
+    public event Action OnResume = delegate { };
 
     // Update is called once per frame
-    void Update()
+    public void OnClickResume()
     {
-        
+        OnResume();
     }
 }
