@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 4ca58664da99dd041b48e0eef01e4762
+guid: 8654b62066102114dbe0bafb6fe4ca95
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3937395983013798283
-    second: jump3_0
+      213: 2053235339209659443
+    second: hammer shoot1_0
   - first:
-      213: -6304608246120704075
-    second: jump3_1
+      213: -1770322076645000208
+    second: hammer shoot1_1
   - first:
-      213: 1924494387725541898
-    second: jump3_2
+      213: 5509438348126404538
+    second: hammer shoot1_2
   - first:
-      213: -4834443892995437564
-    second: jump3_3
+      213: -7041623187741714724
+    second: hammer shoot1_3
+  - first:
+      213: -7292980743757348009
+    second: hammer shoot1_4
+  - first:
+      213: 3540575798248943657
+    second: hammer shoot1_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,85 +140,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump3_0
+      name: hammer shoot1_0
       rect:
         serializedVersion: 2
-        x: 17
+        x: 48
         y: 0
-        width: 49
-        height: 48
-      alignment: 9
-      pivot: {x: 0.51155454, y: 0.58846426}
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e9964f63f8b59c0800000000000000
-      internalID: -3937395983013798283
+      spriteID: 334ded999ae8e7c10800000000000000
+      internalID: 2053235339209659443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump3_1
+      name: hammer shoot1_1
       rect:
         serializedVersion: 2
-        x: 119
-        y: 0
-        width: 46
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5123082, y: 0.6061571}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b71af114388188a0800000000000000
-      internalID: -6304608246120704075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump3_2
-      rect:
-        serializedVersion: 2
-        x: 220
+        x: 202
         y: 0
         width: 43
-        height: 58
-      alignment: 9
+        height: 61
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a022d90037d25ba10800000000000000
-      internalID: 1924494387725541898
+      spriteID: 0fbfa8b637d8e67e0800000000000000
+      internalID: -1770322076645000208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump3_3
+      name: hammer shoot1_2
       rect:
         serializedVersion: 2
-        x: 325
+        x: 355
         y: 0
-        width: 42
+        width: 66
         height: 61
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.26838452, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40c437fa4ea98ecb0800000000000000
-      internalID: -4834443892995437564
+      spriteID: abf3df3ccf4757c40800000000000000
+      internalID: 5509438348126404538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer shoot1_3
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 73
+        height: 61
+      alignment: 9
+      pivot: {x: 0.22079259, y: 0.47911665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd65084d401274e90800000000000000
+      internalID: -7041623187741714724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer shoot1_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 0
+        width: 75
+        height: 61
+      alignment: 9
+      pivot: {x: 0.23673014, y: 0.46867496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753449647a02aca90800000000000000
+      internalID: -7292980743757348009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer shoot1_5
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 59
+        height: 61
+      alignment: 9
+      pivot: {x: 0.31647453, y: 0.46867496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92039f20ee6a22130800000000000000
+      internalID: 3540575798248943657
       vertices: []
       indices: 
       edges: []

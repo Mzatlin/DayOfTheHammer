@@ -11,9 +11,11 @@ public class ReelToGrapplePoint : MonoBehaviour
     bool isGrappled = false;
     Transform hook;
     Rigidbody2D rb;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         hammer.GetComponent<GrappleOnTouch>().OnGrapple += HandleTouch;
     }
 
@@ -22,6 +24,7 @@ public class ReelToGrapplePoint : MonoBehaviour
         isGrappled = true;
         hook = obj;
         hammer.SetActive(false);
+        animator.SetBool("IsThrowing", false);
     }
 
 

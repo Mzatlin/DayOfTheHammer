@@ -7,6 +7,8 @@ public class OpenDoorOnPress : MonoBehaviour
 
     [SerializeField]
     GameObject door;
+    [SerializeField]
+    LayerMask allowedMasks;
     Animator animator;
     Collider2D doorCollider;
 
@@ -19,13 +21,19 @@ public class OpenDoorOnPress : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.SetBool("IsOpen", false);
-        doorCollider.enabled = false;
+        if ((1 << collision.gameObject.layer & allowedMasks) != 0)
+        {
+            animator.SetBool("IsOpen", false);
+            doorCollider.enabled = false;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        animator.SetBool("IsOpen", true);
-        doorCollider.enabled = true;
+        if ((1 << collision.gameObject.layer & allowedMasks) != 0)
+        {
+            animator.SetBool("IsOpen", true);
+            doorCollider.enabled = true;
+        }
     }
 }

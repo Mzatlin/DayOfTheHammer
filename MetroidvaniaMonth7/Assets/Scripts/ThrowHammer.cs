@@ -14,6 +14,8 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
     [SerializeField]
     public float throwSpeed;
     [SerializeField]
+    float throwDelay = 0.1f;
+    [SerializeField]
     PlayerStateSO playerState;
     Rigidbody2D _rigidBody;
     MovePhysics move;
@@ -23,6 +25,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
     bool isAbilityInUse = false;
     ICharacterMovement charMove;
     IVerticalDirection vertical;
+    Animator animator;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
 
@@ -36,6 +39,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
         InitializeProjectile();
         charMove = GetComponent<ICharacterMovement>();
         vertical = GetComponent<IVerticalDirection>();
+        animator = GetComponentInChildren<Animator>();
 
     }
 
@@ -68,6 +72,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             hammer.SetActive(false);
             OnAbilityEnd();
             isAbilityInUse = false;
+            animator.SetBool("IsThrowing", false);
 
         }
         else if (!hammer.activeInHierarchy)
@@ -87,26 +92,45 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             isAbilityInUse = true;
             OnAbilityStart();
             OnThrow();
-
-            hammer.transform.position = transform.position;
-            hammer.SetActive(true);
-            if (Mathf.Abs(vertical.MoveDirectionY.y) < 0.1f)
-            {
-                var finalDirection = charMove.GetLasLoggedDirection().normalized; //Calculate Direction
-                _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
-            }
-            else
-            {
-                var finalDirection = vertical.MoveDirectionY.normalized; //Calculate Direction
-                _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
-            }
-
+            animator.SetBool("IsThrowing", true);
+            StartCoroutine(ThrowDelay());
+         
         }
+    }
+
+    void SpawnHammer()
+    {
+        hammer.transform.position = transform.position;
+        hammer.SetActive(true);
+        if (Mathf.Abs(vertical.MoveDirectionY.y) < 0.1f)
+        {
+            var finalDirection = charMove.GetLasLoggedDirection().normalized; //Calculate Direction
+            _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
+        }
+        else
+        {
+            var finalDirection = vertical.MoveDirectionY.normalized; //Calculate Direction
+            _rigidBody.velocity = new Vector2(finalDirection.x * throwSpeed, finalDirection.y * throwSpeed); //FireWeapon
+        }
+
+    }
+
+    IEnumerator ThrowDelay()
+    {
+        yield return new WaitForSeconds(throwDelay);
+        SpawnHammer();
     }
 
     bool CanThrow() //CanFire
     {
-        return true;
+        if (!isAbilityInUse)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 }
