@@ -2670,7 +2670,7 @@ RectTransform:
   m_Children:
   - {fileID: 473198457}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2966,7 +2966,7 @@ GameObject:
   - component: {fileID: 475953535}
   - component: {fileID: 475953534}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: ContinueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3625,6 +3625,54 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &535764081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535764083}
+  - component: {fileID: 535764082}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &535764082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535764081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d436d5cc9fee61f489881a20eead8104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogLines: []
+  typingSpeed: 1
+  dialogCanvas: {fileID: 0}
+  textContent: {fileID: 0}
+--- !u!4 &535764083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535764081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7273905, y: -0.4727764, z: -24.430664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1352717870}
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &553333959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6591481625291161355, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -6124,7 +6172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1193262530 stripped
 Transform:
@@ -6638,6 +6686,56 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 393386343}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1289672724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6075293491991449201, guid: d97c4d187c2b42d45976feaca3a38474,
+    type: 3}
+  m_PrefabInstance: {fileID: 7710644207087538824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289672725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289672724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87133bee84f8b714ea4c944b6022be28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  continueText: {fileID: 475953534}
+--- !u!114 &1289672732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289672724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d436d5cc9fee61f489881a20eead8104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - Hello There!
+  - Welcome To the Test Room!
+  typingSpeed: 0.05
+  dialogCanvas: {fileID: 1352717869}
+  textContent: {fileID: 1586332865}
+--- !u!114 &1289672733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289672724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9effbfc326ae5fb409ae9e1e39573ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &1293666210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6591481625291161355, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -7063,8 +7161,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1434109521}
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 535764083}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8089,7 +8187,7 @@ GameObject:
   - component: {fileID: 1586332866}
   - component: {fileID: 1586332865}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11460,11 +11558,21 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1352717869}
+    - target: {fileID: 7710644207991845930, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: dialogCanvas
+      value: 
+      objectReference: {fileID: 1352717869}
     - target: {fileID: 7710644207991845935, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
       propertyPath: hoverDescCanvas
       value: 
       objectReference: {fileID: 403911376}
+    - target: {fileID: 7710644207991845935, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: canvasOffset
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d97c4d187c2b42d45976feaca3a38474, type: 3}
 --- !u!1001 &7835350339996316554

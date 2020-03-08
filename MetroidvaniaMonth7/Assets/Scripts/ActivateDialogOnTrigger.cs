@@ -2,39 +2,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class ActivateDialogOnTrigger : MonoBehaviour
+public class ActivateDialogOnTrigger : MonoBehaviour, IActiveDialog
 {
-    [SerializeField]
-    Canvas canvas;
+    public event Action OnDialogStart = delegate { };
+
     [SerializeField]
     PlayerStateSO playerState;
     IInteractable interact;
+    IDialogEnd end;
+    [SerializeField]
     bool isActive = false;
+
+    public bool IsActive => isActive;
 
     // Start is called before the first frame update
     void Start()
     {
         interact = GetComponent<IInteractable>();
         interact.OnInteract += HandleInteraction;
-        canvas.enabled = false;
+        end = GetComponent<IDialogEnd>();
+        end.OnDialogEnd += HandleDialogEnd;
+    }
+
+    private void HandleDialogEnd()
+    {
+        if (isActive)
+        {
+            isActive = false;
+        }
     }
 
     private void HandleInteraction()
     {
-        canvas.enabled = true;
-        isActive = true;
-        playerState.isStopped = true;
-    }
-
-    private void Update()
-    {
-        if(isActive && Input.GetKeyDown(KeyCode.Space))
+        if (!isActive)
         {
-            canvas.enabled = false;
-            playerState.isStopped = false;
-
+            isActive = true;
+            OnDialogStart();
         }
-
     }
+
 }
