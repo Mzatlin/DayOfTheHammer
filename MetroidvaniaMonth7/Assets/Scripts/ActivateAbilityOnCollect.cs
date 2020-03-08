@@ -1,15 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ActivateAbilityOnCollect : CollectBase
 {
     [SerializeField]
     GameObject ability;
-    // Start is called before the first frame update
+
     void Start()
     {
-
+        if(ability == null)
+        {
+            Debug.Log("Warning! No Ability is Assigned to this Collectable!");
+        }
     }
 
     protected override void HandleCollection()

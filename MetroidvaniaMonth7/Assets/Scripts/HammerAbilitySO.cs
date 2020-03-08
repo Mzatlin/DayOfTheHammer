@@ -7,6 +7,8 @@ public class HammerAbilitySO : AbilitySO
 {
     [SerializeField]
     float attackRange;
+    [SerializeField]
+    float swingSpeed;
 
     private IHammer hammerAttack;
 
@@ -15,6 +17,7 @@ public class HammerAbilitySO : AbilitySO
         hammerAttack = obj.GetComponent<IHammer>();
         hammerAttack.Initialize();
         hammerAttack.AttackRange = attackRange;
+        hammerAttack.SwingSpeed = swingSpeed;
     }
 
     public override void UseAbilityTick()

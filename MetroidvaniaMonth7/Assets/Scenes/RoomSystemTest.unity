@@ -590,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &35325931
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -813,6 +813,7 @@ GameObject:
   - component: {fileID: 47860495}
   - component: {fileID: 47860494}
   - component: {fileID: 47860497}
+  - component: {fileID: 47860498}
   m_Layer: 0
   m_Name: RoomJ2
   m_TagString: Untagged
@@ -891,6 +892,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 613722230}
+--- !u!114 &47860498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47860493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1958f85ff53d22e4f967e7f746a7622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapPiece: {fileID: 1064611949}
 --- !u!1001 &54136769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5395,6 +5409,7 @@ GameObject:
   - component: {fileID: 461101088}
   - component: {fileID: 461101087}
   - component: {fileID: 461101086}
+  - component: {fileID: 461101090}
   m_Layer: 0
   m_Name: RoomShed
   m_TagString: Untagged
@@ -5477,6 +5492,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -2.88, y: 0, z: 0}
+--- !u!114 &461101090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461101085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1958f85ff53d22e4f967e7f746a7622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapPiece: {fileID: 1711989775}
 --- !u!4 &463807296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6591481625291161352, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -14087,7 +14115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1064611950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19429,7 +19457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1418033310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23746,7 +23774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1711989776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27841,6 +27869,7 @@ GameObject:
   - component: {fileID: 1981275551}
   - component: {fileID: 1981275550}
   - component: {fileID: 1981275549}
+  - component: {fileID: 1981275553}
   m_Layer: 0
   m_Name: RoomJ3
   m_TagString: Untagged
@@ -27919,6 +27948,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -2.88, y: 0, z: 0}
+--- !u!114 &1981275553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981275548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1958f85ff53d22e4f967e7f746a7622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapPiece: {fileID: 35325930}
 --- !u!1001 &1981497390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28810,6 +28852,7 @@ GameObject:
   - component: {fileID: 2023166556}
   - component: {fileID: 2023166555}
   - component: {fileID: 2023166557}
+  - component: {fileID: 2023166558}
   m_Layer: 0
   m_Name: RoomJ1
   m_TagString: Untagged
@@ -28888,6 +28931,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 699547518}
+--- !u!114 &2023166558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023166553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1958f85ff53d22e4f967e7f746a7622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapPiece: {fileID: 1418033309}
 --- !u!1001 &2034420252
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
 
     [HideInInspector]
     float attackRange = 0.8f;
+    [HideInInspector]
+    float swingSpeed = 0.3f;
     [SerializeField]
     LayerMask finalLayerMask;
     [SerializeField]
@@ -22,6 +24,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
 
     public float AttackRange { get => attackRange; set => attackRange = value; }
     public bool IsAbilityInUse { get => isAbilityInUse; set => isAbilityInUse = value; }
+    public float SwingSpeed { get => swingSpeed; set => swingSpeed = value; }
 
 
     // Start is called before the first frame update
@@ -67,7 +70,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
 
     IEnumerator HitDelay()
     {
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(swingSpeed);
         animator.SetBool("IsSwinging", false);
         OnAbilityEnd();
         isAbilityInUse = false;

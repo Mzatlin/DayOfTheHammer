@@ -5,7 +5,7 @@ using UnityEngine;
 public class WriterBase : MonoBehaviour, IWriteDialog
 {
     [SerializeField]
-    List<string> dialogLines;
+    protected List<string> dialogLines;
     public List<string> DialogLines => dialogLines;
 
     public void WriteDialog(string textLine)

@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CameraRoomTransition : MonoBehaviour
 {
+    public event Action OnRoomChange = delegate { };
+
     [SerializeField]
     GameObject camera;
 
@@ -11,6 +14,7 @@ public class CameraRoomTransition : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            OnRoomChange();
             camera.SetActive(true);
         }
     }
