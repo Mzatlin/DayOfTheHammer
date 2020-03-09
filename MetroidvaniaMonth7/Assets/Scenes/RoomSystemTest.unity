@@ -31443,6 +31443,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37541c02e922ed44cb8be68b9eed468c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1735236399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735236380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPath: event:/Player/Player-Hit/Second
 --- !u!1 &1741903342
 GameObject:
   m_ObjectHideFlags: 0

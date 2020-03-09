@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 5390191980054669047}
   - component: {fileID: 7992123849903526965}
   - component: {fileID: 8467496536801907366}
+  - component: {fileID: 246408658988501291}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -467,8 +468,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7aba08df93b2d4bb291ff2c0db7f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdDownTime: 0
   timeToCharge: 1.5
+  finalLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
   chargeCenter: {fileID: 877930816724466956}
   chargeRadius: 0
@@ -530,6 +533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hammer: {fileID: 0}
   throwSpeed: 25
+  throwDelay: 0.1
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
   isAbilityInUse: 0
 --- !u!114 &7462708572023999753
@@ -708,6 +712,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
+--- !u!114 &246408658988501291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758174693710431917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8859705e88aaf024f94578f10aac2e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health1: event:/Player/Player-Hit/First
+  health2: event:/Player/Player-Hit/Second
+  playerDeathSound: event:/Player/Player-Hit/Death
 --- !u!1 &922007510579866762
 GameObject:
   m_ObjectHideFlags: 0
