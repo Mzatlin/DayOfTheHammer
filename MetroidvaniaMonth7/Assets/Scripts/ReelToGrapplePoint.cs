@@ -38,10 +38,7 @@ public class ReelToGrapplePoint : MonoBehaviour
         }
         else
         {
-
             isGrappled = false;
-
         }
-
     }
 }

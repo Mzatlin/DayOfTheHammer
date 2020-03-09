@@ -14,7 +14,6 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
     Transform chargeCenter;
     [HideInInspector]
     public float chargeRadius;
-    LayerMask finalLayerMask;
     List<Collider2D> results = new List<Collider2D>();
     bool isAbilityInUse = false;
     Animator animator;

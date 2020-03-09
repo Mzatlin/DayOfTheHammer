@@ -10,6 +10,7 @@ public class ResetPlayerStatsOnLoad : MonoBehaviour
     void Start()
     {
         player.ResetPlayerState();
+        Time.timeScale = 1;
     }
 
 }

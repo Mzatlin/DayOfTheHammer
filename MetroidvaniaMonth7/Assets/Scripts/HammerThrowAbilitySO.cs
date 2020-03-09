@@ -8,8 +8,6 @@ public class HammerThrowAbilitySO : AbilitySO
 
     [SerializeField]
     float throwSpeed;
-    [SerializeField]
-    PlayerStateSO playerState;
 
     IThrow throwHammer;
 
@@ -22,6 +20,6 @@ public class HammerThrowAbilitySO : AbilitySO
 
     public override void UseAbilityTick()
     {
-            throwHammer.ThrowAttackTick();
+       throwHammer.ThrowAttackTick();
     }
 }

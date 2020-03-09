@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class ChargeBase : MonoBehaviour, IChargeable
 {
-    [SerializeField]
-    protected float holdDownTime = 0f;
+
     [SerializeField]
     protected float timeToCharge = 1.5f;
     protected float targetDistance = 0f;
+    protected float holdDownTime = 0f;
+    [SerializeField]
+    protected LayerMask finalLayerMask;
 
     public float HoldDownTime => holdDownTime;
 
