@@ -10,10 +10,11 @@ public class EnemyChargeHammer : ChargeBase
     float chargeRadius = 1.5f;
     [SerializeField]
     float liftPower = 35f;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -21,17 +22,23 @@ public class EnemyChargeHammer : ChargeBase
     {
         if (CanRelease())
         {
-            var results = Physics2D.OverlapCircleAll(chargeCenter.position, chargeRadius, finalLayerMask);
-            if (results != null)
-            {
-                foreach (Collider2D obj in results)
-                {
-                    ProcessHammerCharge(obj);
-                }
-            }
+            animator.SetBool("CanRelease", true);
+            DropHammer();
         }
 
         holdDownTime += Time.deltaTime;
+    }
+
+    void DropHammer()
+    {
+        var results = Physics2D.OverlapCircleAll(chargeCenter.position, chargeRadius, finalLayerMask);
+        if (results != null)
+        {
+            foreach (Collider2D obj in results)
+            {
+                ProcessHammerCharge(obj);
+            }
+        }
     }
 
     protected override void ProcessHammerCharge(Collider2D obj)
@@ -41,7 +48,7 @@ public class EnemyChargeHammer : ChargeBase
         {
 
             if (targetDistance < chargeRadius / 5
-                )
+                 )
             {
                 var hit = obj.GetComponent<IHittable>();
                 if (hit != null)
@@ -55,5 +62,14 @@ public class EnemyChargeHammer : ChargeBase
                 lift.ProcessLift(liftPower / targetDistance);
             }
         }
+        StartCoroutine(ReleaseDelay());
+    }
+
+
+
+    IEnumerator ReleaseDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        animator.SetBool("CanRelease", false);
     }
 }
