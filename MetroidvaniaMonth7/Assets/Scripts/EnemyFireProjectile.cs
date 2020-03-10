@@ -13,14 +13,20 @@ public class EnemyFireProjectile : MonoBehaviour,IShootProjectile
     GameObject projectile;
     [SerializeField]
     Vector2 direction;
+    [SerializeField]
+    Vector3 offset = Vector3.zero;
     Rigidbody2D rigidbody;
     float timeBeforeFire = 0;
+    [SerializeField]
+    Animator animate;
+
 
     public float FireRate => _fireRate;
 
     // Start is called before the first frame update
     void Start()
     {
+        animate = GetComponentInChildren<Animator>();
         rigidbody = projectile.GetComponent<Rigidbody2D>();
     }
 
@@ -29,6 +35,7 @@ public class EnemyFireProjectile : MonoBehaviour,IShootProjectile
     {
         if (CanFire())
         {
+            animate.SetBool("CanFire", true);
             FireWeapon();
         }
     }
@@ -53,8 +60,15 @@ public class EnemyFireProjectile : MonoBehaviour,IShootProjectile
 
     public void FireWeapon()
     {
-       var clone = Instantiate(projectile, transform.position, Quaternion.identity);
+       var clone = Instantiate(projectile, transform.position+offset, Quaternion.identity);
         clone.GetComponent<Rigidbody2D>().velocity = (CalculateDirection() * projectileSpeed);
+        StartCoroutine(AnimateDelay());
+    }
+
+    IEnumerator AnimateDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        animate.SetBool("CanFire", false);
     }
 
 
