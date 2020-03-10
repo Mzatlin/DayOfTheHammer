@@ -26,12 +26,12 @@ public class DialogController : WriterBase, ITypeCharacter, IDialogEnd
     // Start is called before the first frame update
     void Awake()
     {
-        textContent.text = "";
         dialogCanvas.enabled = false;
         dialogActivate = GetComponent<IActiveDialog>();
         dialogActivate.OnDialogStart += HandleDialogStart;
         input = GetComponent<IDialogInput>();
         input.OnDialogInput += HandleInput;
+        textContent.text = "";
     }
 
     private void HandleInput()

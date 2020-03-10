@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7710644207991845932}
   - component: {fileID: 7710644207991845934}
   - component: {fileID: 7710644207991845935}
+  - component: {fileID: 2062271281671973444}
+  - component: {fileID: 5037623626419159899}
+  - component: {fileID: 4015154605496833676}
   m_Layer: 13
   m_Name: NPC
   m_TagString: Untagged
@@ -74,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a04d4f721651241bff3db32c96358a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
+  isActive: 0
 --- !u!114 &7710644207991845932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +118,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverDescCanvas: {fileID: 0}
   canvasOffset: 0
+--- !u!114 &2062271281671973444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075293491991449201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87133bee84f8b714ea4c944b6022be28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  continueText: {fileID: 0}
+--- !u!114 &5037623626419159899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075293491991449201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d436d5cc9fee61f489881a20eead8104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - Hello There!
+  - Welcome To the Test Room!
+  typingSpeed: 0.05
+  dialogCanvas: {fileID: 0}
+  textContent: {fileID: 0}
+--- !u!114 &4015154605496833676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075293491991449201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9effbfc326ae5fb409ae9e1e39573ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &7710644206884660627
 GameObject:
   m_ObjectHideFlags: 0
