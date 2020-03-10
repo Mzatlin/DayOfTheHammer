@@ -47,11 +47,16 @@ public class EnemyJump : MonoBehaviour,IJump
         {
             jump.JumpMove(jumpPower);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
 
 =======
 
            // FMODUnity.RuntimeManager.PlayOneShot("event:/Spring", GetComponent<Transform> ().position);
+>>>>>>> Stashed changes
+=======
+
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
 >>>>>>> Stashed changes
         }
 
@@ -62,9 +67,13 @@ public class EnemyJump : MonoBehaviour,IJump
             if (isGrounded == false)
             {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
 =======
                // FMODUnity.RuntimeManager.PlayOneShot("event:/SpringLand", GetComponent<Transform>().position);
+>>>>>>> Stashed changes
+=======
+             //   FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
 >>>>>>> Stashed changes
             }
 
