@@ -8,8 +8,6 @@ public class HandleAbilityUse : MonoBehaviour
     AbilitySO ability;
     [SerializeField]
     GameObject abilitySource;
-    [SerializeField]
-    PlayerStateSO playerState;
     // Start is called before the first frame update
     void Start()
     {

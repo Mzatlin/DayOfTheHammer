@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 8626576979730954298}
   - component: {fileID: 8626576979730954319}
   - component: {fileID: 8626576979730954312}
+  - component: {fileID: 6163543156212033703}
   m_Layer: 11
   m_Name: Jump Enemy
   m_TagString: Untagged
@@ -384,6 +385,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveXSpeed: 5
+--- !u!114 &6163543156212033703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626576979730954297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b2ec7d657b84bc7a77a0cc37105685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8626576979910534266
 GameObject:
   m_ObjectHideFlags: 0
