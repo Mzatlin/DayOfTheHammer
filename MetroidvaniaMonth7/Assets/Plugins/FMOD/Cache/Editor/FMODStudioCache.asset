@@ -1,613 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9214349158640593255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193919910000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-8963824503007410234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176410650000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-8957311048131961080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182385770000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
-  Path: event:/Objects/Charge
-  guid: c46b23625c24e74cb330c77234cea286
-  Banks:
-<<<<<<< Updated upstream
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3977
---- !u!114 &-8649212331031342016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SpringLand
-  m_EditorClassIdentifier: 
-  Path: event:/SpringLand
-  guid: 991a50b5a4968c41a048cb2146cddc0f
-  Banks:
-  - {fileID: -4846364701280831746}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 20
-  Length: 1341
->>>>>>> Stashed changes
---- !u!114 &-8646096119697549037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Objects/Hit
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/Hit
-  guid: 4546f531aecd774cab89d330e92681b1
-  Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 4
-  MaxDistance: 65
-  Length: 633
-<<<<<<< Updated upstream
---- !u!114 &-8629015756109495370
-=======
---- !u!114 &-8505929121726816543
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< Updated upstream
-  m_Name: event:/Objects/Charging
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/Charging
-  guid: f65170dd3fe6834dbc2f16f0399e73a6
-  Banks:
-  - {fileID: -8466376205197039402}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 9896
---- !u!114 &-8466376205197039402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182722680000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
-=======
-  m_Name: event:/Spring
-  m_EditorClassIdentifier: 
-  Path: event:/Spring
-  guid: b05c58411905f64385c5323b1813268b
-  Banks:
-  - {fileID: -4846364701280831746}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0.59999996
-  MaxDistance: 20
-  Length: 1798
->>>>>>> Stashed changes
---- !u!114 &-8368338020290715584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176560200000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-8066682542890894137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player-Hit/First
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player-Hit/First
-  guid: 59e00446d743814ca058cf030c2ea03d
-  Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-  IsStream: 0
-=======
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 1
->>>>>>> Stashed changes
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 357
---- !u!114 &-7395368973726904907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176401700000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-7390053476443736171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/Spring Jump1
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/Spring Jump1
-  guid: b36c28303df6874d8e66c1109dc2dbab
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 10000
-  Length: 1798
---- !u!114 &-7345509259241288989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Landed
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Landed
-  guid: 4e6eada09e43324b9dce978475ca7a03
-  Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 358
-<<<<<<< Updated upstream
---- !u!114 &-7182293782462568713
-=======
---- !u!114 &-6841566347384217295
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182422680000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-6589967438388205686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181809020000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/JunkyardMusic
-  m_EditorClassIdentifier: 
-  Path: event:/JunkyardMusic
-  guid: 5a042a8a10d4a54595ea058497fe6173
-  Banks:
-  - {fileID: 4581996820324303970}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 286701
->>>>>>> Stashed changes
---- !u!114 &-6377379888746415206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637174552340000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
-<<<<<<< Updated upstream
---- !u!114 &-5798181560600624799
-=======
---- !u!114 &-6092919628411071531
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Objects/Charge
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/Charge
-  guid: c46b23625c24e74cb330c77234cea286
-  Banks:
-  - {fileID: -8466376205197039402}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3977
---- !u!114 &-5689613445810485954
-=======
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193927560000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5744737332872778548
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182427260000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
-=======
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/SpringJump
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/SpringJump
-  guid: 7ed4426e7829d44c9b4f5bd9b163fb02
-  Banks: []
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1798
->>>>>>> Stashed changes
---- !u!114 &-5368403001776404847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Objects/Throw
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/Throw
-  guid: 8362b561fe8415479f27ab09ffdad3e5
-  Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 333
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
---- !u!114 &-5241098903932437506
-=======
---- !u!114 &-4846364701280831746
->>>>>>> Stashed changes
-=======
---- !u!114 &-5358281961676897824
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  lastModified: 637181865040000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-4969704467832513657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181818200000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-4776140028120375895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181842240000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-4284370881363611031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambiences/Spooky
-  m_EditorClassIdentifier: 
-  Path: event:/Ambiences/Spooky
-  guid: 46aee93794918c42b462664de1f04390
-  Banks:
-  - {fileID: -8466376205197039402}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14516
---- !u!114 &-4283471559206455955
-=======
-  lastModified: 637193937790000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &-4049041637087030107
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-<<<<<<< Updated upstream
-  lastModified: 637181869360000000
-=======
-  lastModified: 637193934060000000
->>>>>>> Stashed changes
-=======
-  lastModified: 637193975320000000
->>>>>>> Stashed changes
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-3441415382626320845
+--- !u!114 &-9193089682628947212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -622,15 +15,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Attack
   guid: a6add3ce1ca52a41acf39763b7fc0619
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -638,65 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 460
---- !u!114 &-3360299852565092485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176403300000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-<<<<<<< Updated upstream
---- !u!114 &-1954540513672757280
-=======
---- !u!114 &-2737139454560949804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193925180000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-2500148068978940423
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182422910000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1927537762702199449
+--- !u!114 &-8689942477929206663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -706,20 +33,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player-Hit/Death
+  m_Name: event:/Player/Player-Hit/First
   m_EditorClassIdentifier: 
-  Path: event:/Player/Player-Hit/Death
-  guid: 39b6ad56dd12ae4590c3ccb2171813a8
+  Path: event:/Player/Player-Hit/First
+  guid: 59e00446d743814ca058cf030c2ea03d
   Banks:
-  - {fileID: -8466376205197039402}
-  IsStream: 1
+  - {fileID: 5277866041820724163}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 10795
---- !u!114 &-1871312567568317706
+  Length: 357
+--- !u!114 &-7946307028777086812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -734,15 +61,7 @@ MonoBehaviour:
   Path: event:/Player/Flip
   guid: 0f14310cfa788640af08b92bb3fb6e98
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -750,381 +69,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 383
---- !u!114 &-1432748989399502362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182536210000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1376583497401260747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176388750000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1374921447031716849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176408260000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1260507869335644425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181802450000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-1222782011386402793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176576150000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
-  Path: event:/Ambiences/Spooky
-  guid: 46aee93794918c42b462664de1f04390
-  Banks:
-<<<<<<< Updated upstream
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14516
->>>>>>> Stashed changes
---- !u!114 &-745520646042548374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176411580000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-742381882343727294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193924320000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-543862185616317834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176412630000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &-400854800581852830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/Spring Jump
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/Spring Jump
-  guid: b36c28303df6874d8e66c1109dc2dbab
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 1600
-  Length: 1798
---- !u!114 &-14150240419330478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176575600000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 1573143148529918172}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  EditorEvents:
-  - {fileID: 5655218590518824696}
-  - {fileID: -7345509259241288989}
-  - {fileID: 3942827799703619261}
-  - {fileID: -1871312567568317706}
-  - {fileID: -8646096119697549037}
-  - {fileID: -5368403001776404847}
-  - {fileID: -3441415382626320845}
-<<<<<<< Updated upstream
-  - {fileID: 8614957317728548864}
-  - {fileID: 2624229888510897619}
-  - {fileID: 4773502213397844051}
-  - {fileID: -1927537762702199449}
-  - {fileID: -8066682542890894137}
-  - {fileID: 8607014962103071676}
-  - {fileID: -5798181560600624799}
-  - {fileID: -8629015756109495370}
-  - {fileID: -4284370881363611031}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -8466376205197039402}
-  StringsBanks:
-  - {fileID: 1573143148529918172}
-  stringsBankWriteTime: 637182722680000000
-=======
-  - {fileID: 4338871208247983689}
-  - {fileID: -1218748337707389313}
-  - {fileID: 4158645640589429914}
-  - {fileID: 3928209349125059215}
-  - {fileID: -8736213365891649618}
-  - {fileID: 433992688296315524}
-  - {fileID: 6697829207206827578}
-  - {fileID: 7014497357408305237}
-  - {fileID: -7539025541552702958}
-<<<<<<< Updated upstream
-  - {fileID: -8505929121726816543}
-  - {fileID: -8649212331031342016}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -4846364701280831746}
-  StringsBanks:
-  - {fileID: 1573143148529918172}
-  stringsBankWriteTime: 637193937790000000
->>>>>>> Stashed changes
-=======
-  - {fileID: 2122531273909896934}
-  - {fileID: -6841566347384217295}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 4581996820324303970}
-  StringsBanks:
-  - {fileID: 1573143148529918172}
-  stringsBankWriteTime: 637193979890000000
->>>>>>> Stashed changes
-  cacheVersion: 3
---- !u!114 &74924325771083917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176229020000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-<<<<<<< Updated upstream
---- !u!114 &728710169078328642
-=======
---- !u!114 &146701695416286198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182736480000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &433992688296315524
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182396030000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
-  Path: event:/Objects/Ability-Collected
-  guid: d34f7c97a3006141a75947b882019981
-  Banks:
-<<<<<<< Updated upstream
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 750
->>>>>>> Stashed changes
---- !u!114 &1021630362902509414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176610433674520
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &1573143148529918172
+--- !u!114 &-7309601351469039226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1138,25 +83,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../MetroidVania7-FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  lastModified: 637182722680000000
-=======
-  lastModified: 637193937790000000
->>>>>>> Stashed changes
+  lastModified: 637194017530000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1516
-=======
-  lastModified: 637193979890000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1530
->>>>>>> Stashed changes
+    Value: 1556
   Exists: 1
---- !u!114 &1696881740938635366
+--- !u!114 &-6542156153703114860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1165,91 +98,90 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637179831189169539
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-<<<<<<< Updated upstream
---- !u!114 &2060979738996021391
-=======
---- !u!114 &2122531273909896934
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181812940000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-=======
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/SpringJump
+  m_Name: event:/JunkMusic
   m_EditorClassIdentifier: 
-  Path: event:/Enemy/SpringJump
-  guid: b853b7f4883b634eb1545c9114bc9213
+  Path: event:/JunkMusic
+  guid: 42e1d29a4067cd4e9d260214492be9e5
   Banks:
-  - {fileID: 4581996820324303970}
+  - {fileID: 5277866041820724163}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 286701
+--- !u!114 &-5637942848002184431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/Charge
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/Charge
+  guid: c46b23625c24e74cb330c77234cea286
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3977
+--- !u!114 &-5562325228149560442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/Charging
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/Charging
+  guid: f65170dd3fe6834dbc2f16f0399e73a6
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9896
+--- !u!114 &-4695952675761087337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/Hit
+  guid: 4546f531aecd774cab89d330e92681b1
+  Banks:
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 20
-  Length: 1798
->>>>>>> Stashed changes
---- !u!114 &2455446638365703903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176561800000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &2558914451085663383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176523570000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &2624229888510897619
+  MinDistance: 4
+  MaxDistance: 65
+  Length: 633
+--- !u!114 &-4637928396525443716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1264,15 +196,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Swing
   guid: 4959c8eb44718c45a1889649576967be
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1280,43 +204,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 241
---- !u!114 &2714625386368493701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637182422270000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &3762229930051575904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176576150000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &3942827799703619261
+--- !u!114 &-4065733956249475291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1326,64 +214,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Footsteps
+  m_Name: event:/Player/Landed
   m_EditorClassIdentifier: 
-  Path: event:/Player/Footsteps
-  guid: 6cb2f000a7cf4944852dbd7dc552352f
+  Path: event:/Player/Landed
+  guid: 4e6eada09e43324b9dce978475ca7a03
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 4
-  MaxDistance: 25
-  Length: 300
---- !u!114 &4651488901017707734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176390090000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &4773502213397844051
-=======
-  Path: event:/Objects/Hammer-Swing
-  guid: 4959c8eb44718c45a1889649576967be
-  Banks:
-<<<<<<< Updated upstream
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 241
---- !u!114 &4269369432065211985
+  Length: 358
+--- !u!114 &-2954791722926286268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1393,236 +237,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/Spring Jump2
+  m_Name: event:/Objects/Throw
   m_EditorClassIdentifier: 
-  Path: event:/Enemy/Spring Jump2
-  guid: b36c28303df6874d8e66c1109dc2dbab
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 1600
-  Length: 1798
---- !u!114 &4338871208247983689
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/Enemy-Dead
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/Enemy-Dead
-  guid: e5495afb15e7f74f920f6075951e2731
+  Path: event:/Objects/Throw
+  guid: 8362b561fe8415479f27ab09ffdad3e5
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-  IsStream: 0
-=======
-  - {fileID: -4846364701280831746}
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
-  IsStream: 1
->>>>>>> Stashed changes
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< Updated upstream
-  Length: 882
---- !u!114 &5058508746573222179
-=======
-  Length: 10795
---- !u!114 &4581996820324303970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193979890000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &4651488901017707734
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637181801470000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &4822040305994301908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193921800000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &5533351435956269955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193955110000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &5655218590518824696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Jump
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Jump
-  guid: 070457901b00b74caa5df5df7a2666fe
-  Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 411
---- !u!114 &5808185308268580081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637174757280046343
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &5962186482948370431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637193936840000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &6253000418794782820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/test
-  m_EditorClassIdentifier: 
-  Path: event:/test
-  guid: 7bc70e77182a6241bafaa878c818ab7a
-  Banks: []
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 3.6000001
-  MaxDistance: 90
-  Length: 31916
---- !u!114 &7196365065490305357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176411940000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &8607014962103071676
+  Length: 333
+--- !u!114 &-2613724904844440176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1637,15 +265,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/Second
   guid: e37b3d7508abfa4b9daf67579ea0b370
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1653,7 +273,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 613
---- !u!114 &8614957317728548864
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -7309601351469039226}
+  - {fileID: 5277866041820724163}
+  EditorEvents:
+  - {fileID: 1296895310168362681}
+  - {fileID: -7946307028777086812}
+  - {fileID: 7278619643995470437}
+  - {fileID: -4695952675761087337}
+  - {fileID: 5408213602154658085}
+  - {fileID: -4637928396525443716}
+  - {fileID: -4065733956249475291}
+  - {fileID: -8689942477929206663}
+  - {fileID: 7867991001508887674}
+  - {fileID: -2954791722926286268}
+  - {fileID: 7394444622747301654}
+  - {fileID: -9193089682628947212}
+  - {fileID: 9210952837927984029}
+  - {fileID: -5637942848002184431}
+  - {fileID: 3917591571727238408}
+  - {fileID: -2613724904844440176}
+  - {fileID: 4558396482427569029}
+  - {fileID: -5562325228149560442}
+  - {fileID: -6542156153703114860}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 5277866041820724163}
+  StringsBanks:
+  - {fileID: -7309601351469039226}
+  stringsBankWriteTime: 637194017530000000
+  cacheVersion: 3
+--- !u!114 &1296895310168362681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Jump
+  guid: 070457901b00b74caa5df5df7a2666fe
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 411
+--- !u!114 &3917591571727238408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1668,45 +353,15 @@ MonoBehaviour:
   Path: event:/Objects/Ability-Collected
   guid: d34f7c97a3006141a75947b882019981
   Banks:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - {fileID: -8466376205197039402}
-=======
-  - {fileID: -4846364701280831746}
->>>>>>> Stashed changes
-=======
-  - {fileID: 4581996820324303970}
->>>>>>> Stashed changes
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< Updated upstream
   Length: 750
-=======
-  Length: 882
---- !u!114 &7196365065490305357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176411940000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
-<<<<<<< Updated upstream
---- !u!114 &7490863617808179937
+--- !u!114 &4558396482427569029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1716,80 +371,185 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/Spring Jump
+  m_Name: event:/Enemy/Enemy-Dead
   m_EditorClassIdentifier: 
-  Path: event:/Enemy/Spring Jump
-  guid: b36c28303df6874d8e66c1109dc2dbab
-  Banks: []
+  Path: event:/Enemy/Enemy-Dead
+  guid: e5495afb15e7f74f920f6075951e2731
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 882
+--- !u!114 &5277866041820724163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637194017530000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5408213602154658085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/Spooky
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/Spooky
+  guid: 46aee93794918c42b462664de1f04390
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14516
+--- !u!114 &6306743339055718038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637194015580000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7278619643995470437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player-Hit/Death
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player-Hit/Death
+  guid: 39b6ad56dd12ae4590c3ccb2171813a8
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10795
+--- !u!114 &7394444622747301654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SpringLand
+  m_EditorClassIdentifier: 
+  Path: event:/SpringLand
+  guid: 991a50b5a4968c41a048cb2146cddc0f
+  Banks:
+  - {fileID: 5277866041820724163}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
-  MaxDistance: 9400
+  MaxDistance: 20
+  Length: 1341
+--- !u!114 &7867991001508887674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Footsteps
+  guid: 6cb2f000a7cf4944852dbd7dc552352f
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 4
+  MaxDistance: 25
+  Length: 300
+--- !u!114 &9051996278999882531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637193981330000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &9210952837927984029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Spring
+  m_EditorClassIdentifier: 
+  Path: event:/Spring
+  guid: b05c58411905f64385c5323b1813268b
+  Banks:
+  - {fileID: 5277866041820724163}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0.59999996
+  MaxDistance: 20
   Length: 1798
---- !u!114 &7640514661386903148
-=======
---- !u!114 &8307918385211873213
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-<<<<<<< Updated upstream
-  lastModified: 637193926210000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
->>>>>>> Stashed changes
-=======
-  lastModified: 637193979680000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
->>>>>>> Stashed changes
---- !u!114 &8922633034586237547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637176568110000000
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &9101740826524552033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637180561493675160
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
