@@ -45,7 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 93ec1dcbb80a42c438786d339ff37217, type: 2}
   abilitySource: {fileID: 758174693710431917}
-  playerState: {fileID: 0}
 --- !u!1 &758174692481552262
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +341,7 @@ GameObject:
   - component: {fileID: 7992123849903526965}
   - component: {fileID: 8467496536801907366}
   - component: {fileID: 246408658988501291}
+  - component: {fileID: 4097329246429949574}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -727,6 +727,19 @@ MonoBehaviour:
   health1: event:/Player/Player-Hit/First
   health2: event:/Player/Player-Hit/Second
   playerDeathSound: event:/Player/Player-Hit/Death
+--- !u!114 &4097329246429949574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758174693710431917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e59197c11e7604786e1b9ea97419a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 11400000, guid: 56c2934ef65a2a74fba46fb828d8101c, type: 2}
 --- !u!1 &922007510579866762
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +785,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: addc595a4a56d3f439de86f463042741, type: 2}
   abilitySource: {fileID: 758174693710431917}
-  playerState: {fileID: 0}
 --- !u!1 &4052892044092842341
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +911,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 8795c406730ff0441922d6c6ddee320f, type: 2}
   abilitySource: {fileID: 758174693710431917}
-  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &6435886972986988039
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,4 +956,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 41463d3ce00071943991ea535ca05808, type: 2}
   abilitySource: {fileID: 758174693710431917}
-  playerState: {fileID: 0}
