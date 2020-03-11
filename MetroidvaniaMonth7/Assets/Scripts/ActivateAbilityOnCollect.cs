@@ -18,8 +18,5 @@ public class ActivateAbilityOnCollect : CollectBase
         base.HandleCollection();
         ability.SetActive(true);
         gameObject.SetActive(false);
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Ability-Collected");
-
-
     }
 }
