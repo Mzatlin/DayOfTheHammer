@@ -30,7 +30,6 @@ public class LaserBeam : MonoBehaviour
         {
             laserRenderer.enabled = true;
             FireLaser();
-             // StartCoroutine(FireLaserEnum());
         }
         else
         {
@@ -68,18 +67,6 @@ public class LaserBeam : MonoBehaviour
 bool CanFireLaser()
 {
     return true;
-}
-
-IEnumerator FireLaserEnum()
-{
-
-
-    while (laserOn)
-    {
-        FireLaser();
-        yield return null;
-    }
-
 }
 
 }

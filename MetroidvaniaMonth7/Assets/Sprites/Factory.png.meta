@@ -1,37 +1,55 @@
 fileFormatVersion: 2
-guid: 4e0a23be7556a0541ba0168395e7ada2
+guid: 4fcc5a9354f573241a68662c00bc38e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 291163656354155302
-    second: junk_ground_0
+      213: 8677582162583586583
+    second: Factory_0
   - first:
-      213: 1223664196347873955
-    second: junk_ground_1
+      213: -4102168524580681326
+    second: Factory_1
   - first:
-      213: 7519753091403287736
-    second: junk_ground_2
+      213: -4203045798846300014
+    second: Factory_2
   - first:
-      213: -622174415475486104
-    second: junk_ground_3
+      213: 1382012446459987350
+    second: Factory_3
   - first:
-      213: -7778992391012986083
-    second: junk_ground_4
+      213: 9183415357368926435
+    second: Factory_4
   - first:
-      213: 8112620693985613260
-    second: junk_ground_5
+      213: 4598070345415809096
+    second: Factory_5
   - first:
-      213: 8657490795901943733
-    second: junk_ground_6
+      213: 5388451540310983593
+    second: Factory_6
   - first:
-      213: -6526405202088926286
-    second: junk_ground_7
+      213: -558147519687124405
+    second: Factory_7
   - first:
-      213: 1476284261519219731
-    second: junk_ground_8
+      213: -6199472147244460643
+    second: Factory_8
   - first:
-      213: -4278705281955372731
-    second: junk_ground_0
+      213: 8921676448362898236
+    second: Factory_9
+  - first:
+      213: 7148157525692020765
+    second: Factory_10
+  - first:
+      213: 6805221370377706705
+    second: Factory_11
+  - first:
+      213: 1733557627887526964
+    second: Factory_12
+  - first:
+      213: -7175999513555718791
+    second: Factory_13
+  - first:
+      213: 9209750841708879129
+    second: Factory_14
+  - first:
+      213: 5441983201098221969
+    second: Factory_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -70,12 +88,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: junk_ground_0
+      name: Factory_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 254
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +184,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5416672373cfe94c0800000000000000
-      internalID: -4278705281955372731
+      spriteID: 7178f064007fc6870800000000000000
+      internalID: 8677582162583586583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299849b067b2217c0800000000000000
+      internalID: -4102168524580681326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29081195d18cba5c0800000000000000
+      internalID: -4203045798846300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6958a627ff4ed2310800000000000000
+      internalID: 1382012446459987350
       vertices: []
       indices: 
       edges: []
