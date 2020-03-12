@@ -24,6 +24,8 @@ public class EnemyChargeHammer : ChargeBase
         {
             animator.SetBool("CanRelease", true);
             DropHammer();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Piston", GetComponent<Transform>().position);
+
         }
 
         holdDownTime += Time.deltaTime;

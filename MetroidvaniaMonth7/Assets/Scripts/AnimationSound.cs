@@ -12,13 +12,13 @@ public class AnimationSound : MonoBehaviour
 
     private void DoorOpen ()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Open", GetComponent<Transform>().position);
+       // FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Open", GetComponent<Transform>().position);
 
     }
 
     private void DoorClose()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Close", GetComponent<Transform>().position);
+       // FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Close", GetComponent<Transform>().position);
 
     }
 }

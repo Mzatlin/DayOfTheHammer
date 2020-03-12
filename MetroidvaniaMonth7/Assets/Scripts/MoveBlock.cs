@@ -21,6 +21,9 @@ public class MoveBlock : HitBase, IMoveBlock
         rb.bodyType = RigidbodyType2D.Static;
     }
 
+   
+
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if((1 << collision.gameObject.layer & staticLayer) != 0){
@@ -33,6 +36,7 @@ public class MoveBlock : HitBase, IMoveBlock
         if ((1 << collision.gameObject.layer & staticLayer) != 0)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
+
         }
     }
 
@@ -45,11 +49,15 @@ public class MoveBlock : HitBase, IMoveBlock
         if (Vector2.Dot(targetPoint, blockPoint) < 0)
         {
             rb.velocity = new Vector2(moveXSpeed, 0);
+
         }
         if (Vector2.Dot(targetPoint, blockPoint) > 0)
         {
             rb.velocity = new Vector2(-moveXSpeed, 0);
+            
         }
+       
+
         base.HandleHitTransform(trans);
 
     }
