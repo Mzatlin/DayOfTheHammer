@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e8116b26-50df-40a7-9bb7-4e3aaddf58fc}">
+		<property name="assetPath">
+			<value>Metal Scrape Squeak_Long_NT4_Fienup_003.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6888020833333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{63198ff8-827b-4fc3-a206-330a292557db}</destination>
+		</relationship>
+	</object>
+</objects>

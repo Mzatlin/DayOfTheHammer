@@ -8,7 +8,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{9925a1d8-d6d8-47a7-8eec-3e5dd5a0cfa1}</destination>
+			<destination>{b5f06ec2-9c4a-433e-8050-d36d2c13cc90}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{d81f76d3-8008-4616-b448-424d9b6237ff}</destination>
@@ -53,7 +53,7 @@
 			<destination>{9c7e9764-fa9e-4de2-912f-a8a8eba3b967}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{36f94da2-77b5-4a03-86db-f059096daba7}</destination>
+			<destination>{ce32cd98-36f9-4b6c-a6c9-34a5eee2b6de}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d930f2ce-e689-4771-a6fe-46b636445fdd}" />
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{59e8e1bc-b151-4e97-a4d2-eda2ad2c65f8}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{e18d3a45-a661-44f7-930e-607c599a9540}</destination>
 		</relationship>
@@ -154,6 +157,9 @@
 	<object class="SpatialiserEffect" id="{33a05f38-e616-4804-aec3-097bb581b7d9}">
 		<property name="minimumDistance">
 			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>35</value>
 		</property>
 		<property name="extentMode">
 			<value>1</value>

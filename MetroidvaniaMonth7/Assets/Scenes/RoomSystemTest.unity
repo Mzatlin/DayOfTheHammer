@@ -24612,6 +24612,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1919335917}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1030868090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030868089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPath: event:/Enemy/JumpEnemyHit
 --- !u!114 &1030868104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25156,6 +25169,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1002124717}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1052258249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4018728209988103815, guid: 28a48ce03f32bf54c88a761cbb7e95d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 635327574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1052258254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052258249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPath: event:/Objects/BoxHit
 --- !u!1001 &1055605948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30288,6 +30320,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6, type: 3}
+--- !u!1 &1252640770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626576978829944621, guid: c7aedcb60b2b35542af31101e7a3f92e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1919335917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1252640774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252640770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b382acc940934bb5b7d2b8f8c2dceff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1253228950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6591481625291161352, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -30565,6 +30615,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1448857254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1260211893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626576978829944621, guid: c7aedcb60b2b35542af31101e7a3f92e,
+    type: 3}
+  m_PrefabInstance: {fileID: 616265610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1260211897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260211893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b382acc940934bb5b7d2b8f8c2dceff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1272144506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32772,6 +32840,7 @@ GameObject:
   - component: {fileID: 1357150988}
   - component: {fileID: 1357150990}
   - component: {fileID: 1357150989}
+  - component: {fileID: 1357150991}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -32863,6 +32932,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1357150991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357150987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7efbcb551b514441806eca680f7368d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1361737294
 GameObject:
   m_ObjectHideFlags: 0
@@ -37151,7 +37232,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -38757,7 +38838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646791412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.38667, y: 2.3948722, z: 6.367383}
+  m_LocalPosition: {x: -48.748127, y: 2.3948722, z: 6.367383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39848,6 +39929,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1671403559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671403557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7efbcb551b514441806eca680f7368d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1671403561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6591481625291161352, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -41553,7 +41646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPath: event:/Player/Player-Hit/Second
+  hitPath: event:/Enemy/JumpEnemyHit
 --- !u!1 &1741903342
 GameObject:
   m_ObjectHideFlags: 0
@@ -47133,6 +47226,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1916361699}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1969811256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969811255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7efbcb551b514441806eca680f7368d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1969811259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3712036082322982080, guid: 5364f3ec149810d48bfbe4c7f96859f6,
