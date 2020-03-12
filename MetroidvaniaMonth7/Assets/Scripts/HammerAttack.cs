@@ -47,7 +47,7 @@ public class HammerAttack : MonoBehaviour, IHammer, IAbility
                 animator.SetBool("IsSwinging", true);
                 TryHit();
                 //implement hammer attack sound
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Attack");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Hammer-Swing");
             }
 
         }

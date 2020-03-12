@@ -46,10 +46,19 @@ public class EnemyJump : MonoBehaviour, IJump
             {
                 animator.SetBool("IsFalling", true);
                 animator.SetBool("CanJump", false);
+               
             }
             else
             {
                 animator.SetBool("IsFalling", false);
+
+                if (wasGrounded != isGrounded)  
+                {
+                    wasGrounded = isGrounded;
+
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Enemy/SpringLand", GetComponent<Transform>().position);
+                }
+
             }
         }
      
@@ -67,19 +76,9 @@ public class EnemyJump : MonoBehaviour, IJump
         {
             animator.SetBool("CanJump", true);
             jump.JumpMove(jumpPower);
-
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
         }
 
-        if (isGrounded != wasGrounded)
-        {
-            wasGrounded = !wasGrounded;
-            if (isGrounded == true)
-            {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Landed");
-            }
-
-        }
+        
     }
 
     public bool CanJump()

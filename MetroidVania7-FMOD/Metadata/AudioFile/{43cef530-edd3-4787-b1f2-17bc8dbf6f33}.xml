@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{43cef530-edd3-4787-b1f2-17bc8dbf6f33}">
+		<property name="assetPath">
+			<value>Impact, Wood, Thump, Hit, Hollow 02 SND39323.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.84110416666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{63198ff8-827b-4fc3-a206-330a292557db}</destination>
+		</relationship>
+	</object>
+</objects>

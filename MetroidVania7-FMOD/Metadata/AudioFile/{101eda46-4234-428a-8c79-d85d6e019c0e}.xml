@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{101eda46-4234-428a-8c79-d85d6e019c0e}">
+		<property name="assetPath">
+			<value>5343 - Rusty Starship Door 05 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.0177916666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{63198ff8-827b-4fc3-a206-330a292557db}</destination>
+		</relationship>
+	</object>
+</objects>
