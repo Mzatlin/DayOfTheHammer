@@ -122,7 +122,8 @@ AnimationClip:
   - time: 0
     functionName: DoorOpen
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 3712036082322982083, guid: 5364f3ec149810d48bfbe4c7f96859f6,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

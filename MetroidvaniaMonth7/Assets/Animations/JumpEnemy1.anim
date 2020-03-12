@@ -82,7 +82,8 @@ AnimationClip:
   - time: 0.25
     functionName: SpringJump
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 8626576979730954297, guid: c7aedcb60b2b35542af31101e7a3f92e,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

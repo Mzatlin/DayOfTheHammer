@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 8626576979730954319}
   - component: {fileID: 8626576979730954312}
   - component: {fileID: 6163543156212033703}
+  - component: {fileID: 4417140568326241391}
   m_Layer: 11
   m_Name: Jump Enemy
   m_TagString: Untagged
@@ -260,7 +261,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8b49a4b92541bdb4c9a3b57eae52da27, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -397,6 +398,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b2ec7d657b84bc7a77a0cc37105685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4417140568326241391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626576979730954297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5544f88bf611e47a750697db410918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathPath: event:/Enemy/JumpEnemyDeath
 --- !u!1 &8626576979910534266
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 9e3f4a072f425664b846da4371269230, type: 2}
   abilitySource: {fileID: 8626576979730954297}
-  playerState: {fileID: 0}
 --- !u!1 &8626576980190567522
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,4 +663,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 41463d3ce00071943991ea535ca05808, type: 2}
   abilitySource: {fileID: 8626576979730954297}
-  playerState: {fileID: 0}
