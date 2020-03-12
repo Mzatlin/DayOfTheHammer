@@ -15,6 +15,9 @@ public class ElevatorLiftController : MonoBehaviour, IElevatorEnd
     float elevatorLiftSpeed = 1f;
     IElevatorStart start;
     bool isLifting;
+    bool audioStatus=false;
+
+    FMOD.Studio.EventInstance ElevatorSound;
 
 
     // Start is called before the first frame update
@@ -22,17 +25,32 @@ public class ElevatorLiftController : MonoBehaviour, IElevatorEnd
     {
         start = GetComponentInChildren<IElevatorStart>();
         start.OnElevatorStart += HandleElevatorStart;
+        ElevatorSound = FMODUnity.RuntimeManager.CreateInstance("event:/Ambiences/Elevator");
     }
 
     private void HandleElevatorStart()
     {
         isLifting = true;
+        audioStatus = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         if (isLifting && (Vector2.Distance(transform.position, destinationSpot.position) > 1f))
+        {
             transform.position = Vector2.Lerp(transform.position, destinationSpot.position, elevatorLiftSpeed);
+            if (audioStatus)
+            {
+                ElevatorSound.start();
+                audioStatus = false;
+            }
+        }
+        if (isLifting == false)
+        {
+            ElevatorSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+           // Debug.Log("Elevator Stopped");
+        }
+
     }
 }

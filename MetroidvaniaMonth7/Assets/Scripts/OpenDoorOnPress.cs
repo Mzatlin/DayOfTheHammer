@@ -25,6 +25,7 @@ public class OpenDoorOnPress : MonoBehaviour
         {
             animator.SetBool("IsOpen", false);
             doorCollider.enabled = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Open", GetComponent<Transform>().position);
         }
     }
 
@@ -34,6 +35,8 @@ public class OpenDoorOnPress : MonoBehaviour
         {
             animator.SetBool("IsOpen", true);
             doorCollider.enabled = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Door-Close", GetComponent<Transform>().position);
+
         }
     }
 }
