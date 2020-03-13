@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: RoomSystemTest
+  name: CutScene
 --- !u!114 &1252148822
 MonoBehaviour:
   m_ObjectHideFlags: 0

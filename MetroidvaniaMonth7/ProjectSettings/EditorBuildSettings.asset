@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoomSystemTest.unity
     guid: 5b40c222b73880f4c8f2a48ef6f0477e
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: f55df88fc749d3046811e866405e47f3
   m_configObjects: {}
