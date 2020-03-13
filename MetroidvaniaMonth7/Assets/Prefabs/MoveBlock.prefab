@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4018728209988103814}
   - component: {fileID: 7835350338541323273}
   - component: {fileID: 7835350338541323272}
+  - component: {fileID: 5723746722438442733}
   m_Layer: 10
   m_Name: MoveBlock
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   staticLayer:
     serializedVersion: 2
     m_Bits: 2560
+--- !u!114 &5723746722438442733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4018728209988103815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPath: event:/Objects/BoxHit
