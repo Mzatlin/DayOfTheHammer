@@ -10,12 +10,14 @@ public class ReelToGrapplePoint : MonoBehaviour
     float grappleSpeed = 0.3f;
     bool isGrappled = false;
     bool grappleSoundStatus = false;
+    IAbility ability;
     Transform hook;
     Rigidbody2D rb;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        ability = GetComponent<IAbility>();
         animator = GetComponentInChildren<Animator>();
         hammer.GetComponent<GrappleOnTouch>().OnGrapple += HandleTouch;
     }
@@ -33,20 +35,28 @@ public class ReelToGrapplePoint : MonoBehaviour
     void Update()
     {
         //reelback logic
-        if (isGrappled && hook != null && (Vector2.Distance(transform.position,hook.position) > 1f))
+        if (isGrappled && hook != null)
         {
-            transform.position = Vector2.Lerp(transform.position, hook.position,grappleSpeed);
-            if (grappleSoundStatus != isGrappled)
+            if ((Vector2.Distance(transform.position, hook.position) > 1f))
             {
-                grappleSoundStatus = isGrappled;
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Reel", GetComponent<Transform>().position);
-            } 
+                transform.position = Vector2.Lerp(transform.position, hook.position, grappleSpeed);
+                if (grappleSoundStatus != isGrappled)
+                {
+                    grappleSoundStatus = isGrappled;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Reel", GetComponent<Transform>().position);
+                }
 
+            }
+            else if ((Vector2.Distance(transform.position, hook.position) < 1f))
+            {
+                StopGrapple();
+            }
         }
-        else
-        {
-            isGrappled = false;
-            grappleSoundStatus = false;
-        }
+    }
+
+    void StopGrapple()
+    {
+        grappleSoundStatus = false;
+        isGrappled = false;
     }
 }

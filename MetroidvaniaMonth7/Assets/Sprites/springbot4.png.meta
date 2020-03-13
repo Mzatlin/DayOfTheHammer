@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 0a5687859fbacc542be86f408ebea592
+guid: 2e0edb72caccbac48b05c3c3ee46880f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4305290173693301989
-    second: hammer charge3_0
+      213: 3671497237839500830
+    second: springbot4_0
   - first:
-      213: -3205847082429583406
-    second: hammer charge3_1
+      213: 2199768371483894024
+    second: springbot4_1
   - first:
-      213: 8449182711879881084
-    second: hammer charge3_2
+      213: -2113975169088545715
+    second: springbot4_2
   - first:
-      213: -8101499536884354116
-    second: hammer charge3_3
+      213: -4337542927053998420
+    second: springbot4_3
+  - first:
+      213: 780175679469746731
+    second: springbot4_4
+  - first:
+      213: 1467612785297206025
+    second: springbot4_5
+  - first:
+      213: -4456939453544471878
+    second: springbot4_6
+  - first:
+      213: -2294661950436236808
+    second: springbot4_7
+  - first:
+      213: -1273307278017443182
+    second: springbot4_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,85 +149,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hammer charge3_0
+      name: springbot4_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 0
         y: 0
-        width: 86
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32448682}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1be70eb5698044c0800000000000000
-      internalID: -4305290173693301989
+      spriteID: e16504f0947c3f230800000000000000
+      internalID: 3671497237839500830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hammer charge3_1
+      name: springbot4_1
       rect:
         serializedVersion: 2
-        x: 194
+        x: 70
         y: 0
-        width: 86
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.49433845, y: 0.31882513}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dfef87501b8283d0800000000000000
-      internalID: -3205847082429583406
+      spriteID: 801ef62dda5278e10800000000000000
+      internalID: 2199768371483894024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hammer charge3_2
+      name: springbot4_2
       rect:
         serializedVersion: 2
-        x: 345
+        x: 140
         y: 0
-        width: 74
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5056619, y: 0.31882513}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c71d8f729e6814570800000000000000
-      internalID: 8449182711879881084
+      spriteID: d4c1b76b8c6a9a2e0800000000000000
+      internalID: -2113975169088545715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hammer charge3_3
+      name: springbot4_3
       rect:
         serializedVersion: 2
-        x: 491
+        x: 210
         y: 0
-        width: 42
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.51698524, y: 0.25088453}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb334044811b19f80800000000000000
-      internalID: -8101499536884354116
+      spriteID: ca630fa60b3fdc3c0800000000000000
+      internalID: -4337542927053998420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: springbot4_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.51132375, y: 0.23389941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a713d95adb3da00800000000000000
+      internalID: 780175679469746731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: springbot4_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.49433854, y: 0.29617828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b267f6d020e5410800000000000000
+      internalID: 1467612785297206025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: springbot4_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5000004, y: 0.31882513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2ee0e4e25c522c0800000000000000
+      internalID: -4456939453544471878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: springbot4_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 70
+        height: 70
+      alignment: 9
+      pivot: {x: 0.49433854, y: 0.30183998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1a4ac1d19b720e0800000000000000
+      internalID: -2294661950436236808
       vertices: []
       indices: 
       edges: []

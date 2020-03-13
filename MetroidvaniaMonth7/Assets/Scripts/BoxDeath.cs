@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BoxDeath : DeathBase
 {
-
     protected override void HandleDie()
     {
         base.HandleDie();

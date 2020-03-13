@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 8626576979730954312}
   - component: {fileID: 6163543156212033703}
   - component: {fileID: 4417140568326241391}
+  - component: {fileID: 7359879900195400863}
   m_Layer: 11
   m_Name: Jump Enemy
   m_TagString: Untagged
@@ -411,6 +412,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathPath: event:/Enemy/JumpEnemyDeath
+--- !u!114 &7359879900195400863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626576979730954297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa01e62093557a04788a93f21397ec27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDrop: {fileID: 120571756919686757, guid: 7264c7b7e8a502641859e5ee875d3904,
+    type: 3}
 --- !u!1 &8626576979910534266
 GameObject:
   m_ObjectHideFlags: 0

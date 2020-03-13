@@ -25,6 +25,7 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
     bool isAbilityInUse = false;
     ICharacterMovement charMove;
     IVerticalDirection vertical;
+    GrappleOnTouch grapple;
     Animator animator;
 
     public float ThrowSpeed { get => throwSpeed; set => throwSpeed = value; }
@@ -40,7 +41,15 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
         charMove = GetComponent<ICharacterMovement>();
         vertical = GetComponent<IVerticalDirection>();
         animator = GetComponentInChildren<Animator>();
+        grapple = hammer.GetComponent<GrappleOnTouch>();
+        grapple.OnGrapple += HandleGrapple;
 
+    }
+
+    private void HandleGrapple(Transform obj)
+    {
+         OnAbilityEnd();
+        isAbilityInUse = false;
     }
 
     void InitializeProjectile()
@@ -61,34 +70,26 @@ public class ThrowHammer : MonoBehaviour, IThrow, IAbility
             {
 
                 Throw();
-                //implement throwing sound
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
+
             }
 
+            if (Vector3.Distance(transform.position, hammer.transform.position) > 5 && hammer.activeInHierarchy)
+            {
+                _rigidBody.velocity = Vector2.zero;
+                hammer.SetActive(false);
+                OnAbilityEnd();
+                isAbilityInUse = false;
+                animator.SetBool("IsThrowing", false);
+            }
         }
-        if (Vector3.Distance(transform.position, hammer.transform.position) > 5 && hammer.activeInHierarchy)
-        {
-            _rigidBody.velocity = Vector2.zero;
-            hammer.SetActive(false);
-            OnAbilityEnd();
-            isAbilityInUse = false;
-            animator.SetBool("IsThrowing", false);
-
-        }
-        else if (!hammer.activeInHierarchy)
-        {
-            _rigidBody.velocity = Vector2.zero;
-            hammer.SetActive(false);
-            OnAbilityEnd();
-            isAbilityInUse = false;
-        }
-
     }
 
     public void Throw()
     {
         if (CanThrow())
         {
+            //implement throwing sound
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Throw");
             isAbilityInUse = true;
             OnAbilityStart();
             OnThrow();

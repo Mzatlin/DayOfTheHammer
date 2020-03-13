@@ -14,6 +14,7 @@ public class PlayerHealthSoundManager : MonoBehaviour
 
     IHealth health;
     IHittable hit;
+    Animator animate;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerHealthSoundManager : MonoBehaviour
         hit.OnHit += HandleHit;
         health = GetComponent<IHealth>();
         health.OnDie += HandleDie;
+        animate = GetComponentInChildren<Animator>();
     }
 
     private void HandleHit()
@@ -40,6 +42,7 @@ public class PlayerHealthSoundManager : MonoBehaviour
 
     private void HandleDie()
     {
+        animate.SetBool("IsDead", true);
         FMODUnity.RuntimeManager.PlayOneShot(playerDeathSound, transform.position);
     }
 

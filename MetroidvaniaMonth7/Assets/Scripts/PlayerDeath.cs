@@ -6,6 +6,7 @@ public class PlayerDeath : DeathBase
 {
     [SerializeField]
     PlayerStateSO playerState;
+    Animator animate;
     // Start is called before the first frame update
     protected override void HandleDie()
     {

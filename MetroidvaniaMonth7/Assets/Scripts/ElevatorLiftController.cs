@@ -46,11 +46,16 @@ public class ElevatorLiftController : MonoBehaviour, IElevatorEnd
                 audioStatus = false;
             }
         }
-        if (isLifting == false)
-        {
-            ElevatorSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-           // Debug.Log("Elevator Stopped");
-        }
 
+        else if(isLifting && (Vector2.Distance(transform.position, destinationSpot.position) < 1f))
+        {
+            StopElevator();
+        }
+    }
+
+    void StopElevator()
+    {
+        isLifting = false;
+        ElevatorSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

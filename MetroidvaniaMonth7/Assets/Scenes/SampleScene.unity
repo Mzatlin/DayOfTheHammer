@@ -1234,6 +1234,7 @@ MonoBehaviour:
     type: 3}
   direction: {x: 1, y: 0}
   offset: {x: 0, y: 0, z: 0}
+  animate: {fileID: 0}
 --- !u!114 &163236087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,7 +1589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 9e3f4a072f425664b846da4371269230, type: 2}
   abilitySource: {fileID: 163236074}
-  playerState: {fileID: 0}
 --- !u!1001 &227507213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3888,7 +3888,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 41463d3ce00071943991ea535ca05808, type: 2}
   abilitySource: {fileID: 163236074}
-  playerState: {fileID: 0}
 --- !u!4 &788315292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6591481625291161352, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -6294,56 +6293,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 393386343}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1289672724 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6075293491991449201, guid: d97c4d187c2b42d45976feaca3a38474,
-    type: 3}
-  m_PrefabInstance: {fileID: 7710644207087538824}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1289672725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289672724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87133bee84f8b714ea4c944b6022be28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  continueText: {fileID: 475953534}
---- !u!114 &1289672732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289672724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d436d5cc9fee61f489881a20eead8104, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogLines:
-  - Hello There!
-  - Welcome To the Test Room!
-  typingSpeed: 0.05
-  dialogCanvas: {fileID: 1352717869}
-  textContent: {fileID: 1586332865}
---- !u!114 &1289672733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289672724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9effbfc326ae5fb409ae9e1e39573ff4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
 --- !u!1 &1293666210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6591481625291161355, guid: c36c644f3d3cdd24ba3a0e98cfc71ce6,
@@ -10106,6 +10055,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2754465861059531928, guid: 9bf0101041b504142b442d97cb5cb3bc,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754465861059531928, guid: 9bf0101041b504142b442d97cb5cb3bc,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5490681874842138476, guid: 9bf0101041b504142b442d97cb5cb3bc,
         type: 3}
       propertyPath: m_Name
@@ -10170,6 +10129,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746597909122294988, guid: 9bf0101041b504142b442d97cb5cb3bc,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746597909122294988, guid: 9bf0101041b504142b442d97cb5cb3bc,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf0101041b504142b442d97cb5cb3bc, type: 3}
@@ -10831,6 +10800,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2062271281671973444, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: continueText
+      value: 
+      objectReference: {fileID: 475953534}
+    - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: dialogCanvas
+      value: 
+      objectReference: {fileID: 1352717869}
+    - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: textContent
+      value: 
+      objectReference: {fileID: 1586332865}
     - target: {fileID: 6075293491991449201, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
       propertyPath: m_Name
