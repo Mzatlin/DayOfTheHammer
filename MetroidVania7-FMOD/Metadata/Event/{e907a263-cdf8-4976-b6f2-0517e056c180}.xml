@@ -149,17 +149,14 @@
 		<property name="minimumDistance">
 			<value>0</value>
 		</property>
-		<property name="maximumDistance">
-			<value>90</value>
-		</property>
 		<property name="extentMode">
 			<value>1</value>
 		</property>
 		<property name="soundSize">
-			<value>18</value>
+			<value>11.5</value>
 		</property>
 		<property name="minimumExtent">
-			<value>360</value>
+			<value>140</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{49f874a0-621a-4ca3-9413-4a6239746c82}" />

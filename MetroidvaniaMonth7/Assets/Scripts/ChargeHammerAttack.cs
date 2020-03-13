@@ -16,7 +16,10 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
     public float chargeRadius;
     List<Collider2D> results = new List<Collider2D>();
     bool isAbilityInUse = false;
+    bool chargeSoundStatus = false;
     Animator animator;
+
+    FMOD.Studio.EventInstance chargingSound;
 
     public float HammerRadius { get => chargeRadius; set => chargeRadius = value; }
 
@@ -26,6 +29,10 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
 
     // Start is called before the first frame update
 
+    public void Start()
+    {
+        chargingSound = FMODUnity.RuntimeManager.CreateInstance("event:/Objects/Charging");
+    }
     public void InitializeCharge()
     {
         finalLayerMask = (1 << LayerMask.NameToLayer("Box") | (1 << LayerMask.NameToLayer("Enemy")));
@@ -47,10 +54,16 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
         }
         if (holdDownTime > .2f)
         {
-            // add charging sound here
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Hammer_Charge");
+            
             isAbilityInUse = true;
             OnAbilityStart();
+
+            if (isAbilityInUse != chargeSoundStatus)
+            {
+                chargeSoundStatus = isAbilityInUse;
+                chargingSound.start();
+
+            }
         }
 
         if (CanRelease())
@@ -90,7 +103,13 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
             {
                 holdDownTime = 0f;
                 animator.SetBool("CanRelease", true);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Charged");
+                chargeSoundStatus = false;
+                chargingSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
                 return true;
+
+
             }
             else
             {
@@ -98,7 +117,12 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
                 OnAbilityEnd();
                 holdDownTime = 0f;
                 animator.SetBool("CanRelease",false);
+                chargeSoundStatus = false;
+                chargingSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+
                 return false;
+
             }
         }
         else
@@ -120,8 +144,7 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
                 {
                     hit.ProcessHit(10f/targetDistance);
                 }
-                //should I make a special sound for gameobjects destroyed by the hammer charge here?
-                //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Destroyed_By_Charge");
+             
             }
             var lift = obj.GetComponent<ILift>();
             if (lift != null)
@@ -130,7 +153,6 @@ public class ChargeHammerAttack : ChargeBase, IChargeAttack, IAbility
             }
 
 
-            //I'm guessing this throws objects that aren't within 1.5 but within the charge radius. Could maybe add a sound to this.
         }
     }
 

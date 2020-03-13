@@ -9,6 +9,7 @@ public class ReelToGrapplePoint : MonoBehaviour
     [SerializeField]
     float grappleSpeed = 0.3f;
     bool isGrappled = false;
+    bool grappleSoundStatus = false;
     Transform hook;
     Rigidbody2D rb;
     Animator animator;
@@ -35,10 +36,17 @@ public class ReelToGrapplePoint : MonoBehaviour
         if (isGrappled && hook != null && (Vector2.Distance(transform.position,hook.position) > 1f))
         {
             transform.position = Vector2.Lerp(transform.position, hook.position,grappleSpeed);
+            if (grappleSoundStatus != isGrappled)
+            {
+                grappleSoundStatus = isGrappled;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Reel", GetComponent<Transform>().position);
+            } 
+
         }
         else
         {
             isGrappled = false;
+            grappleSoundStatus = false;
         }
     }
 }
