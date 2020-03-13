@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{16a5177c-9916-496b-84aa-05f8d6f462c5}">
+		<property name="assetPath">
+			<value>Door, Wood, Open, Close, Creaky, Rattle 2 SND0233 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1260104166666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{63198ff8-827b-4fc3-a206-330a292557db}</destination>
+		</relationship>
+	</object>
+</objects>
