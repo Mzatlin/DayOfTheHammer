@@ -23,6 +23,7 @@ public class SwitchController : MonoBehaviour, ISwitch
             animate.SetBool("IsSwitched", true);
             isTriggered = true;
             OnTrigger();
+
         }
     }
 

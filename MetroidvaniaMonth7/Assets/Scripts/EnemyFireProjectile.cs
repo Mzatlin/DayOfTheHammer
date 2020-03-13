@@ -63,6 +63,8 @@ public class EnemyFireProjectile : MonoBehaviour,IShootProjectile
        var clone = Instantiate(projectile, transform.position+offset, Quaternion.identity);
         clone.GetComponent<Rigidbody2D>().velocity = (CalculateDirection() * projectileSpeed);
         StartCoroutine(AnimateDelay());
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Enemy/TurretFire");
+
     }
 
     IEnumerator AnimateDelay()

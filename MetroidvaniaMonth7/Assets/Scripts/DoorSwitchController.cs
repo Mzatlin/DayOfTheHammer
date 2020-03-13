@@ -8,6 +8,7 @@ public class DoorSwitchController : MonoBehaviour
     [SerializeField]
     List<GameObject> switches = new List<GameObject>();
     bool isComplete = false;
+    bool switchSound = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,11 @@ public class DoorSwitchController : MonoBehaviour
         }
         isComplete = true;
         gameObject.SetActive(false);
+        if (isComplete != switchSound)
+        {
+            switchSound = isComplete;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/DoorUnlocked", GetComponent<Transform>().position);
+        }
     }
 
 }

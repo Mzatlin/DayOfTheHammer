@@ -166,6 +166,8 @@ GameObject:
   - component: {fileID: 1466108024062695894}
   - component: {fileID: 2065540334386512242}
   - component: {fileID: 6709232025565158758}
+  - component: {fileID: 3193206677741278478}
+  - component: {fileID: 6853989785833381}
   m_Layer: 11
   m_Name: Enemy Turret
   m_TagString: Untagged
@@ -351,6 +353,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0507b594827761849be728cc1693de37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3193206677741278478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349429636065827172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5544f88bf611e47a750697db410918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathPath: event:/Enemy/TurretDeath
+--- !u!114 &6853989785833381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349429636065827172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPath: event:/Enemy/TurretHit
 --- !u!1 &5024965121754780886
 GameObject:
   m_ObjectHideFlags: 0
