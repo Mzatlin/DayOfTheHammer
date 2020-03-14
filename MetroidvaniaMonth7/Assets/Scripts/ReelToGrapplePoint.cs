@@ -54,7 +54,7 @@ public class ReelToGrapplePoint : MonoBehaviour
             else if ((Vector2.Distance(transform.position, hook.position) < 1f))
             {
                 StopGrapple();
-                grappleSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                //grappleSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
             }
         }
