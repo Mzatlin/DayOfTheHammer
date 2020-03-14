@@ -295,14 +295,11 @@ MonoBehaviour:
   jumpPower: 9.9
   isGrounded: 0
   jumpRate: 0.68
+  finalLayerMask:
+    serializedVersion: 2
+    m_Bits: 17664
   groundCheck: {fileID: 8626576979910534267}
   checkRadius: 0.3
-  Ground:
-    serializedVersion: 2
-    m_Bits: 0
-  Box:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &8626576979730954299
 MonoBehaviour:
   m_ObjectHideFlags: 0

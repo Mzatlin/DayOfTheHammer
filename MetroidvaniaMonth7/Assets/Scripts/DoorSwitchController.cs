@@ -25,6 +25,9 @@ public class DoorSwitchController : MonoBehaviour
         {
            if(obj.GetComponent<SwitchController>().isTriggered == false)
             {
+                isComplete = false;
+                gameObject.SetActive(true);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/DoorUnlocked", GetComponent<Transform>().position);
                 return;
             }
         }
