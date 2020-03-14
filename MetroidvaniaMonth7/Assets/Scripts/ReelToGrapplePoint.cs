@@ -7,7 +7,7 @@ public class ReelToGrapplePoint : MonoBehaviour
     [SerializeField]
     GameObject hammer;
     [SerializeField]
-    float grappleSpeed = 0.3f;
+    float grappleSpeed = 1f;
     bool isGrappled = false;
     bool grappleSoundStatus = false;
     IAbility ability;
@@ -15,11 +15,14 @@ public class ReelToGrapplePoint : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     // Start is called before the first frame update
+    FMOD.Studio.EventInstance grappleSound;
     void Start()
     {
         ability = GetComponent<IAbility>();
         animator = GetComponentInChildren<Animator>();
         hammer.GetComponent<GrappleOnTouch>().OnGrapple += HandleTouch;
+        grappleSound = FMODUnity.RuntimeManager.CreateInstance("event:/Objects/Reel");
+
     }
 
     private void HandleTouch(Transform obj)
@@ -43,13 +46,16 @@ public class ReelToGrapplePoint : MonoBehaviour
                 if (grappleSoundStatus != isGrappled)
                 {
                     grappleSoundStatus = isGrappled;
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/Objects/Reel", GetComponent<Transform>().position);
+                    grappleSound.start();
+                    Debug.Log("grapple sound on");
                 }
 
             }
             else if ((Vector2.Distance(transform.position, hook.position) < 1f))
             {
                 StopGrapple();
+                grappleSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
             }
         }
     }
