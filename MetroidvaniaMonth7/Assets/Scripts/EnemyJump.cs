@@ -30,7 +30,7 @@ public class EnemyJump : MonoBehaviour, IJump
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box")));
+        finalLayerMask = (1 << LayerMask.NameToLayer("Ground") | (1 << LayerMask.NameToLayer("Box") | (1 << LayerMask.NameToLayer("Platform"))));
         jump = GetComponent<Jump>();
         animator = GetComponentInChildren<Animator>();
         stun = GetComponent<IStunnable>();

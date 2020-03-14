@@ -74,8 +74,9 @@ public class DialogController : WriterBase, ITypeCharacter, IDialogEnd
         foreach(char i in message.ToCharArray())
         {
             textContent.text += i;
-            //Insert Typing Sound here
             yield return new WaitForSeconds(typingSpeed);
+
+            //Move this to its own script 
             FMODUnity.RuntimeManager.PlayOneShot("event:/Typing", GetComponent<Transform>().position);
 
         }

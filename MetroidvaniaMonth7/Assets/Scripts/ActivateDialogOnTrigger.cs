@@ -7,9 +7,6 @@ using System;
 public class ActivateDialogOnTrigger : MonoBehaviour, IActiveDialog
 {
     public event Action OnDialogStart = delegate { };
-
-    [SerializeField]
-    PlayerStateSO playerState;
     IInteractable interact;
     IDialogEnd end;
     [SerializeField]

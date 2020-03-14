@@ -49,8 +49,7 @@ public class EnemyChargeHammer : ChargeBase
         if (targetDistance < chargeRadius)
         {
 
-            if (targetDistance < chargeRadius / 5
-                 )
+            if (targetDistance < chargeRadius / 5)
             {
                 var hit = obj.GetComponent<IHittable>();
                 if (hit != null)
