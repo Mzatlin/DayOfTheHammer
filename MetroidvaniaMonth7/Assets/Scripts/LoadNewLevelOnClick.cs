@@ -11,5 +11,6 @@ public class LoadNewLevelOnClick : MonoBehaviour
     public void OnClickNewLevel()
     {
         SceneManager.LoadScene(name, LoadSceneMode.Single);
+        Time.timeScale = 1;
     }
 }
