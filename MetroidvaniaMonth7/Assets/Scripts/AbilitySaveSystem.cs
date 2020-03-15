@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "AbilitySaveSystem")]
 public class AbilitySaveSystem : ScriptableObject
 {
+
     public Dictionary<string,GameObject> abilities = new Dictionary<string, GameObject>();
     
     public void ActivateAbility(string abilityName)
