@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{8c869d05-fd62-49bd-bd26-1c182d9159f3}">
+		<property name="assetPath">
+			<value>Beep, Terminal, Sharp SND6599 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.16027083333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{63198ff8-827b-4fc3-a206-330a292557db}</destination>
+		</relationship>
+	</object>
+</objects>
