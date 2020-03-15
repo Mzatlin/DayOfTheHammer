@@ -7,6 +7,8 @@ public class SetCurrentCheckPoint : MonoBehaviour
 {
     [SerializeField]
     CheckpointSO checkpoint;
+    [SerializeField]
+    AbilitySaveSystem ability;
     IInteractable interact;
 
     // Start is called before the first frame update
@@ -19,7 +21,7 @@ public class SetCurrentCheckPoint : MonoBehaviour
     private void HandleInteraction()
     {
         Debug.Log("Interacting");
-        if (checkpoint != null)
+        if (checkpoint != null && ability != null)
         {
             checkpoint.checkpointLocation = transform.position;
         }

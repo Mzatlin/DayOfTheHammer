@@ -16,7 +16,7 @@ public class DropItemOnDeath : MonoBehaviour
 
     private void HandleDie()
     {
-       if(Random.Range(0f,1.0f) >= 0.4)
+       if(Random.Range(0f,1.0f) >= 0.55f)
         {
             Instantiate(objectToDrop, transform.position, Quaternion.identity);
         }

@@ -25,7 +25,7 @@ public class LoadLevelOnElevator : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(12f);
         SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 
