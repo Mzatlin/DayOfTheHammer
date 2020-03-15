@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{eee98dcb-27ff-4dfe-8b1e-1b21a39522f6}">
+		<property name="name">
+			<value>JunkyardRestart</value>
+		</property>
+		<relationship name="folder">
+			<destination>{372e40bf-904b-4d40-a85e-11f2c5e3492f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7600c1de-4e9a-4b55-9635-39e78ee0d288}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7600c1de-4e9a-4b55-9635-39e78ee0d288}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

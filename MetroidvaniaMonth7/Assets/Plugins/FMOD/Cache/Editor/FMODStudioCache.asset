@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Attack
   guid: a6add3ce1ca52a41acf39763b7fc0619
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23,6 +23,74 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 460
+--- !u!114 &-9108958469753765575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/MelodyFX
+  m_EditorClassIdentifier: 
+  Name: MelodyFX
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-8878672791749291239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Melody
+  m_EditorClassIdentifier: 
+  Name: Melody
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8782942376120931112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Factory
+  m_EditorClassIdentifier: 
+  Name: Factory
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8774348781909452031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/LowSynth
+  m_EditorClassIdentifier: 
+  Name: LowSynth
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8774298840594692796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,7 +142,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/First
   guid: 59e00446d743814ca058cf030c2ea03d
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -82,6 +150,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 357
+--- !u!114 &-8135213469601334170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/LowSynth
+  m_EditorClassIdentifier: 
+  Name: LowSynth
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7946307028777086812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +182,7 @@ MonoBehaviour:
   Path: event:/Player/Flip
   guid: 0f14310cfa788640af08b92bb3fb6e98
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -173,11 +258,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../MetroidVania7-FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637198045900000000
+  lastModified: 637198217890000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2578
+    Value: 2936
   Exists: 1
 --- !u!114 &-7286141787003442469
 MonoBehaviour:
@@ -248,7 +333,7 @@ MonoBehaviour:
   Path: event:/JunkMusic
   guid: 42e1d29a4067cd4e9d260214492be9e5
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -292,6 +377,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6028205415329446907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198170510000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5998676124515949587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +410,7 @@ MonoBehaviour:
   Path: event:/Objects/Reel
   guid: 25f7f51509a7844595e6006bcabecc06
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -315,6 +418,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &-5810212945833374513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Factory
+  m_EditorClassIdentifier: 
+  Name: Factory
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-5637942848002184431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +472,7 @@ MonoBehaviour:
   Path: event:/Objects/Charging
   guid: f65170dd3fe6834dbc2f16f0399e73a6
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -378,6 +498,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5415711210169601615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198171340000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5259271249782119975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +531,7 @@ MonoBehaviour:
   Path: event:/Objects/FallingBox
   guid: a47d66e1d8d6a8429523c5a181b99fb7
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -416,7 +554,7 @@ MonoBehaviour:
   Path: event:/Enemy/SpringLand
   guid: 991a50b5a4968c41a048cb2146cddc0f
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -457,7 +595,7 @@ MonoBehaviour:
   Path: event:/Enemy/SpringJump
   guid: b853b7f4883b634eb1545c9114bc9213
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -520,7 +658,7 @@ MonoBehaviour:
   Path: event:/Objects/Hit
   guid: 4546f531aecd774cab89d330e92681b1
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -528,6 +666,23 @@ MonoBehaviour:
   MinDistance: 4
   MaxDistance: 65
   Length: 633
+--- !u!114 &-4690301348908038503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/JunkyardRestart
+  m_EditorClassIdentifier: 
+  Name: JunkyardRestart
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4637928396525443716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,7 +698,7 @@ MonoBehaviour:
   Path: event:/Objects/Hammer-Swing
   guid: 4959c8eb44718c45a1889649576967be
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -566,7 +721,7 @@ MonoBehaviour:
   Path: event:/Typing
   guid: 26a0b40f64823f43b49b0cef2a006cc3
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -625,7 +780,7 @@ MonoBehaviour:
   Path: event:/Enemy/TurretFire
   guid: 63a207e9f8cd7649b6f20517e056c180
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -648,7 +803,7 @@ MonoBehaviour:
   Path: event:/Player/Landed
   guid: 4e6eada09e43324b9dce978475ca7a03
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -656,6 +811,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 419
+--- !u!114 &-3804018102383910592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/LowSynth
+  m_EditorClassIdentifier: 
+  Name: LowSynth
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3803097430586699689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/JunkyardRestart
+  m_EditorClassIdentifier: 
+  Name: JunkyardRestart
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3740168017381028760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +860,7 @@ MonoBehaviour:
   Path: event:/CutScene
   guid: 01231781aa25d640a8684c079818f986
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -679,6 +868,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 64363
+--- !u!114 &-3596249525594711864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Factory
+  m_EditorClassIdentifier: 
+  Name: Factory
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-3581356446760908550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/JunkyardRestart
+  m_EditorClassIdentifier: 
+  Name: JunkyardRestart
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3466688077217829076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,7 +917,7 @@ MonoBehaviour:
   Path: event:/Objects/BoxHit
   guid: 3b8b6b0b64834d46a737ecb5fd424260
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -789,7 +1012,7 @@ MonoBehaviour:
   Path: event:/Objects/Throw
   guid: 8362b561fe8415479f27ab09ffdad3e5
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -812,7 +1035,7 @@ MonoBehaviour:
   Path: event:/Objects/Door-Close
   guid: e4f6aa820475e547ad0a58c3a0d9f14f
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -838,6 +1061,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2718005405964993834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198217890000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-2613724904844440176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +1094,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/Second
   guid: e37b3d7508abfa4b9daf67579ea0b370
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -861,6 +1102,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 613
+--- !u!114 &-2325404865474468099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Melody
+  m_EditorClassIdentifier: 
+  Name: Melody
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-2186773152363896933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,6 +1137,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2174601856286807129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/JunkyardRestart
+  m_EditorClassIdentifier: 
+  Name: JunkyardRestart
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-2105730581357053542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +1171,23 @@ MonoBehaviour:
   lastModified: 637196448250000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-2002402539650645647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/MelodyFX
+  m_EditorClassIdentifier: 
+  Name: MelodyFX
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &-1774851028326466244
 MonoBehaviour:
@@ -948,7 +1240,7 @@ MonoBehaviour:
   Path: event:/Enemy/Spring
   guid: b05c58411905f64385c5323b1813268b
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -956,6 +1248,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 20
   Length: 2218
+--- !u!114 &-1582052208411097159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/LowSynth
+  m_EditorClassIdentifier: 
+  Name: LowSynth
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1457745488317787543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1028,6 +1337,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1247668023481483919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/MelodyFX
+  m_EditorClassIdentifier: 
+  Name: MelodyFX
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1105321523985026947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,6 +1372,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1061485542053913075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Melody
+  m_EditorClassIdentifier: 
+  Name: Melody
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1051680224111824842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,7 +1422,7 @@ MonoBehaviour:
   Path: event:/Enemy/Resting
   guid: adb2f4278768034ea1c7f2d994feda2c
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1087,6 +1430,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 20
   Length: 1125
+--- !u!114 &-612850732239505497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/JunkyardRestart
+  m_EditorClassIdentifier: 
+  Name: JunkyardRestart
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-579875395237541877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1141,6 +1501,40 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-307644549728386160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/LowSynth
+  m_EditorClassIdentifier: 
+  Name: LowSynth
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-266004287823982731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Factory
+  m_EditorClassIdentifier: 
+  Name: Factory
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-163463750528958325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,13 +1585,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -7309601351469039226}
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   EditorEvents:
   - {fileID: 1296895310168362681}
   - {fileID: -7946307028777086812}
   - {fileID: 7278619643995470437}
   - {fileID: -4695952675761087337}
-  - {fileID: 5408213602154658085}
   - {fileID: -4637928396525443716}
   - {fileID: -4065733956249475291}
   - {fileID: -8689942477929206663}
@@ -1234,12 +1627,15 @@ MonoBehaviour:
   - {fileID: 2467503006792765946}
   - {fileID: 6716395240690132094}
   - {fileID: -3740168017381028760}
+  - {fileID: 6292438044589315103}
+  - {fileID: 8456419969822081669}
+  - {fileID: 8032783204964599377}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   StringsBanks:
   - {fileID: -7309601351469039226}
-  stringsBankWriteTime: 637198045900000000
+  stringsBankWriteTime: 637198217890000000
   cacheVersion: 3
 --- !u!114 &175453164896068421
 MonoBehaviour:
@@ -1295,6 +1691,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &423268326445666391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/MelodyFX
+  m_EditorClassIdentifier: 
+  Name: MelodyFX
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &481160728865273539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,6 +1762,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &940961052061094201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Melody
+  m_EditorClassIdentifier: 
+  Name: Melody
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1071776933170821193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,7 +1830,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: 070457901b00b74caa5df5df7a2666fe
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1441,7 +1871,7 @@ MonoBehaviour:
   Path: event:/Objects/DoorUnlocked
   guid: 486bd70d31ca824f838cdff47a84d8b7
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1482,7 +1912,7 @@ MonoBehaviour:
   Path: event:/UIButton
   guid: e251626487b50f45ae7c7a6b4b79b76c
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1490,6 +1920,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &2532498014621762502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/MelodyFX
+  m_EditorClassIdentifier: 
+  Name: MelodyFX
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2624609192512323455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,7 +1954,7 @@ MonoBehaviour:
   lastModified: 637198045900000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &2745700580378851450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,7 +1988,7 @@ MonoBehaviour:
   Path: event:/Ambiences/Elevator
   guid: bac89e5c9656374798535810979f0bfd
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1618,7 +2065,7 @@ MonoBehaviour:
   Path: event:/Objects/Ability-Collected
   guid: d34f7c97a3006141a75947b882019981
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1626,6 +2073,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1062
+--- !u!114 &3931024426065165378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198210530000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4098289708576238567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,7 +2142,7 @@ MonoBehaviour:
   Path: event:/Objects/WoodDoorClose
   guid: a2b99bc011b24643926dc22ddf92502d
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1685,6 +2150,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1574
+--- !u!114 &4250815035093505576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Factory
+  m_EditorClassIdentifier: 
+  Name: Factory
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4273361537899523876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1725,6 +2207,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 882
+--- !u!114 &4745583089228006401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Factory/Conveyer
+  m_EditorClassIdentifier: 
+  Name: Conveyer
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4751488815572797196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,7 +2275,7 @@ MonoBehaviour:
   Path: event:/Objects/Door-Open
   guid: 62e4bf2fb81f764da2bec2bc131359e3
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1853,7 +2352,7 @@ MonoBehaviour:
   Path: event:/Enemy/TurretDeath
   guid: 5f5d52262f8fe247a562cc420c8f0c08
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1893,8 +2392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ambiences/Spooky
   guid: 46aee93794918c42b462664de1f04390
-  Banks:
-  - {fileID: 2624609192512323455}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1935,7 +2433,7 @@ MonoBehaviour:
   Path: event:/Enemy/JumpEnemyHit
   guid: 76bd61f8d6c0df40a7917539f144c913
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1961,6 +2459,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5925837832837609257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198154880000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6173925055509839331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1976,7 +2492,7 @@ MonoBehaviour:
   Path: event:/StartDialogue
   guid: d1bee94226484c4d81834edf20e3b131
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1999,7 +2515,7 @@ MonoBehaviour:
   Path: event:/Enemy/TurretHit
   guid: 40ecb73b7252db42bf6ae9588f24a212
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2007,6 +2523,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &6292438044589315103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Score
+  m_EditorClassIdentifier: 
+  Path: event:/Score
+  guid: 2f6c699ccca5544cbdade5c24315f6d5
+  Banks:
+  - {fileID: -2718005405964993834}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -307644549728386160}
+  - {fileID: -266004287823982731}
+  - {fileID: -9108958469753765575}
+  - {fileID: -2325404865474468099}
+  - {fileID: -4690301348908038503}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 148363
 --- !u!114 &6306743339055718038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,7 +2656,7 @@ MonoBehaviour:
   Path: event:/TitleScene
   guid: fa12677438276c458b058c06e8c5b1a4
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2153,7 +2697,7 @@ MonoBehaviour:
   Path: event:/Objects/FallingBoxExplo
   guid: d313f7372d52604fa1f7ee283cd6ed5a
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2161,6 +2705,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1781
+--- !u!114 &7092988625154109351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../MetroidVania7-FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637198084800000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7105340331598265814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2194,7 +2756,7 @@ MonoBehaviour:
   Path: event:/Objects/Charged
   guid: c46b23625c24e74cb330c77234cea286
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2235,7 +2797,7 @@ MonoBehaviour:
   Path: event:/Enemy/JumpEnemyDeath
   guid: 6cc583d62b2e4443bee8803c0df1bdf2
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2258,7 +2820,7 @@ MonoBehaviour:
   Path: event:/Player/Player-Hit/Death
   guid: 39b6ad56dd12ae4590c3ccb2171813a8
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2324,6 +2886,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &7718949115987263388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Score/Melody
+  m_EditorClassIdentifier: 
+  Name: Melody
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &7745035914240797140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2357,7 +2936,7 @@ MonoBehaviour:
   Path: event:/Objects/WoodDoorOpen
   guid: 93df25b63727664ba3a4fc92b2ab9878
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2380,7 +2959,7 @@ MonoBehaviour:
   Path: event:/Player/Footsteps
   guid: 6cb2f000a7cf4944852dbd7dc552352f
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2388,6 +2967,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 554
+--- !u!114 &8032783204964599377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/Factory
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/Factory
+  guid: 8355e5add9a61d489c1965739087196a
+  Banks:
+  - {fileID: -2718005405964993834}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4745583089228006401}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 37874
 --- !u!114 &8228719014098792803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2406,6 +3009,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8456419969822081669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/SuperAbility
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/SuperAbility
+  guid: 06ccb8da160e9147a30a72eef7f49c95
+  Banks:
+  - {fileID: -2718005405964993834}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2343
 --- !u!114 &8460746217450670719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2547,14 +3173,14 @@ MonoBehaviour:
   Path: event:/Objects/Piston
   guid: 97781e603fd0204cab6a048944f29cd9
   Banks:
-  - {fileID: 2624609192512323455}
+  - {fileID: -2718005405964993834}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 20
-  Length: 1387
+  Length: 3075
 --- !u!114 &9210952837927984029
 MonoBehaviour:
   m_ObjectHideFlags: 0

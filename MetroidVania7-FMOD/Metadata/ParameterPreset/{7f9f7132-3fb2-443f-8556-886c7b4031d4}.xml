@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{7f9f7132-3fb2-443f-8556-886c7b4031d4}">
+		<property name="name">
+			<value>LowSynth</value>
+		</property>
+		<relationship name="folder">
+			<destination>{372e40bf-904b-4d40-a85e-11f2c5e3492f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{34b86c7e-4da4-4b11-92bf-a73d66583002}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{34b86c7e-4da4-4b11-92bf-a73d66583002}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.27000001072883606</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{7b6968c6-ad2f-4fdb-aef6-8939ebd82530}">
+		<property name="name">
+			<value>MelodyFX</value>
+		</property>
+		<relationship name="folder">
+			<destination>{372e40bf-904b-4d40-a85e-11f2c5e3492f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{223cb9c8-63e5-46cc-b08c-fd60e1d4cddd}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{223cb9c8-63e5-46cc-b08c-fd60e1d4cddd}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.26000002026557922</value>
+		</property>
+	</object>
+</objects>
