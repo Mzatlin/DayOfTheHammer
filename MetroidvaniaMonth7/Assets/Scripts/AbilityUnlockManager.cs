@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class AbilityUnlockManager : MonoBehaviour
 {
+    [SerializeField]
+    AbilitySaveSystem ability;
 
     public List<GameObject> abilityContainers = new List<GameObject>();
     Dictionary<string, GameObject> abilities = new Dictionary<string, GameObject>();
     // Start is called before the first frame update
     void Start()
     {
-        foreach(GameObject obj in abilityContainers)
+        for(int i = 1; i < abilityContainers.Count; i++)
         {
-            obj.SetActive(false);
+            abilityContainers[i].SetActive(ability.activeAbilities[i]);
         }
-        abilityContainers[0].SetActive(true);
+     //   foreach(GameObject obj in abilityContainers)
+    //    {
+    //        obj.SetActive(false);
+    //    }
+      //  abilityContainers[0].SetActive(true);
     }
 
     // Update is called once per frame
