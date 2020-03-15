@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SaveSystem
   m_EditorClassIdentifier: 
   checkPoint: {fileID: 11400000, guid: e3a3fff17242e6042a650d0c630b6025, type: 2}
+  ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
