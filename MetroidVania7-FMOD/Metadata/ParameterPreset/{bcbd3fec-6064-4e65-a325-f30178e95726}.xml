@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{bcbd3fec-6064-4e65-a325-f30178e95726}">
+		<property name="name">
+			<value>Conveyer</value>
+		</property>
+		<relationship name="folder">
+			<destination>{372e40bf-904b-4d40-a85e-11f2c5e3492f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5ba13cc9-1858-49df-bd9b-b011737a976f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5ba13cc9-1858-49df-bd9b-b011737a976f}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.1900000125169754</value>
+		</property>
+	</object>
+</objects>
