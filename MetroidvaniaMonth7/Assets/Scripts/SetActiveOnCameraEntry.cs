@@ -8,11 +8,12 @@ public class SetActiveOnCameraEntry : MonoBehaviour
     [SerializeField]
     GameObject minimapPiece;
     CameraRoomTransition transition;
+
     // Start is called before the first frame update
     void Start()
     {
         transition = GetComponent<CameraRoomTransition>();
-        transition.OnRoomChange += HandleRoomChange;
+        transition.OnEnter += HandleRoomChange;
         if(minimapPiece == null)
         {
             Debug.Log("No Minimap Piece Assigned");

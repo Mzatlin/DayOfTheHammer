@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class CameraRoomTransition : MonoBehaviour
+public class CameraRoomTransition : MonoBehaviour, IEntry
 {
-    public event Action OnRoomChange = delegate { };
+    public event Action OnEnter = delegate { };
+    public event Action OnExit = delegate { };
 
     [SerializeField]
     GameObject camera;
@@ -14,7 +15,7 @@ public class CameraRoomTransition : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            OnRoomChange();
+            OnEnter();
             camera.SetActive(true);
         }
     }
@@ -23,6 +24,7 @@ public class CameraRoomTransition : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             camera.SetActive(false);
+            OnExit();
         }
     }
 }
