@@ -7,7 +7,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fc979d1ec08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fe88ce3fe08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,10 +18,171 @@
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe818d646a8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='UI2', format=2, channels=2, frequency=48000, lengthbytes=11200, lengthpcm=47000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.267517.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe818d646a8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='UI1', format=2, channels=2, frequency=48000, lengthbytes=12320, lengthpcm=47000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188049.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe818d646a8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='UI3', format=2, channels=2, frequency=48000, lengthbytes=12480, lengthpcm=46999, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.244843.
+[LOG] SystemI::createSound                     : filename = ../MetroidVania7-FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fe818d8a028 : node = 0x7fe818d26930
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fe819d0fdd8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fe818d8a028
+[LOG] SystemI::createSoundInternal             :     Create name='../MetroidVania7-FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fe818d26a40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CutScene', format=2, channels=2, frequency=48000, lengthbytes=834144, lengthpcm=3089455, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.302094.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fe818d8a028
+[LOG] SoundI::getSubSound                      : sound 0x7fe818d8a028.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe819be0ef8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 4', format=2, channels=1, frequency=48000, lengthbytes=1184, lengthpcm=4540, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.173699.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe819be0ef8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 2', format=2, channels=1, frequency=48000, lengthbytes=1280, lengthpcm=4398, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.268410.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe819be0ef8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 3', format=2, channels=1, frequency=48000, lengthbytes=1792, lengthpcm=7076, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.167681.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6774656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 67072
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004f218cc
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x15e77df64
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x15e77e01b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x15e77e048
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x15e77e0ea
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fe819be0ef8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 5', format=2, channels=1, frequency=48000, lengthbytes=2176, lengthpcm=9896, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.230800.
+[LOG] SoundI::release                          : TItleScene (0x7fe819d0f9a8)
+[LOG] SoundI::release                          :     TItleScene (0x7fe80e5591e8)
+[LOG] SoundI::release                          :     TItleScene (0x7fe80f2a5d98)
+[LOG] SoundI::release                          : CutScene (0x7fe818d8a028)
+[LOG] SoundI::release                          :     CutScene (0x7fe819cc9fe8)
+[LOG] SoundI::release                          :     CutScene (0x7fe81896c388)
+[LOG] SoundI::release                          :  (0x7fe819d6a0d8)
+[LOG] SoundI::release                          :     UI1 (0x7fe80e33b4e8)
+[LOG] SoundI::release                          :  (0x7fe818df83c8)
+[LOG] SoundI::release                          :     UI2 (0x7fe818d8f3b8)
+[LOG] SoundI::release                          :  (0x7fe818c2b568)
+[LOG] SoundI::release                          :     UI3 (0x7fe818ca6398)
+[LOG] SoundI::release                          :  (0x7fe819baf198)
+[LOG] SoundI::release                          :     Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 2 (0x7fe819baf308)
+[LOG] SoundI::release                          :  (0x7fe819baf648)
+[LOG] SoundI::release                          :     Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 3 (0x7fe819b76728)
+[LOG] SoundI::release                          :  (0x7fe819b85168)
+[LOG] SoundI::release                          :     Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 4 (0x7fe819b852d8)
+[LOG] SoundI::release                          :  (0x7fe819b76a68)
+[LOG] SoundI::release                          :     Computer, Keyboard, Macbook Pro 2017, Period, Hits, 4  SND12261 5 (0x7fe819b4e9e8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

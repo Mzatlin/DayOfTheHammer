@@ -11,5 +11,7 @@ public class PauseOnClick : MonoBehaviour
     public void OnClickResume()
     {
         OnResume();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
+
     }
 }
