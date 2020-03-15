@@ -16,6 +16,7 @@ public class SpawnOnEnable : MonoBehaviour
         if (enemy != null)
         {
             health = enemy.GetComponent<IHealth>();
+            enemy.SetActive(false);
         }
     }
 
