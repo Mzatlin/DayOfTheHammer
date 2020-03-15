@@ -5,11 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "AbilitySaveSystem")]
 public class AbilitySaveSystem : ScriptableObject
 {
+    public List<bool> activeAbilities = new List<bool>();
     public Dictionary<string,GameObject> abilities = new Dictionary<string, GameObject>();
     
-    public void ActivateAbility(string abilityName)
+    public void ActivateAbility(int index)
     {
-        abilities[abilityName].SetActive(true);
+        activeAbilities[index] = true;
+        //abilities[abilityName].SetActive(true);
     }
 
     public void ClearAbilitiesExceptFirst(string abilityName)

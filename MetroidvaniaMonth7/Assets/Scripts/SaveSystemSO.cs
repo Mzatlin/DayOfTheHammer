@@ -6,6 +6,7 @@ using UnityEngine;
 public class SaveSystemSO : ScriptableObject
 {
     public CheckpointSO checkPoint;
+    public AbilitySaveSystem ability;
 
     public bool CheckIfSaved()
     {
@@ -22,5 +23,9 @@ public class SaveSystemSO : ScriptableObject
     public void ClearData()
     {
         checkPoint.checkpointLocation = Vector3.zero;
+        for(int i = 1; i < ability.activeAbilities.Count; i++)
+        {
+            ability.activeAbilities[i] = false;
+        }
     }
 }
