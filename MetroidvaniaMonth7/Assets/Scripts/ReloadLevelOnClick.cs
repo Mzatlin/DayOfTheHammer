@@ -8,5 +8,7 @@ public class ReloadLevelOnClick : MonoBehaviour
     public void OnReloadClick()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
+
     }
 }

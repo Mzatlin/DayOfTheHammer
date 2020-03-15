@@ -7,5 +7,7 @@ public class QuitGameOnClick : MonoBehaviour
     public void OnClickQuit()
     {
         Application.Quit();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
+
     }
 }

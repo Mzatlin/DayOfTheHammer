@@ -47,7 +47,7 @@ public class ReelToGrapplePoint : MonoBehaviour
                 {
                     grappleSoundStatus = isGrappled;
                     grappleSound.start();
-                    Debug.Log("grapple sound on");
+                   // Debug.Log("grapple sound on");
                 }
 
             }
