@@ -6553,12 +6553,17 @@ PrefabInstance:
     - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
       propertyPath: dialogLines.Array.data[0]
-      value: Head to the east to find the elevator to the Factory.
+      value: Head to the west to find the elevator to the Factory.
       objectReference: {fileID: 0}
     - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
       propertyPath: dialogLines.Array.data[1]
       value: Remember, we're counting on you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 6075293491991449200, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
@@ -11470,6 +11475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogLines.Array.data[1]
       value: I guess the boss should have made the hole deeper.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 6075293491991449201, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
@@ -21110,7 +21120,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7489398878271199921, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
 --- !u!1001 &989604871
 PrefabInstance:
@@ -26129,7 +26140,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7489398878271199921, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
 --- !u!1001 &1238175240
 PrefabInstance:
@@ -26444,7 +26456,7 @@ MonoBehaviour:
   - Most may not remember what you tried to do, but I did. That's why I'm giving
     you a second chance.
   - Finish what you started, and free us all! Good Luck.
-  typingSpeed: 0.05
+  typingSpeed: 0.005
   dialogCanvas: {fileID: 199203865}
   textContent: {fileID: 1981290777}
 --- !u!114 &1241882240
@@ -26853,7 +26865,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7489398878271199921, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
 --- !u!1 &1260604681 stripped
 GameObject:
@@ -33312,7 +33325,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 8677582162583586583, guid: 4fcc5a9354f573241a68662c00bc38e3,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -59805,7 +59818,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7489398878271199921, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
 --- !u!1 &1730957616
 GameObject:
@@ -60936,6 +60950,11 @@ PrefabInstance:
       propertyPath: dialogLines.Array.data[1]
       value: Hold down "E" to charge up a powerful attack that can lift certain blocks
         and stun nearby enemies!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791801982848512821, guid: ebb88151ad4df4f4b946ecc4b19a7271,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 9021158311551803585, guid: ebb88151ad4df4f4b946ecc4b19a7271,
         type: 3}
@@ -63459,7 +63478,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7489398878271199921, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e9ec39f55e8684a4ea4addf5c88c4d32, type: 3}
 --- !u!1 &1912207156
 GameObject:
@@ -68140,6 +68160,11 @@ PrefabInstance:
       propertyPath: dialogLines.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5037623626419159899, guid: d97c4d187c2b42d45976feaca3a38474,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 6075293491991449200, guid: d97c4d187c2b42d45976feaca3a38474,
         type: 3}
       propertyPath: m_Offset.x
@@ -69213,6 +69238,11 @@ PrefabInstance:
       propertyPath: textContent
       value: 
       objectReference: {fileID: 1981290777}
+    - target: {fileID: 4791801982848512821, guid: ebb88151ad4df4f4b946ecc4b19a7271,
+        type: 3}
+      propertyPath: typingSpeed
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 9021158311551803585, guid: ebb88151ad4df4f4b946ecc4b19a7271,
         type: 3}
       propertyPath: m_LocalPosition.x

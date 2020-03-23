@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1605676809640693325}
   - component: {fileID: 1605676809640693324}
   - component: {fileID: 1605676809640693327}
-  - component: {fileID: -7489398878271199921}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -125,16 +124,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.24642134, y: 0.17856833}
   m_EdgeRadius: 0
---- !u!114 &-7489398878271199921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605676809640693427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1322355873f03254d81de47dcfa4e3c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPath: event:/Enemy/TurretHit
