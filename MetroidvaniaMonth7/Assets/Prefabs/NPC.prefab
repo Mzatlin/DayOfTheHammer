@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2062271281671973444}
   - component: {fileID: 5037623626419159899}
   - component: {fileID: 4015154605496833676}
+  - component: {fileID: 7228095654826905342}
   m_Layer: 13
   m_Name: NPC
   m_TagString: Untagged
@@ -146,7 +147,7 @@ MonoBehaviour:
   dialogLines:
   - Hello There!
   - Welcome To the Test Room!
-  typingSpeed: 0.05
+  typingSpeed: 0.009
   dialogCanvas: {fileID: 0}
   textContent: {fileID: 0}
 --- !u!114 &4015154605496833676
@@ -162,6 +163,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerState: {fileID: 11400000, guid: cd17b84dac4a58f409a36fb92822ab56, type: 2}
+--- !u!114 &7228095654826905342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075293491991449201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43eb43bc6f48a14a96b8a969b17f8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputPath: event:/StartDialogue
 --- !u!1 &7710644206884660627
 GameObject:
   m_ObjectHideFlags: 0

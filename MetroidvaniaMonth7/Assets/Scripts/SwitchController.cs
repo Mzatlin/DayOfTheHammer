@@ -7,7 +7,7 @@ public class SwitchController : MonoBehaviour, ISwitch
 {
     IMoveBlock move;
     public event Action OnTrigger = delegate { };
-    public bool isTriggered;
+    public bool isTriggered = false;
     Animator animate;
 
     void Start()
@@ -15,10 +15,11 @@ public class SwitchController : MonoBehaviour, ISwitch
         animate = GetComponentInChildren<Animator>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+
+    void OnTriggerStay2D(Collider2D collision)
     {
         move = collision.GetComponent<IMoveBlock>();
-        if(move != null)
+        if(move != null && !isTriggered)
         {
             animate.SetBool("IsSwitched", true);
             isTriggered = true;
@@ -30,9 +31,9 @@ public class SwitchController : MonoBehaviour, ISwitch
     void OnTriggerExit2D(Collider2D collision)
     {
         move = collision.GetComponent<IMoveBlock>();
-        if (move != null)
+        if (move != null && isTriggered)
         {
-         //   animate.SetBool("IsSwitched", false);
+            animate.SetBool("IsSwitched", false);
             isTriggered = false;
             OnTrigger();
         }

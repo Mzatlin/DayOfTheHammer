@@ -27,9 +27,6 @@ public class PlayerDuringDialogMananger : MonoBehaviour
     private void HandleDialogStart()
     {
         playerState.isStopped = true;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/StartDialogue", GetComponent<Transform>().position);
-
-
     }
 
 }

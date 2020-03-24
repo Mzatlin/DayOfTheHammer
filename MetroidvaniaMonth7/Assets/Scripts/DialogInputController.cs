@@ -28,8 +28,6 @@ public class DialogInputController : MonoBehaviour,IDialogInput
         if(active.IsActive && continueText.enabled && Input.GetKeyDown(KeyCode.Space))
         {
             CheckDialogLine();
-            FMODUnity.RuntimeManager.PlayOneShot("event:/StartDialogue", GetComponent<Transform>().position);
-
         }
     }
 
