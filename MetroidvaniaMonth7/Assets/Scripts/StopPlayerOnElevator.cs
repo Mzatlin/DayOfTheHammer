@@ -14,8 +14,8 @@ public class StopPlayerOnElevator : MonoBehaviour
     {
         start = GetComponent<IElevatorStart>();
         start.OnElevatorStart += HandleStart;
-        end = GetComponent<IElevatorEnd>();
-        end.OnElevatorEnd += HandleEnd;
+     //   end = GetComponent<IElevatorEnd>();
+     //   end.OnElevatorEnd += HandleEnd;
     }
 
     private void HandleEnd()

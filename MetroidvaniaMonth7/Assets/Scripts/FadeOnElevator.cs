@@ -17,7 +17,7 @@ public class FadeOnElevator : MonoBehaviour
 
     private void HandleStart()
     {
-        fade.Fade(1, 3f);
+        fade.Fade(1, 4f);
     }
 
 }
