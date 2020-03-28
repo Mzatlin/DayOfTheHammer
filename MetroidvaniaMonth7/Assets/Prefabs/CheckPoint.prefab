@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 5575381398617173639}
   - component: {fileID: 5575381398617173658}
   - component: {fileID: 5575381398617173659}
+  - component: {fileID: 3628588143181992962}
   m_Layer: 13
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -151,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 11400000, guid: e3a3fff17242e6042a650d0c630b6025, type: 2}
+  ability: {fileID: 0}
 --- !u!114 &5575381398617173656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverDescCanvas: {fileID: 0}
-  canvasOffset: 0
+  textContent: {fileID: 0}
+  text: 
 --- !u!61 &5575381398617173658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,3 +219,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f706006a184d10f4fb97e8de1e8d7b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3628588143181992962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575381398617173637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a081c15cce0ab04bb3df9cb8eed8354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateCanvas: {fileID: 4098905000743171668, guid: ec8a9aced24eb7e4d95922276b9ac603,
+    type: 3}
