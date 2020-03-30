@@ -12,7 +12,8 @@ public class EnableCanvasOnHover : MonoBehaviour
     TextMeshProUGUI textContent;
     [SerializeField]
     string text;
-    float canvasOffset;
+    [SerializeField]
+    float canvasOffset = 0.5f;
     [SerializeField]
     IInteractable interact;
     Vector2 canvasPosition;
@@ -27,7 +28,7 @@ public class EnableCanvasOnHover : MonoBehaviour
         {
             hoverDescCanvas.enabled = false;
         }
-        
+
 
     }
 
@@ -38,13 +39,13 @@ public class EnableCanvasOnHover : MonoBehaviour
         {
             hoverDescCanvas.enabled = true;
             textContent.text = text;
-         //   canvasPosition = camera.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + canvasOffset));
-         //   hoverDescCanvas.transform.position = canvasPosition;
         }
         else
         {
             hoverDescCanvas.enabled = false;
+            textContent.text = "";
         }
-
+        canvasPosition = camera.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + canvasOffset));
+        textContent.transform.position = canvasPosition;
     }
 }

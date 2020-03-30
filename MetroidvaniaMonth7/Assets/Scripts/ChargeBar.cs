@@ -29,15 +29,15 @@ public class ChargeBar : MonoBehaviour
     {
         sliderValue = chargeable.HoldDownTime;
         chargeSlider.value = sliderValue;
-        if(sliderValue > .2f)
+        if (sliderValue > .2f)
         {
             canvas.enabled = true;
         }
         else
         {
-         canvas.enabled = false;
+            canvas.enabled = false;
         }
-        position = camera.WorldToScreenPoint(new Vector2(transform.position.x,transform.position.y+offset));
+        position = camera.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + offset));
         chargeSlider.transform.position = position;
     }
 }
