@@ -26324,6 +26324,19 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &1241882242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241882235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec040c25e188cf2488a19d5ae476d899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: {fileID: 11400000, guid: dcd16da288f68a0428d2bc799aecaaec, type: 2}
 --- !u!114 &1241882243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26925,7 +26938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca8cbe89210a8c468aefbe8c1f6103c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
   abilities: []
 --- !u!4 &1268643961
 Transform:
@@ -28824,7 +28837,7 @@ PrefabInstance:
     - target: {fileID: 1333207724171789627, guid: 78b36bb088e2722418b0179e6b36f143,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.2568665
+      value: -7.256836
       objectReference: {fileID: 0}
     - target: {fileID: 1333207725549626622, guid: 78b36bb088e2722418b0179e6b36f143,
         type: 3}
@@ -30219,7 +30232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.299835, y: -8.099976}
+  m_AnchoredPosition: {x: -11.299805, y: -8.099976}
   m_SizeDelta: {x: -426.9, y: -247.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403127246
