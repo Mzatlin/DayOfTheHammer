@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba858944f4be74642a6d91c6c7909c83, type: 3}
   m_Name: Game State SO
   m_EditorClassIdentifier: 
-  isOpeningComplete: 0
+  isOpeningComplete: 1

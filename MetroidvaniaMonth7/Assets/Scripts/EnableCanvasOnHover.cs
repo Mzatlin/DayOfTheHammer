@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class EnableCanvasOnHover : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class EnableCanvasOnHover : MonoBehaviour
     [SerializeField]
     string text;
     [SerializeField]
-    float canvasOffset = 0.5f;
+    float canvasOffsetY = 1f;
+    [SerializeField]
+    float canvasOffsetX = -0.5f;
     [SerializeField]
     IInteractable interact;
     Vector2 canvasPosition;
@@ -24,28 +27,34 @@ public class EnableCanvasOnHover : MonoBehaviour
         camera = Camera.main;
         textContent = hoverDescCanvas.GetComponentInChildren<TextMeshProUGUI>();
         interact = GetComponent<IInteractable>();
-        if(hoverDescCanvas != null)
+        if (hoverDescCanvas != null)
+        {
+            Debug.Log("No Canvas Assigned.");
+        }
+        else
         {
             hoverDescCanvas.enabled = false;
         }
 
+        interact.OnHover += HandleHover;
+        interact.OnHoverLeave += HandleLeave;
+
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandleLeave()
+    {
+        hoverDescCanvas.enabled = false;
+    }
+
+    private void HandleHover()
     {
         if (interact.IsInteracting)
         {
             hoverDescCanvas.enabled = true;
             textContent.text = text;
+            canvasPosition = camera.WorldToScreenPoint(new Vector2(transform.position.x+canvasOffsetX, transform.position.y + canvasOffsetY));
+            textContent.transform.position = canvasPosition;
         }
-        else
-        {
-            hoverDescCanvas.enabled = false;
-            textContent.text = "";
-        }
-        canvasPosition = camera.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + canvasOffset));
-        textContent.transform.position = canvasPosition;
     }
 }

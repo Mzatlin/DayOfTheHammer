@@ -47,6 +47,7 @@ public class PlayerInteract : MonoBehaviour
             if(interact != null)
             {
                 interact.IsInteracting = false;
+                interact.ProcessHoverLeave();
             }
         }
     }
