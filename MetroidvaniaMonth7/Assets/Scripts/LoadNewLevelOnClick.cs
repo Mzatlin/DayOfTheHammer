@@ -10,9 +10,16 @@ public class LoadNewLevelOnClick : MonoBehaviour
 
     public void OnClickNewLevel()
     {
-        SceneManager.LoadScene(name, LoadSceneMode.Single);
+
         Time.timeScale = 1;
         FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
+        StartCoroutine(StartDelay());
 
+    }
+
+    IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 }

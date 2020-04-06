@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [CreateAssetMenu(menuName = "SaveSystem")]
 public class SaveSystemSO : ScriptableObject
 {
+    public event Action OnClearData = delegate { };
     public CheckpointSO checkPoint;
-    public AbilitySaveSystem ability;
 
     public bool CheckIfSaved()
     {
@@ -22,10 +23,6 @@ public class SaveSystemSO : ScriptableObject
 
     public void ClearData()
     {
-        checkPoint.checkpointLocation = Vector3.zero;
-        for(int i = 1; i < ability.activeAbilities.Count; i++)
-        {
-            ability.activeAbilities[i] = false;
-        }
+        OnClearData();
     }
 }

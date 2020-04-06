@@ -180,7 +180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverDescCanvas: {fileID: 0}
   textContent: {fileID: 0}
-  text: 
+  text: Save Game
+  canvasOffsetY: 1
+  canvasOffsetX: -0.5
 --- !u!61 &5575381398617173658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -233,3 +235,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateCanvas: {fileID: 4098905000743171668, guid: ec8a9aced24eb7e4d95922276b9ac603,
     type: 3}
+  delayTime: 3

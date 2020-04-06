@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListenerNumber: -1
+  ListenerNumber: 0
 --- !u!1 &237330797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   - All workers that have failed our boss are sent to the Junkyard.
   - Where all hope of freedom forever fades away...
   - ...or so they say.
-  typingSpeed: 0.07
+  typingSpeed: 8.5
   dialogCanvas: {fileID: 903380565}
   textContent: {fileID: 1480949452}
 --- !u!4 &1795139106

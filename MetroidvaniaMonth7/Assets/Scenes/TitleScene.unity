@@ -235,12 +235,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -443,6 +443,9 @@ GameObject:
   - component: {fileID: 981445764}
   - component: {fileID: 981445766}
   - component: {fileID: 981445767}
+  - component: {fileID: 981445768}
+  - component: {fileID: 981445769}
+  - component: {fileID: 981445770}
   m_Layer: 0
   m_Name: TitleManager
   m_TagString: Untagged
@@ -490,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeAlpha: 0
-  fadeDuration: 1
+  fadeDuration: 3
   delayTime: 1
 --- !u!114 &981445766
 MonoBehaviour:
@@ -518,8 +521,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeAlpha: 1
-  fadeDuration: 2
+  fadeDuration: 3
   fadeCanvas: {fileID: 433121273}
+--- !u!114 &981445768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981445762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4589fba98480cb4b8a489fec4951b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  checkpoint: {fileID: 11400000, guid: e3a3fff17242e6042a650d0c630b6025, type: 2}
+--- !u!114 &981445769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981445762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01703c4c6591853409bf5b6a6942e269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
+--- !u!114 &981445770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981445762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817c518061acb6544a070807f1de80ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  game: {fileID: 11400000, guid: dcd16da288f68a0428d2bc799aecaaec, type: 2}
 --- !u!1 &1079709947
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,9 +666,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/TitleScene
+  Event: event:/CutScene
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -765,7 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListenerNumber: -1
+  ListenerNumber: 0
 --- !u!1 &1252148816
 GameObject:
   m_ObjectHideFlags: 0
