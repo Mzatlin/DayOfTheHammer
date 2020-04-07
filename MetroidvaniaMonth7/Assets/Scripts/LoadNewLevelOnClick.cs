@@ -3,23 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadNewLevelOnClick : MonoBehaviour
+public class LoadNewLevelOnClick : OnClickListenerBase
 {
     [SerializeField]
-    string name = "";
+    string levelName = "";
 
-    public void OnClickNewLevel()
+    public override void HandleClickEvent()
     {
-
         Time.timeScale = 1;
         FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
         StartCoroutine(StartDelay());
-
     }
 
     IEnumerator StartDelay()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(name, LoadSceneMode.Single);
+        SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
 }

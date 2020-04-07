@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be3e3b3c3b29914c972de7599f7d2bd, type: 3}
   m_Name: Ability Save System
   m_EditorClassIdentifier: 
-  activeAbilities: 01000001
+  activeAbilities: 01000000

@@ -442,10 +442,6 @@ GameObject:
   - component: {fileID: 981445765}
   - component: {fileID: 981445764}
   - component: {fileID: 981445766}
-  - component: {fileID: 981445767}
-  - component: {fileID: 981445768}
-  - component: {fileID: 981445769}
-  - component: {fileID: 981445770}
   m_Layer: 0
   m_Name: TitleManager
   m_TagString: Untagged
@@ -493,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeAlpha: 0
-  fadeDuration: 3
+  fadeDuration: 1
   delayTime: 1
 --- !u!114 &981445766
 MonoBehaviour:
@@ -508,63 +504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasToShow: {fileID: 1852072215}
---- !u!114 &981445767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981445762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30496ac6f3353764b956e491e521f3d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeAlpha: 1
-  fadeDuration: 3
-  fadeCanvas: {fileID: 433121273}
---- !u!114 &981445768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981445762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4589fba98480cb4b8a489fec4951b3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
-  checkpoint: {fileID: 11400000, guid: e3a3fff17242e6042a650d0c630b6025, type: 2}
---- !u!114 &981445769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981445762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01703c4c6591853409bf5b6a6942e269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
-  ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
---- !u!114 &981445770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981445762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817c518061acb6544a070807f1de80ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
-  game: {fileID: 11400000, guid: dcd16da288f68a0428d2bc799aecaaec, type: 2}
 --- !u!1 &1079709947
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +764,12 @@ GameObject:
   - component: {fileID: 1252148818}
   - component: {fileID: 1252148821}
   - component: {fileID: 1252148822}
+  - component: {fileID: 1252148824}
+  - component: {fileID: 1252148825}
+  - component: {fileID: 1252148828}
+  - component: {fileID: 1252148827}
+  - component: {fileID: 1252148826}
+  - component: {fileID: 1252148823}
   m_Layer: 5
   m_Name: New Game
   m_TagString: Untagged
@@ -896,30 +841,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1252148822}
-        m_MethodName: OnClickClear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 981445767}
-        m_MethodName: OnClickFade
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1252148821}
-        m_MethodName: OnClickNewLevel
+      - m_Target: {fileID: 1252148824}
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -978,7 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: CutScene
+  levelName: Cutscene
 --- !u!114 &1252148822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,6 +915,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+--- !u!114 &1252148823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30496ac6f3353764b956e491e521f3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeAlpha: 0
+  fadeDuration: 1
+--- !u!114 &1252148824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75062d9192dd38748b242db0ce6c295b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1252148825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de65b4ef66bb3e94c87da564ecb2345d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeCanvas: {fileID: 433121273}
+--- !u!114 &1252148826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817c518061acb6544a070807f1de80ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  game: {fileID: 11400000, guid: dcd16da288f68a0428d2bc799aecaaec, type: 2}
+--- !u!114 &1252148827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4589fba98480cb4b8a489fec4951b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  checkpoint: {fileID: 11400000, guid: e3a3fff17242e6042a650d0c630b6025, type: 2}
+--- !u!114 &1252148828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01703c4c6591853409bf5b6a6942e269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
+  ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
 --- !u!1 &1333519107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1417,9 @@ GameObject:
   - component: {fileID: 1552070753}
   - component: {fileID: 1552070752}
   - component: {fileID: 1552070751}
+  - component: {fileID: 1552070755}
+  - component: {fileID: 1552070757}
+  - component: {fileID: 1552070756}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -1452,7 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: RoomSystemTest
+  levelName: RoomSystemTest
 --- !u!114 &1552070752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,19 +1504,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1552070751}
-        m_MethodName: OnClickNewLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 981445767}
-        m_MethodName: OnClickFade
+      - m_Target: {fileID: 1552070755}
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1556,6 +1552,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552070749}
   m_CullTransparentMesh: 0
+--- !u!114 &1552070755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552070749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75062d9192dd38748b242db0ce6c295b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1552070756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552070749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de65b4ef66bb3e94c87da564ecb2345d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeCanvas: {fileID: 433121273}
+--- !u!114 &1552070757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552070749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30496ac6f3353764b956e491e521f3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeAlpha: 0
+  fadeDuration: 3
 --- !u!1 &1589704738
 GameObject:
   m_ObjectHideFlags: 0

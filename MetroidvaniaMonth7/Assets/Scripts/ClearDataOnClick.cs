@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearDataOnClick : MonoBehaviour
+public class ClearDataOnClick : OnClickListenerBase
 {
     [SerializeField]
     SaveSystemSO saveSystem;
 
-    public void OnClickClear()
+    public override void HandleClickEvent()
     {
         saveSystem.ClearData();
     }
