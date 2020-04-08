@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadNewLevelOnClick : MonoBehaviour
+public class LoadLevelOnEvent : OnClickListenerBase
 {
     [SerializeField]
     string levelName = "";
-    [SerializeField]
-    float loadTime = 1f;
 
-    public void OnLevelClick()
+    public override void HandleClickEvent()
     {
         Time.timeScale = 1;
         FMODUnity.RuntimeManager.PlayOneShot("event:/UIBUtton");
@@ -19,7 +17,7 @@ public class LoadNewLevelOnClick : MonoBehaviour
 
     IEnumerator StartDelay()
     {
-        yield return new WaitForSeconds(loadTime);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
 }

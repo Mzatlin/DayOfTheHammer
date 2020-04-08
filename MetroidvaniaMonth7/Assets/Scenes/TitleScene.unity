@@ -762,7 +762,6 @@ GameObject:
   - component: {fileID: 1252148820}
   - component: {fileID: 1252148819}
   - component: {fileID: 1252148818}
-  - component: {fileID: 1252148821}
   - component: {fileID: 1252148822}
   - component: {fileID: 1252148824}
   - component: {fileID: 1252148825}
@@ -770,6 +769,8 @@ GameObject:
   - component: {fileID: 1252148827}
   - component: {fileID: 1252148826}
   - component: {fileID: 1252148823}
+  - component: {fileID: 1252148829}
+  - component: {fileID: 1252148821}
   m_Layer: 5
   m_Name: New Game
   m_TagString: Untagged
@@ -898,7 +899,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1252148816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
+  m_Script: {fileID: 11500000, guid: a5e7ca6c08ee07b48add6145906bdd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Cutscene
@@ -996,6 +997,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveSystem: {fileID: 11400000, guid: 93d8712d0b727d64eb5927c926896552, type: 2}
   ability: {fileID: 11400000, guid: 9cbbe9ef77d3afd4a8293e0afcdf0a6a, type: 2}
+--- !u!114 &1252148829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252148816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b7aa36cccf5e8429d1cf7578696b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasToShow: {fileID: 1852072215}
 --- !u!1 &1333519107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,10 +1430,10 @@ GameObject:
   - component: {fileID: 1552070754}
   - component: {fileID: 1552070753}
   - component: {fileID: 1552070752}
-  - component: {fileID: 1552070751}
   - component: {fileID: 1552070755}
   - component: {fileID: 1552070757}
   - component: {fileID: 1552070756}
+  - component: {fileID: 1552070751}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -1456,7 +1470,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552070749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
+  m_Script: {fileID: 11500000, guid: a5e7ca6c08ee07b48add6145906bdd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: RoomSystemTest

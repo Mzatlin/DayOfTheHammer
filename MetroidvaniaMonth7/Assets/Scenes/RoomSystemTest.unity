@@ -5904,7 +5904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: TitleScene
+  levelName: TitleScene
+  loadTime: 0.1
 --- !u!114 &246264580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5949,7 +5950,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 246264579}
-        m_MethodName: OnClickNewLevel
+        m_MethodName: OnLevelClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29056,6 +29057,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 705030923}
+    - target: {fileID: 2278255579230624373, guid: 78b36bb088e2722418b0179e6b36f143,
+        type: 3}
+      propertyPath: levelName
+      value: TitleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199394445324403189, guid: 78b36bb088e2722418b0179e6b36f143,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLevelClick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78b36bb088e2722418b0179e6b36f143, type: 3}
 --- !u!1 &1357150987

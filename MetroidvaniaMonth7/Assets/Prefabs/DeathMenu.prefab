@@ -749,7 +749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2278255579230624373}
-        m_MethodName: OnClickNewLevel
+        m_MethodName: OnLevelClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -771,7 +771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd13dc10aa568459239947ed559133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: TitleScene
+  levelName: TitleScene
+  loadTime: 0.1
 --- !u!1 &7241373429658955607
 GameObject:
   m_ObjectHideFlags: 0

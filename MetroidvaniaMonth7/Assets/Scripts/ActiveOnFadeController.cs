@@ -13,7 +13,7 @@ public class ActiveOnFadeController : MonoBehaviour
     {
         canvasToShow.enabled = false;
         fade = GetComponent<IFade>();
-        fade.OnEndFade += HandleEndFade;
+     //   fade.OnEndFade += HandleEndFade;
         fade.OnFade += HandleFade;
     }
 
@@ -24,7 +24,8 @@ public class ActiveOnFadeController : MonoBehaviour
 
     private void HandleFade()
     {
-        canvasToShow.enabled = false;
+        //canvasToShow.enabled = false;
+        FlipEnable();
     }
 
     void FlipEnable()
