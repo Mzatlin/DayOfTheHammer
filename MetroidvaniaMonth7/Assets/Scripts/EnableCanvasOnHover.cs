@@ -27,7 +27,7 @@ public class EnableCanvasOnHover : MonoBehaviour
         camera = Camera.main;
         textContent = hoverDescCanvas.GetComponentInChildren<TextMeshProUGUI>();
         interact = GetComponent<IInteractable>();
-        if (hoverDescCanvas != null)
+        if (hoverDescCanvas == null)
         {
             Debug.Log("No Canvas Assigned.");
         }

@@ -6,8 +6,6 @@ public class IgnorePlayerLayer : MonoBehaviour
 {
     [SerializeField]
     LayerMask ignoreMask;
-    [SerializeField]
-    GameObject target;
     // bool iscolliding;
 
     void OnCollisionEnter2D(Collision2D collision)
