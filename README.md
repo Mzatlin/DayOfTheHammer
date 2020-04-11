@@ -17,5 +17,5 @@ or you can go to the Scenes folder and open up the file "TitleScene" (Note, you 
 
 What I Learned:
 -How to utilize all components of the S.O.L.I.D design principles, including the following:
-  -Dependency Injection Principle
-  -Interface Segregation Principle
+-Dependency Injection Principle
+-Interface Segregation Principle
