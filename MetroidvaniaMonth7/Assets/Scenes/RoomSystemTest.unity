@@ -14642,7 +14642,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Score
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -14665,7 +14665,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Ambiences/Factory
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -21398,6 +21398,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: Player
   Emitters:
+  - Target: {fileID: 705030926}
+    Params:
+    - Name: LowSynth
+      Value: 0
   - Target: {fileID: 705030925}
     Params:
     - Name: LowSynth
@@ -21443,6 +21447,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: Player
   Emitters:
+  - Target: {fileID: 705030926}
+    Params:
+    - Name: LowSynth
+      Value: 1
   - Target: {fileID: 705030925}
     Params:
     - Name: LowSynth
@@ -63085,6 +63093,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: Player
   Emitters:
+  - Target: {fileID: 705030926}
+    Params:
+    - Name: LowSynth
+      Value: 0
   - Target: {fileID: 705030925}
     Params:
     - Name: LowSynth
@@ -63130,6 +63142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: Player
   Emitters:
+  - Target: {fileID: 705030926}
+    Params:
+    - Name: LowSynth
+      Value: 1
   - Target: {fileID: 705030925}
     Params:
     - Name: LowSynth
