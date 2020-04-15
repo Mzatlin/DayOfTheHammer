@@ -74,7 +74,7 @@ public class DialogController : WriterBase, ITypeCharacter, IDialogEnd
         foreach(char i in message.ToCharArray())
         {
             textContent.text += i;
-            yield return new WaitForSeconds(typingSpeed*Time.deltaTime);
+            yield return new WaitForSeconds(typingSpeed);
 
             //Move this to its own script 
             FMODUnity.RuntimeManager.PlayOneShot("event:/Typing", GetComponent<Transform>().position);
